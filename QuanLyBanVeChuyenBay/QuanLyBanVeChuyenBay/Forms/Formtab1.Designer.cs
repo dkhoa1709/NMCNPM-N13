@@ -34,7 +34,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(376, 166);
+            this.button1.Location = new System.Drawing.Point(479, 202);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 96);
             this.button1.TabIndex = 0;
