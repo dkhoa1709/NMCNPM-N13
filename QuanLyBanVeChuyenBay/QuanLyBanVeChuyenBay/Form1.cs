@@ -15,6 +15,7 @@ namespace QuanLyBanVeChuyenBay
         private Button currentButton;
         private Random random;
         private int tempIndex;
+        Form activeForm;
 
         public Form1()
         {
@@ -27,7 +28,7 @@ namespace QuanLyBanVeChuyenBay
             int index = random.Next(ThemeColor.ColorList.Count);
             while (tempIndex == index)
             {
-                random.Next(ThemeColor.ColorList.Count);
+                index = random.Next(ThemeColor.ColorList.Count);
             }
             tempIndex = index;
             string color = ThemeColor.ColorList[index];
@@ -45,7 +46,11 @@ namespace QuanLyBanVeChuyenBay
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));        
+                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    panelTitle.BackColor = color;
+                    panelLogo.BackColor = ThemeColor.ChangeColor(color, -0.5);
+                    ThemeColor.PrimaryColor = color;
+                    ThemeColor.SecondaryColor = ThemeColor.ChangeColor(color, -0.5);
                 }
             }
         }
@@ -63,29 +68,45 @@ namespace QuanLyBanVeChuyenBay
             }
         }
 
+        private void OpenchildForm(Form childForm, object btnSender)
+        {
+            if(activeForm!=null)
+            {
+                activeForm.Close();
+            }
+            ActivateButton(btnSender);
+            activeForm = childForm;
+            activeForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            this.panelDesktop.Controls.Add(childForm);
+            childForm.BringToFront();
+            childForm.Show();
+            labelTitle.Text = childForm.Text;   
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenchildForm(new Forms.Formtab1(), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenchildForm(new Forms.Formtab2(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenchildForm(new Forms.Formtab3(), sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenchildForm(new Forms.Formtab4(), sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenchildForm(new Forms.Formtab5(), sender);
         }
     }
 } 

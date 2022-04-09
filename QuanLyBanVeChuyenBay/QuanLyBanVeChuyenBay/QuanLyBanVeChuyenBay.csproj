@@ -52,11 +52,56 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Formtab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formtab1.Designer.cs">
+      <DependentUpon>Formtab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formtab2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formtab2.Designer.cs">
+      <DependentUpon>Formtab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formtab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formtab3.Designer.cs">
+      <DependentUpon>Formtab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formtab4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formtab4.Designer.cs">
+      <DependentUpon>Formtab4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formtab5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formtab5.Designer.cs">
+      <DependentUpon>Formtab5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Formtab1.resx">
+      <DependentUpon>Formtab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Formtab2.resx">
+      <DependentUpon>Formtab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Formtab3.resx">
+      <DependentUpon>Formtab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Formtab4.resx">
+      <DependentUpon>Formtab4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Formtab5.resx">
+      <DependentUpon>Formtab5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,5 +132,6 @@
   <ItemGroup>
     <None Include="Resources\icon_google.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
