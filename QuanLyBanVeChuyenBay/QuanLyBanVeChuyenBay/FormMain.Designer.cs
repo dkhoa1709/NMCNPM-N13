@@ -289,9 +289,9 @@ namespace QuanLyBanVeChuyenBay
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Plane1;
-            this.pictureBox1.Location = new System.Drawing.Point(137, 93);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(786, 232);
+            this.pictureBox1.Size = new System.Drawing.Size(1181, 588);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -303,6 +303,7 @@ namespace QuanLyBanVeChuyenBay
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
+            this.MinimumSize = new System.Drawing.Size(1300, 800);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
