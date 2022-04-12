@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\DbConnection.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,30 +60,31 @@
     <Compile Include="Forms\Formtab1.Designer.cs">
       <DependentUpon>Formtab1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formtab2.cs">
+    <Compile Include="Forms\FrmQuyDinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Formtab2.Designer.cs">
-      <DependentUpon>Formtab2.cs</DependentUpon>
+    <Compile Include="Forms\FrmQuyDinh.Designer.cs">
+      <DependentUpon>FrmQuyDinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formtab3.cs">
+    <Compile Include="Forms\FrmDatCho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Formtab3.Designer.cs">
-      <DependentUpon>Formtab3.cs</DependentUpon>
+    <Compile Include="Forms\FrmDatCho.Designer.cs">
+      <DependentUpon>FrmDatCho.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formtab4.cs">
+    <Compile Include="Forms\FrmTraCuu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Formtab4.Designer.cs">
-      <DependentUpon>Formtab4.cs</DependentUpon>
+    <Compile Include="Forms\FrmTraCuu.Designer.cs">
+      <DependentUpon>FrmTraCuu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formtab5.cs">
+    <Compile Include="Forms\FrmThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Formtab5.Designer.cs">
-      <DependentUpon>Formtab5.cs</DependentUpon>
+    <Compile Include="Forms\FrmThongKe.Designer.cs">
+      <DependentUpon>FrmThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Dashboard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
@@ -91,17 +94,17 @@
     <EmbeddedResource Include="Forms\Formtab1.resx">
       <DependentUpon>Formtab1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Formtab2.resx">
-      <DependentUpon>Formtab2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmQuyDinh.resx">
+      <DependentUpon>FrmQuyDinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Formtab3.resx">
-      <DependentUpon>Formtab3.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmDatCho.resx">
+      <DependentUpon>FrmDatCho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Formtab4.resx">
-      <DependentUpon>Formtab4.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmTraCuu.resx">
+      <DependentUpon>FrmTraCuu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Formtab5.resx">
-      <DependentUpon>Formtab5.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmThongKe.resx">
+      <DependentUpon>FrmThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

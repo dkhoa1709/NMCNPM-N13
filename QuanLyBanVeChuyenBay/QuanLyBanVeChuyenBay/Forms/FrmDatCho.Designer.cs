@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyBanVeChuyenBay.Forms
 {
-    partial class Formtab3
+    partial class FrmDatCho
     {
         /// <summary>
         /// Required designer variable.
@@ -335,7 +335,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridViewPhieuDatCho.Size = new System.Drawing.Size(479, 297);
             this.dataGridViewPhieuDatCho.TabIndex = 30;
             // 
-            // Formtab3
+            // FrmDatCho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -370,7 +370,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.labelMaChuyenBay);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonThoat);
-            this.Name = "Formtab3";
+            this.Name = "FrmDatCho";
             this.Text = "Đặt chỗ";
             this.Load += new System.EventHandler(this.Formtab3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuDatCho)).EndInit();

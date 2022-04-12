@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyBanVeChuyenBay.Forms
 {
-    partial class Formtab4
+    partial class FrmTraCuu
     {
         /// <summary>
         /// Required designer variable.
@@ -34,21 +34,21 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(171, 123);
+            this.button1.Location = new System.Drawing.Point(198, 143);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(303, 125);
             this.button1.TabIndex = 0;
             this.button1.Text = "buttonTAB4";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Formtab4
+            // FrmBaoCao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1182, 653);
             this.Controls.Add(this.button1);
-            this.Name = "Formtab4";
-            this.Text = "Formtab4";
+            this.Name = "FrmBaoCao";
+            this.Text = "Báo cáo doanh thu";
             this.Load += new System.EventHandler(this.Formtab4_Load);
             this.ResumeLayout(false);
 

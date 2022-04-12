@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyBanVeChuyenBay.Forms
 {
-    public partial class Formtab2 : Form
+    public partial class FrmQuyDinh : Form
     {
-        public Formtab2()
+        public FrmQuyDinh()
         {
             InitializeComponent();
         }

@@ -104,22 +104,22 @@ namespace QuanLyBanVeChuyenBay
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.Formtab2(), sender);
+            OpenchildForm(new Forms.FrmQuyDinh(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.Formtab3(), sender);
+            OpenchildForm(new Forms.FrmDatCho(), sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.Formtab4(), sender);
+            OpenchildForm(new Forms.FrmTraCuu(), sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.Formtab5(), sender);
+            OpenchildForm(new Forms.FrmThongKe(), sender);
         }
 
         private void buttonCloseChildForm_Click(object sender, EventArgs e)

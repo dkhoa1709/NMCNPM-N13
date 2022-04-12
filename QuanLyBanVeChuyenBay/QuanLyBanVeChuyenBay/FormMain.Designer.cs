@@ -64,7 +64,7 @@ namespace QuanLyBanVeChuyenBay
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(263, 761);
+            this.panelMenu.Size = new System.Drawing.Size(263, 853);
             this.panelMenu.TabIndex = 0;
             // 
             // button5
@@ -199,7 +199,7 @@ namespace QuanLyBanVeChuyenBay
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(263, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1252, 100);
+            this.panelTitle.Size = new System.Drawing.Size(1119, 100);
             this.panelTitle.TabIndex = 1;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
@@ -210,7 +210,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMin.ForeColor = System.Drawing.Color.White;
-            this.buttonMin.Location = new System.Drawing.Point(1142, 3);
+            this.buttonMin.Location = new System.Drawing.Point(1009, 3);
             this.buttonMin.Name = "buttonMin";
             this.buttonMin.Size = new System.Drawing.Size(35, 35);
             this.buttonMin.TabIndex = 4;
@@ -225,7 +225,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMax.ForeColor = System.Drawing.Color.White;
-            this.buttonMax.Location = new System.Drawing.Point(1178, 3);
+            this.buttonMax.Location = new System.Drawing.Point(1045, 3);
             this.buttonMax.Name = "buttonMax";
             this.buttonMax.Size = new System.Drawing.Size(35, 35);
             this.buttonMax.TabIndex = 3;
@@ -240,7 +240,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(1214, 3);
+            this.buttonClose.Location = new System.Drawing.Point(1081, 3);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(35, 35);
             this.buttonClose.TabIndex = 2;
@@ -269,7 +269,7 @@ namespace QuanLyBanVeChuyenBay
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(582, 33);
+            this.labelTitle.Location = new System.Drawing.Point(515, 33);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(81, 29);
             this.labelTitle.TabIndex = 0;
@@ -282,14 +282,14 @@ namespace QuanLyBanVeChuyenBay
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(263, 100);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1252, 661);
+            this.panelDesktop.Size = new System.Drawing.Size(1119, 753);
             this.panelDesktop.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Plane1;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(-35, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1181, 588);
             this.pictureBox1.TabIndex = 0;
@@ -299,7 +299,7 @@ namespace QuanLyBanVeChuyenBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1515, 761);
+            this.ClientSize = new System.Drawing.Size(1382, 853);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
