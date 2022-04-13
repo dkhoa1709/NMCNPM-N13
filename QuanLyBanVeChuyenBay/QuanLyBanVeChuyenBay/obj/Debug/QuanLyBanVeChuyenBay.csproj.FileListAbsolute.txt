@@ -6,10 +6,10 @@ C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\Qua
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.csproj.CoreCompileInputs.cache
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.exe
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.pdb
-C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.Formtab1.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.FormMain.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmDatCho.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.csproj.AssemblyReference.cache
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmQuyDinh.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmThongKe.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmTraCuu.resources
+C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmLichChuyenBay.resources

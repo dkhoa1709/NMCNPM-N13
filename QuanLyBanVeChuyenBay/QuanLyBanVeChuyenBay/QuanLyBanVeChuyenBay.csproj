@@ -54,11 +54,11 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formtab1.cs">
+    <Compile Include="Forms\FrmLichChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Formtab1.Designer.cs">
-      <DependentUpon>Formtab1.cs</DependentUpon>
+    <Compile Include="Forms\FrmLichChuyenBay.Designer.cs">
+      <DependentUpon>FrmLichChuyenBay.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmQuyDinh.cs">
       <SubType>Form</SubType>
@@ -91,8 +91,8 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Formtab1.resx">
-      <DependentUpon>Formtab1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmLichChuyenBay.resx">
+      <DependentUpon>FrmLichChuyenBay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmQuyDinh.resx">
       <DependentUpon>FrmQuyDinh.cs</DependentUpon>

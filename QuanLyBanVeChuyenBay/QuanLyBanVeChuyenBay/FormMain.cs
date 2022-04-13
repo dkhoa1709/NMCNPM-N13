@@ -99,7 +99,7 @@ namespace QuanLyBanVeChuyenBay
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.Formtab1(), sender);
+            OpenchildForm(new Forms.FrmLichChuyenBay(), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
