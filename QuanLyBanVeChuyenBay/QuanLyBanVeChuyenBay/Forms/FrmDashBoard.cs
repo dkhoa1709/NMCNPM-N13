@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyBanVeChuyenBay.Forms
 {
-    public partial class FrmLichChuyenBay : Form
+    public partial class FrmDashBoard : Form
     {
-        public FrmLichChuyenBay()
+        public FrmDashBoard()
         {
             InitializeComponent();
         }
@@ -34,11 +34,12 @@ namespace QuanLyBanVeChuyenBay.Forms
                     lbl.ForeColor = ThemeColor.PrimaryColor;
                 }
             }
-            ChangeColor(panelMain);
-            ChangeColor(panel3);
+
+            ChangeColor(panel2);
+            ChangeColor(panel1);
         }
 
-        private void Formtab1_Load(object sender, EventArgs e)
+        private void Formtab5_Load(object sender, EventArgs e)
         {
             LoadTheme();
         }

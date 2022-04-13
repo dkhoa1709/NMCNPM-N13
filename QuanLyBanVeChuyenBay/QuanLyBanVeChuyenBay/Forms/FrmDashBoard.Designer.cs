@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyBanVeChuyenBay.Forms
 {
-    partial class FrmThongKe
+    partial class FrmDashBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -53,10 +53,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.labelTitle = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -64,6 +64,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chart1
@@ -246,7 +247,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(950, 12);
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(950, 10);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 33);
             this.button4.TabIndex = 3;
@@ -255,7 +259,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(674, 12);
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(674, 10);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(44, 33);
             this.button5.TabIndex = 4;
@@ -264,7 +271,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(837, 12);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(837, 10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 33);
             this.button2.TabIndex = 1;
@@ -273,27 +283,21 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(724, 12);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(724, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 33);
             this.button1.TabIndex = 0;
             this.button1.Text = "buttonTAB5";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(1063, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 33);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "buttonTAB5";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "MMM dd, yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(250, 20);
+            this.dateTimePicker1.Location = new System.Drawing.Point(248, 12);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(140, 22);
             this.dateTimePicker1.TabIndex = 5;
@@ -302,7 +306,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.dateTimePicker2.CustomFormat = "MMM dd, yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(450, 20);
+            this.dateTimePicker2.Location = new System.Drawing.Point(448, 12);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(140, 22);
             this.dateTimePicker2.TabIndex = 6;
@@ -311,29 +315,36 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(12, 15);
+            this.labelTitle.Location = new System.Drawing.Point(10, 5);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(177, 36);
             this.labelTitle.TabIndex = 7;
             this.labelTitle.Text = "THỐNG KÊ";
             // 
-            // FrmThongKe
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.labelTitle);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1182, 61);
+            this.panel1.TabIndex = 9;
+            // 
+            // FrmDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.labelTitle);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.chart1);
-            this.Name = "FrmThongKe";
+            this.Name = "FrmDashBoard";
             this.Text = "Doanh thu";
             this.Load += new System.EventHandler(this.Formtab5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -347,8 +358,9 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -373,9 +385,9 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Panel panel1;
     }
 }

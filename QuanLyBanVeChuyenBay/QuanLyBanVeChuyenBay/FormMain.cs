@@ -56,7 +56,7 @@ namespace QuanLyBanVeChuyenBay
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panelTitle.BackColor = color;
                     panelLogo.BackColor = ThemeColor.ChangeColor(color, -0.5);
                     ThemeColor.PrimaryColor = color;
@@ -74,7 +74,7 @@ namespace QuanLyBanVeChuyenBay
                 {
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }
@@ -99,12 +99,12 @@ namespace QuanLyBanVeChuyenBay
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.FrmLichChuyenBay(), sender);
+            OpenchildForm(new Forms.FrmDashBoard(), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.FrmQuyDinh(), sender);
+            OpenchildForm(new Forms.FrmLichChuyenBay(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -119,7 +119,12 @@ namespace QuanLyBanVeChuyenBay
 
         private void button5_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.FrmThongKe(), sender);
+            OpenchildForm(new Forms.FrmQuyDinh(), sender);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OpenchildForm(new Forms.FrmBaoCao(), sender);
         }
 
         private void buttonCloseChildForm_Click(object sender, EventArgs e)

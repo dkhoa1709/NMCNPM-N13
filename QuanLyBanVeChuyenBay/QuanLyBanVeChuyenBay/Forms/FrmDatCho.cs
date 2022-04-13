@@ -40,5 +40,24 @@ namespace QuanLyBanVeChuyenBay.Forms
         {
             LoadTheme();
         }
+
+        private void ChangeColor(Panel x)
+        {
+            foreach (Control btns in x.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+                if (btns.GetType() == typeof(Label))
+                {
+                    Label lbl = (Label)btns;
+                    lbl.ForeColor = ThemeColor.PrimaryColor;
+                }
+            }
+        }
     }
 }

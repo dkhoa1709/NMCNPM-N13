@@ -30,11 +30,12 @@ namespace QuanLyBanVeChuyenBay
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonBaoCao = new System.Windows.Forms.Button();
+            this.buttonQuyDinh = new System.Windows.Forms.Button();
+            this.buttonTraCuu = new System.Windows.Forms.Button();
+            this.buttonDatVeChuyenBay = new System.Windows.Forms.Button();
+            this.buttonLichChuyenBay = new System.Windows.Forms.Button();
+            this.buttonDashBoard = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.labelLogo = new System.Windows.Forms.Label();
             this.panelTitle = new System.Windows.Forms.Panel();
@@ -55,117 +56,138 @@ namespace QuanLyBanVeChuyenBay
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.button5);
-            this.panelMenu.Controls.Add(this.button4);
-            this.panelMenu.Controls.Add(this.button3);
-            this.panelMenu.Controls.Add(this.button2);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.buttonBaoCao);
+            this.panelMenu.Controls.Add(this.buttonQuyDinh);
+            this.panelMenu.Controls.Add(this.buttonTraCuu);
+            this.panelMenu.Controls.Add(this.buttonDatVeChuyenBay);
+            this.panelMenu.Controls.Add(this.buttonLichChuyenBay);
+            this.panelMenu.Controls.Add(this.buttonDashBoard);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(263, 853);
+            this.panelMenu.Size = new System.Drawing.Size(332, 853);
             this.panelMenu.TabIndex = 0;
             // 
-            // button5
+            // buttonBaoCao
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 360);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(263, 65);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "    button5";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBaoCao.FlatAppearance.BorderSize = 0;
+            this.buttonBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBaoCao.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonBaoCao.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
+            this.buttonBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBaoCao.Location = new System.Drawing.Point(0, 425);
+            this.buttonBaoCao.Name = "buttonBaoCao";
+            this.buttonBaoCao.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonBaoCao.Size = new System.Drawing.Size(332, 65);
+            this.buttonBaoCao.TabIndex = 6;
+            this.buttonBaoCao.Text = "  Báo cáo doanh thu";
+            this.buttonBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonBaoCao.UseVisualStyleBackColor = true;
+            this.buttonBaoCao.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button4
+            // buttonQuyDinh
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 295);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(263, 65);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "    button4";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonQuyDinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonQuyDinh.FlatAppearance.BorderSize = 0;
+            this.buttonQuyDinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQuyDinh.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonQuyDinh.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
+            this.buttonQuyDinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQuyDinh.Location = new System.Drawing.Point(0, 360);
+            this.buttonQuyDinh.Name = "buttonQuyDinh";
+            this.buttonQuyDinh.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonQuyDinh.Size = new System.Drawing.Size(332, 65);
+            this.buttonQuyDinh.TabIndex = 5;
+            this.buttonQuyDinh.Text = "  Quy định chuyến bay";
+            this.buttonQuyDinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQuyDinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonQuyDinh.UseVisualStyleBackColor = true;
+            this.buttonQuyDinh.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button3
+            // buttonTraCuu
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 230);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(263, 65);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "    button3";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonTraCuu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonTraCuu.FlatAppearance.BorderSize = 0;
+            this.buttonTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTraCuu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonTraCuu.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
+            this.buttonTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTraCuu.Location = new System.Drawing.Point(0, 295);
+            this.buttonTraCuu.Name = "buttonTraCuu";
+            this.buttonTraCuu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonTraCuu.Size = new System.Drawing.Size(332, 65);
+            this.buttonTraCuu.TabIndex = 4;
+            this.buttonTraCuu.Text = "  Tra cứu chuyến bay";
+            this.buttonTraCuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonTraCuu.UseVisualStyleBackColor = true;
+            this.buttonTraCuu.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button2
+            // buttonDatVeChuyenBay
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 165);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(263, 65);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "    button2";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonDatVeChuyenBay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDatVeChuyenBay.FlatAppearance.BorderSize = 0;
+            this.buttonDatVeChuyenBay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDatVeChuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDatVeChuyenBay.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonDatVeChuyenBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
+            this.buttonDatVeChuyenBay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDatVeChuyenBay.Location = new System.Drawing.Point(0, 230);
+            this.buttonDatVeChuyenBay.Name = "buttonDatVeChuyenBay";
+            this.buttonDatVeChuyenBay.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonDatVeChuyenBay.Size = new System.Drawing.Size(332, 65);
+            this.buttonDatVeChuyenBay.TabIndex = 3;
+            this.buttonDatVeChuyenBay.Text = "  Đặt vé chuyến bay";
+            this.buttonDatVeChuyenBay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDatVeChuyenBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDatVeChuyenBay.UseVisualStyleBackColor = true;
+            this.buttonDatVeChuyenBay.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button1
+            // buttonLichChuyenBay
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 100);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(263, 65);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "    button1";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonLichChuyenBay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonLichChuyenBay.FlatAppearance.BorderSize = 0;
+            this.buttonLichChuyenBay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLichChuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLichChuyenBay.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonLichChuyenBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
+            this.buttonLichChuyenBay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonLichChuyenBay.Location = new System.Drawing.Point(0, 165);
+            this.buttonLichChuyenBay.Name = "buttonLichChuyenBay";
+            this.buttonLichChuyenBay.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonLichChuyenBay.Size = new System.Drawing.Size(332, 65);
+            this.buttonLichChuyenBay.TabIndex = 2;
+            this.buttonLichChuyenBay.Text = "  Nhận lịch chuyến bay";
+            this.buttonLichChuyenBay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonLichChuyenBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonLichChuyenBay.UseVisualStyleBackColor = true;
+            this.buttonLichChuyenBay.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonDashBoard
+            // 
+            this.buttonDashBoard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDashBoard.FlatAppearance.BorderSize = 0;
+            this.buttonDashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDashBoard.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonDashBoard.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
+            this.buttonDashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDashBoard.Location = new System.Drawing.Point(0, 100);
+            this.buttonDashBoard.Name = "buttonDashBoard";
+            this.buttonDashBoard.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonDashBoard.Size = new System.Drawing.Size(332, 65);
+            this.buttonDashBoard.TabIndex = 1;
+            this.buttonDashBoard.Text = "  DashBoard";
+            this.buttonDashBoard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDashBoard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDashBoard.UseVisualStyleBackColor = true;
+            this.buttonDashBoard.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelLogo
             // 
@@ -174,7 +196,7 @@ namespace QuanLyBanVeChuyenBay
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(263, 100);
+            this.panelLogo.Size = new System.Drawing.Size(332, 100);
             this.panelLogo.TabIndex = 0;
             // 
             // labelLogo
@@ -197,9 +219,9 @@ namespace QuanLyBanVeChuyenBay
             this.panelTitle.Controls.Add(this.buttonCloseChildForm);
             this.panelTitle.Controls.Add(this.labelTitle);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(263, 0);
+            this.panelTitle.Location = new System.Drawing.Point(332, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1119, 100);
+            this.panelTitle.Size = new System.Drawing.Size(1050, 100);
             this.panelTitle.TabIndex = 1;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
@@ -210,7 +232,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMin.ForeColor = System.Drawing.Color.White;
-            this.buttonMin.Location = new System.Drawing.Point(1009, 3);
+            this.buttonMin.Location = new System.Drawing.Point(940, 3);
             this.buttonMin.Name = "buttonMin";
             this.buttonMin.Size = new System.Drawing.Size(35, 35);
             this.buttonMin.TabIndex = 4;
@@ -225,7 +247,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMax.ForeColor = System.Drawing.Color.White;
-            this.buttonMax.Location = new System.Drawing.Point(1045, 3);
+            this.buttonMax.Location = new System.Drawing.Point(976, 3);
             this.buttonMax.Name = "buttonMax";
             this.buttonMax.Size = new System.Drawing.Size(35, 35);
             this.buttonMax.TabIndex = 3;
@@ -240,7 +262,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(1081, 3);
+            this.buttonClose.Location = new System.Drawing.Point(1012, 3);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(35, 35);
             this.buttonClose.TabIndex = 2;
@@ -269,7 +291,7 @@ namespace QuanLyBanVeChuyenBay
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(515, 33);
+            this.labelTitle.Location = new System.Drawing.Point(481, 33);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(81, 29);
             this.labelTitle.TabIndex = 0;
@@ -280,16 +302,16 @@ namespace QuanLyBanVeChuyenBay
             // 
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(263, 100);
+            this.panelDesktop.Location = new System.Drawing.Point(332, 100);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1119, 753);
+            this.panelDesktop.Size = new System.Drawing.Size(1050, 753);
             this.panelDesktop.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Plane1;
-            this.pictureBox1.Location = new System.Drawing.Point(-35, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(-69, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1181, 588);
             this.pictureBox1.TabIndex = 0;
@@ -321,12 +343,12 @@ namespace QuanLyBanVeChuyenBay
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonDashBoard;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonQuyDinh;
+        private System.Windows.Forms.Button buttonTraCuu;
+        private System.Windows.Forms.Button buttonDatVeChuyenBay;
+        private System.Windows.Forms.Button buttonLichChuyenBay;
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelLogo;
@@ -336,6 +358,7 @@ namespace QuanLyBanVeChuyenBay
         private System.Windows.Forms.Button buttonMin;
         private System.Windows.Forms.Button buttonMax;
         private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Button buttonBaoCao;
     }
 }
 

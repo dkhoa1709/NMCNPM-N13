@@ -54,6 +54,12 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBaoCao.Designer.cs">
+      <DependentUpon>FrmBaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmLichChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +84,11 @@
     <Compile Include="Forms\FrmTraCuu.Designer.cs">
       <DependentUpon>FrmTraCuu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmThongKe.cs">
+    <Compile Include="Forms\FrmDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmThongKe.Designer.cs">
-      <DependentUpon>FrmThongKe.cs</DependentUpon>
+    <Compile Include="Forms\FrmDashBoard.Designer.cs">
+      <DependentUpon>FrmDashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Dashboard.cs" />
     <Compile Include="Program.cs" />
@@ -90,6 +96,9 @@
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBaoCao.resx">
+      <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLichChuyenBay.resx">
       <DependentUpon>FrmLichChuyenBay.cs</DependentUpon>
@@ -103,8 +112,8 @@
     <EmbeddedResource Include="Forms\FrmTraCuu.resx">
       <DependentUpon>FrmTraCuu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmThongKe.resx">
-      <DependentUpon>FrmThongKe.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmDashBoard.resx">
+      <DependentUpon>FrmDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
