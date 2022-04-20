@@ -162,5 +162,47 @@
   <ItemGroup>
     <None Include="Resources\rose.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_ID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_ID1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_CMND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_PhoneNumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_IDPlane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_SanBayDi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_SanBayDen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Rank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-check-regular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Cost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_IDPlane1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_IDPlane2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
