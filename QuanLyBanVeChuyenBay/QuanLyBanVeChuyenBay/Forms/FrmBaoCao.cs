@@ -60,8 +60,8 @@ namespace QuanLyBanVeChuyenBay.Forms
             }
             ChangeColor(panel1);
             ChangeColor(panel2);
-            ChangeColor(panel3);
-            ChangeColor(panel4);
+            ChangeColor(panelTitle1);
+            ChangeColor(panelTitle2);
         }
     }
 }

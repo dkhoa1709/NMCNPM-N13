@@ -66,7 +66,7 @@ namespace QuanLyBanVeChuyenBay
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(332, 853);
+            this.panelMenu.Size = new System.Drawing.Size(325, 853);
             this.panelMenu.TabIndex = 0;
             // 
             // buttonBaoCao
@@ -81,7 +81,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonBaoCao.Location = new System.Drawing.Point(0, 425);
             this.buttonBaoCao.Name = "buttonBaoCao";
             this.buttonBaoCao.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonBaoCao.Size = new System.Drawing.Size(332, 65);
+            this.buttonBaoCao.Size = new System.Drawing.Size(325, 65);
             this.buttonBaoCao.TabIndex = 6;
             this.buttonBaoCao.Text = "  Báo cáo doanh thu";
             this.buttonBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -101,7 +101,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonQuyDinh.Location = new System.Drawing.Point(0, 360);
             this.buttonQuyDinh.Name = "buttonQuyDinh";
             this.buttonQuyDinh.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonQuyDinh.Size = new System.Drawing.Size(332, 65);
+            this.buttonQuyDinh.Size = new System.Drawing.Size(325, 65);
             this.buttonQuyDinh.TabIndex = 5;
             this.buttonQuyDinh.Text = "  Quy định chuyến bay";
             this.buttonQuyDinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,7 +121,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonTraCuu.Location = new System.Drawing.Point(0, 295);
             this.buttonTraCuu.Name = "buttonTraCuu";
             this.buttonTraCuu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonTraCuu.Size = new System.Drawing.Size(332, 65);
+            this.buttonTraCuu.Size = new System.Drawing.Size(325, 65);
             this.buttonTraCuu.TabIndex = 4;
             this.buttonTraCuu.Text = "  Tra cứu chuyến bay";
             this.buttonTraCuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,7 +141,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonDatVeChuyenBay.Location = new System.Drawing.Point(0, 230);
             this.buttonDatVeChuyenBay.Name = "buttonDatVeChuyenBay";
             this.buttonDatVeChuyenBay.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonDatVeChuyenBay.Size = new System.Drawing.Size(332, 65);
+            this.buttonDatVeChuyenBay.Size = new System.Drawing.Size(325, 65);
             this.buttonDatVeChuyenBay.TabIndex = 3;
             this.buttonDatVeChuyenBay.Text = "  Đặt vé chuyến bay";
             this.buttonDatVeChuyenBay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -161,7 +161,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonLichChuyenBay.Location = new System.Drawing.Point(0, 165);
             this.buttonLichChuyenBay.Name = "buttonLichChuyenBay";
             this.buttonLichChuyenBay.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonLichChuyenBay.Size = new System.Drawing.Size(332, 65);
+            this.buttonLichChuyenBay.Size = new System.Drawing.Size(325, 65);
             this.buttonLichChuyenBay.TabIndex = 2;
             this.buttonLichChuyenBay.Text = "  Nhận lịch chuyến bay";
             this.buttonLichChuyenBay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,7 +181,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonDashBoard.Location = new System.Drawing.Point(0, 100);
             this.buttonDashBoard.Name = "buttonDashBoard";
             this.buttonDashBoard.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonDashBoard.Size = new System.Drawing.Size(332, 65);
+            this.buttonDashBoard.Size = new System.Drawing.Size(325, 65);
             this.buttonDashBoard.TabIndex = 1;
             this.buttonDashBoard.Text = "  DashBoard";
             this.buttonDashBoard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,7 +196,7 @@ namespace QuanLyBanVeChuyenBay
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(332, 100);
+            this.panelLogo.Size = new System.Drawing.Size(325, 100);
             this.panelLogo.TabIndex = 0;
             // 
             // labelLogo
@@ -219,9 +219,9 @@ namespace QuanLyBanVeChuyenBay
             this.panelTitle.Controls.Add(this.buttonCloseChildForm);
             this.panelTitle.Controls.Add(this.labelTitle);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(332, 0);
+            this.panelTitle.Location = new System.Drawing.Point(325, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1050, 100);
+            this.panelTitle.Size = new System.Drawing.Size(1257, 100);
             this.panelTitle.TabIndex = 1;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
@@ -232,7 +232,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMin.ForeColor = System.Drawing.Color.White;
-            this.buttonMin.Location = new System.Drawing.Point(940, 3);
+            this.buttonMin.Location = new System.Drawing.Point(1147, 3);
             this.buttonMin.Name = "buttonMin";
             this.buttonMin.Size = new System.Drawing.Size(35, 35);
             this.buttonMin.TabIndex = 4;
@@ -247,7 +247,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMax.ForeColor = System.Drawing.Color.White;
-            this.buttonMax.Location = new System.Drawing.Point(976, 3);
+            this.buttonMax.Location = new System.Drawing.Point(1183, 3);
             this.buttonMax.Name = "buttonMax";
             this.buttonMax.Size = new System.Drawing.Size(35, 35);
             this.buttonMax.TabIndex = 3;
@@ -262,7 +262,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(1012, 3);
+            this.buttonClose.Location = new System.Drawing.Point(1219, 3);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(35, 35);
             this.buttonClose.TabIndex = 2;
@@ -291,7 +291,7 @@ namespace QuanLyBanVeChuyenBay
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(481, 33);
+            this.labelTitle.Location = new System.Drawing.Point(584, 33);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(81, 29);
             this.labelTitle.TabIndex = 0;
@@ -302,16 +302,16 @@ namespace QuanLyBanVeChuyenBay
             // 
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(332, 100);
+            this.panelDesktop.Location = new System.Drawing.Point(325, 100);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1050, 753);
+            this.panelDesktop.Size = new System.Drawing.Size(1257, 753);
             this.panelDesktop.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Plane1;
-            this.pictureBox1.Location = new System.Drawing.Point(-69, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1181, 588);
             this.pictureBox1.TabIndex = 0;
@@ -321,11 +321,11 @@ namespace QuanLyBanVeChuyenBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1382, 853);
+            this.ClientSize = new System.Drawing.Size(1582, 853);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
-            this.MinimumSize = new System.Drawing.Size(1300, 800);
+            this.MinimumSize = new System.Drawing.Size(1600, 800);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";

@@ -68,6 +68,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.buttonThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThoat.Location = new System.Drawing.Point(772, 580);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(150, 40);
@@ -169,6 +170,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.buttonTaoMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonTaoMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTaoMoi.Location = new System.Drawing.Point(572, 580);
             this.buttonTaoMoi.Name = "buttonTaoMoi";
             this.buttonTaoMoi.Size = new System.Drawing.Size(150, 40);
@@ -180,6 +182,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.buttonXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoa.Location = new System.Drawing.Point(372, 580);
             this.buttonXoa.Name = "buttonXoa";
             this.buttonXoa.Size = new System.Drawing.Size(150, 40);
@@ -191,6 +194,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.buttonThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThem.Location = new System.Drawing.Point(172, 580);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.Size = new System.Drawing.Size(150, 40);
@@ -214,7 +218,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // textBoxMaHanhKhach
             // 
-            this.textBoxMaHanhKhach.Location = new System.Drawing.Point(670, 79);
+            this.textBoxMaHanhKhach.Location = new System.Drawing.Point(681, 79);
             this.textBoxMaHanhKhach.Name = "textBoxMaHanhKhach";
             this.textBoxMaHanhKhach.Size = new System.Drawing.Size(260, 22);
             this.textBoxMaHanhKhach.TabIndex = 17;
@@ -235,21 +239,21 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // textBoxCMND
             // 
-            this.textBoxCMND.Location = new System.Drawing.Point(670, 169);
+            this.textBoxCMND.Location = new System.Drawing.Point(681, 169);
             this.textBoxCMND.Name = "textBoxCMND";
             this.textBoxCMND.Size = new System.Drawing.Size(260, 22);
             this.textBoxCMND.TabIndex = 20;
             // 
             // textBoxTenHanhKhach
             // 
-            this.textBoxTenHanhKhach.Location = new System.Drawing.Point(670, 124);
+            this.textBoxTenHanhKhach.Location = new System.Drawing.Point(681, 124);
             this.textBoxTenHanhKhach.Name = "textBoxTenHanhKhach";
             this.textBoxTenHanhKhach.Size = new System.Drawing.Size(260, 22);
             this.textBoxTenHanhKhach.TabIndex = 21;
             // 
             // textBoxDienThoai
             // 
-            this.textBoxDienThoai.Location = new System.Drawing.Point(670, 214);
+            this.textBoxDienThoai.Location = new System.Drawing.Point(681, 214);
             this.textBoxDienThoai.Name = "textBoxDienThoai";
             this.textBoxDienThoai.Size = new System.Drawing.Size(260, 22);
             this.textBoxDienThoai.TabIndex = 22;

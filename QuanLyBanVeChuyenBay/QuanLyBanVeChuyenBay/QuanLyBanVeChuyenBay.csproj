@@ -60,17 +60,17 @@
     <Compile Include="Forms\FrmBaoCao.Designer.cs">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmLichChuyenBay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmLichChuyenBay.Designer.cs">
-      <DependentUpon>FrmLichChuyenBay.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmQuyDinh.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmQuyDinh.Designer.cs">
       <DependentUpon>FrmQuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLichChuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLichChuyenBay.Designer.cs">
+      <DependentUpon>FrmLichChuyenBay.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmDatCho.cs">
       <SubType>Form</SubType>
@@ -100,11 +100,11 @@
     <EmbeddedResource Include="Forms\FrmBaoCao.resx">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmLichChuyenBay.resx">
-      <DependentUpon>FrmLichChuyenBay.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmQuyDinh.resx">
       <DependentUpon>FrmQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLichChuyenBay.resx">
+      <DependentUpon>FrmLichChuyenBay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmDatCho.resx">
       <DependentUpon>FrmDatCho.cs</DependentUpon>
@@ -149,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Plane1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rose.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
