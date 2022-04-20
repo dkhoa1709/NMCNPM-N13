@@ -97,35 +97,41 @@ namespace QuanLyBanVeChuyenBay
             labelTitle.Text = childForm.Text;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonDashBoard_Click(object sender, EventArgs e)
         {
             OpenchildForm(new Forms.FrmDashBoard(), sender);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonLichChuyenBay_Click(object sender, EventArgs e)
         {
             OpenchildForm(new Forms.FrmLichChuyenBay(), sender);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonDatVeChuyenBay_Click(object sender, EventArgs e)
         {
             OpenchildForm(new Forms.FrmDatCho(), sender);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonTraCuu_Click(object sender, EventArgs e)
         {
             OpenchildForm(new Forms.FrmTraCuu(), sender);
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonQuyDinh_Click(object sender, EventArgs e)
         {
             OpenchildForm(new Forms.FrmQuyDinh(), sender);
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void buttonBaoCao_Click(object sender, EventArgs e)
         {
             OpenchildForm(new Forms.FrmBaoCao(), sender);
         }
+
+        private void buttonThongTin_Click(object sender, EventArgs e)
+        {
+            OpenchildForm(new Forms.FrmThongTin(), sender);
+        }
+
 
         private void buttonCloseChildForm_Click(object sender, EventArgs e)
         {
