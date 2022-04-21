@@ -162,7 +162,6 @@
   <ItemGroup>
     <None Include="Resources\rose.png" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <None Include="Resources\Icon_ID.png" />
   </ItemGroup>
@@ -215,7 +214,5 @@
     <None Include="Resources\Icon_IDPlane2.png" />
 >>>>>>> parent of 4da8e7b (Create FrmLogin)
   </ItemGroup>
-=======
->>>>>>> parent of 3850507 (Update FrmThongTin)
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
