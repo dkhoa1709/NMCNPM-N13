@@ -16,25 +16,5 @@ namespace QuanLyBanVeChuyenBay.Forms
         {
             InitializeComponent();
         }
-
-        private void buttonSua_Click(object sender, EventArgs e)
-        {
-            textBoxMaHanhKhach.Multiline = false;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonLuu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonXoa_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

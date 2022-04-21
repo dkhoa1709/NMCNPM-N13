@@ -40,13 +40,13 @@ namespace QuanLyBanVeChuyenBay
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonThongTin = new System.Windows.Forms.Button();
             this.buttonBaoCao = new System.Windows.Forms.Button();
             this.buttonQuyDinh = new System.Windows.Forms.Button();
             this.buttonTraCuu = new System.Windows.Forms.Button();
             this.buttonDatVeChuyenBay = new System.Windows.Forms.Button();
             this.buttonLichChuyenBay = new System.Windows.Forms.Button();
             this.buttonDashBoard = new System.Windows.Forms.Button();
+            this.buttonThongTin = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
@@ -199,26 +199,6 @@ namespace QuanLyBanVeChuyenBay
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonThongTin
-            // 
-            this.buttonThongTin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonThongTin.FlatAppearance.BorderSize = 0;
-            this.buttonThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThongTin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonThongTin.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
-            this.buttonThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThongTin.Location = new System.Drawing.Point(0, 490);
-            this.buttonThongTin.Name = "buttonThongTin";
-            this.buttonThongTin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonThongTin.Size = new System.Drawing.Size(325, 65);
-            this.buttonThongTin.TabIndex = 7;
-            this.buttonThongTin.Text = "  Thông tin";
-            this.buttonThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThongTin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonThongTin.UseVisualStyleBackColor = true;
-            this.buttonThongTin.Click += new System.EventHandler(this.buttonThongTin_Click);
-            // 
             // buttonBaoCao
             // 
             this.buttonBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
@@ -338,6 +318,26 @@ namespace QuanLyBanVeChuyenBay
             this.buttonDashBoard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDashBoard.UseVisualStyleBackColor = true;
             this.buttonDashBoard.Click += new System.EventHandler(this.buttonDashBoard_Click);
+            // 
+            // buttonThongTin
+            // 
+            this.buttonThongTin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonThongTin.FlatAppearance.BorderSize = 0;
+            this.buttonThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThongTin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonThongTin.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
+            this.buttonThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThongTin.Location = new System.Drawing.Point(0, 490);
+            this.buttonThongTin.Name = "buttonThongTin";
+            this.buttonThongTin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonThongTin.Size = new System.Drawing.Size(325, 65);
+            this.buttonThongTin.TabIndex = 7;
+            this.buttonThongTin.Text = "  Thông tin";
+            this.buttonThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThongTin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonThongTin.UseVisualStyleBackColor = true;
+            this.buttonThongTin.Click += new System.EventHandler(this.buttonThongTin_Click);
             // 
             // FormMain
             // 

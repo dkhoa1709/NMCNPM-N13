@@ -53,6 +53,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelTenKhach = new System.Windows.Forms.Label();
             this.labelHangVe = new System.Windows.Forms.Label();
             this.labelNgayDatVe = new System.Windows.Forms.Label();
+            this.textBoxHangVe = new System.Windows.Forms.TextBox();
             this.textBoxGiaTien = new System.Windows.Forms.TextBox();
             this.comboBoxMaChuyenBay = new System.Windows.Forms.ComboBox();
             this.dateTimePickerNgayDatVe = new System.Windows.Forms.DateTimePicker();
@@ -60,7 +61,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBoxHangVe = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuDatCho)).BeginInit();
             this.SuspendLayout();
             // 
@@ -288,6 +288,13 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelNgayDatVe.TabIndex = 25;
             this.labelNgayDatVe.Text = "Ngày Đặt Vé:";
             // 
+            // textBoxHangVe
+            // 
+            this.textBoxHangVe.Location = new System.Drawing.Point(205, 291);
+            this.textBoxHangVe.Name = "textBoxHangVe";
+            this.textBoxHangVe.Size = new System.Drawing.Size(260, 22);
+            this.textBoxHangVe.TabIndex = 26;
+            // 
             // textBoxGiaTien
             // 
             this.textBoxGiaTien.Location = new System.Drawing.Point(205, 381);
@@ -348,27 +355,18 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(82, 462);
+            this.button1.Location = new System.Drawing.Point(82, 442);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(295, 92);
+            this.button1.Size = new System.Drawing.Size(295, 97);
             this.button1.TabIndex = 33;
             this.button1.Text = "Tạo vé";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBoxHangVe
-            // 
-            this.comboBoxHangVe.FormattingEnabled = true;
-            this.comboBoxHangVe.Location = new System.Drawing.Point(205, 291);
-            this.comboBoxHangVe.Name = "comboBoxHangVe";
-            this.comboBoxHangVe.Size = new System.Drawing.Size(260, 24);
-            this.comboBoxHangVe.TabIndex = 34;
             // 
             // FrmDatCho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 655);
-            this.Controls.Add(this.comboBoxHangVe);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -376,6 +374,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.dateTimePickerNgayDatVe);
             this.Controls.Add(this.comboBoxMaChuyenBay);
             this.Controls.Add(this.textBoxGiaTien);
+            this.Controls.Add(this.textBoxHangVe);
             this.Controls.Add(this.labelNgayDatVe);
             this.Controls.Add(this.labelHangVe);
             this.Controls.Add(this.labelTenKhach);
@@ -435,6 +434,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Label labelTenKhach;
         private System.Windows.Forms.Label labelHangVe;
         private System.Windows.Forms.Label labelNgayDatVe;
+        private System.Windows.Forms.TextBox textBoxHangVe;
         private System.Windows.Forms.TextBox textBoxGiaTien;
         private System.Windows.Forms.ComboBox comboBoxMaChuyenBay;
         private System.Windows.Forms.DateTimePicker dateTimePickerNgayDatVe;
@@ -442,6 +442,5 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBoxHangVe;
     }
 }
