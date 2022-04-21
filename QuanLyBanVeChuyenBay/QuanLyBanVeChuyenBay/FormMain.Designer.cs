@@ -192,7 +192,7 @@ namespace QuanLyBanVeChuyenBay
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Plane1;
+            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Plane;
             this.pictureBox1.Location = new System.Drawing.Point(34, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1181, 588);
