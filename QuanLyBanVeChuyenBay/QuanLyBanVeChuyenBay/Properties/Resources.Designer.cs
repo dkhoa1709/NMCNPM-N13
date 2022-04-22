@@ -173,6 +173,26 @@ namespace QuanLyBanVeChuyenBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icon_Name1 {
+            get {
+                object obj = ResourceManager.GetObject("Icon_Name1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icon_Pass {
+            get {
+                object obj = ResourceManager.GetObject("Icon_Pass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_PhoneNumber {
             get {
                 object obj = ResourceManager.GetObject("Icon_PhoneNumber", resourceCulture);
@@ -216,6 +236,16 @@ namespace QuanLyBanVeChuyenBay.Properties {
         internal static System.Drawing.Bitmap Icon_Status {
             get {
                 object obj = ResourceManager.GetObject("Icon_Status", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogoApp {
+            get {
+                object obj = ResourceManager.GetObject("LogoApp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
