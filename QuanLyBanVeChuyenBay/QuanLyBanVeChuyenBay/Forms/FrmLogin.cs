@@ -19,11 +19,17 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if(textBoxUserName.Text == "dkhoa1709" && textBoxPassWord.Text == "dkhoa1709")
+            if (textBoxUserName.Text == "dkhoa1709" && textBoxPassWord.Text == "dkhoa1709")
             {
                 new FormMain().Show();
                 this.Hide();
-            }    
+            }
+            else
+            {
+                MessageBox.Show("Username or Password is incorrect!");
+                textBoxUserName.Clear();
+                textBoxPassWord.Clear();
+            }
         }
 
         private void textBoxPassWord_KeyDown(object sender, KeyEventArgs e)
@@ -32,6 +38,12 @@ namespace QuanLyBanVeChuyenBay.Forms
             {
                 buttonLogin.PerformClick();
             }    
+        }
+
+        private void linkLabelSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new FrmSignUp().Show();
+            this.Hide();
         }
     }
 }

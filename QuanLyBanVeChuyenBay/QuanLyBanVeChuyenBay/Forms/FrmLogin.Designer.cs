@@ -30,9 +30,6 @@ namespace QuanLyBanVeChuyenBay.Forms
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonLogin = new System.Windows.Forms.Button();
@@ -41,6 +38,9 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabelForgotPass = new System.Windows.Forms.LinkLabel();
             this.linkLabelSignUp = new System.Windows.Forms.LinkLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,36 +56,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label1.Size = new System.Drawing.Size(138, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "LOGIN";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Icon_Pass;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 319);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Icon_Name1;
-            this.pictureBox2.Location = new System.Drawing.Point(30, 239);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.LogoApp;
-            this.pictureBox1.Location = new System.Drawing.Point(100, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -182,6 +152,37 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.linkLabelSignUp.TabStop = true;
             this.linkLabelSignUp.Text = "Sign up";
             this.linkLabelSignUp.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.linkLabelSignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSignUp_LinkClicked);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Icon_Pass;
+            this.pictureBox3.Location = new System.Drawing.Point(30, 319);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Icon_Name1;
+            this.pictureBox2.Location = new System.Drawing.Point(30, 239);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.LogoApp;
+            this.pictureBox1.Location = new System.Drawing.Point(100, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmLogin
             // 
