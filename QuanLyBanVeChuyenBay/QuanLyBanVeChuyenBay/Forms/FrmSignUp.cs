@@ -26,10 +26,15 @@ namespace QuanLyBanVeChuyenBay.Forms
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void FrmSignUp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBoxBack_Click(object sender, EventArgs e)
         {
             new FrmLogin().Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

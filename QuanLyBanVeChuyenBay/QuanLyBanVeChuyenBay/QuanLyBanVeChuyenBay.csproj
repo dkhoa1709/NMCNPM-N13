@@ -66,6 +66,12 @@
     <Compile Include="Forms\FrmBaoCao.Designer.cs">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCalendar.Designer.cs">
+      <DependentUpon>FrmCalendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmLoading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,12 @@
     </Compile>
     <Compile Include="Forms\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmQuanLyNhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmQuanLyNhanSu.Designer.cs">
+      <DependentUpon>FrmQuanLyNhanSu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmQuyDinh.cs">
       <SubType>Form</SubType>
@@ -101,6 +113,12 @@
     </Compile>
     <Compile Include="Forms\FrmSignUp.Designer.cs">
       <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmThemNhanVien.Designer.cs">
+      <DependentUpon>FrmThemNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmThongTin.cs">
       <SubType>Form</SubType>
@@ -130,11 +148,17 @@
     <EmbeddedResource Include="Forms\FrmBaoCao.resx">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCalendar.resx">
+      <DependentUpon>FrmCalendar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLoading.resx">
       <DependentUpon>FrmLoading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQuanLyNhanSu.resx">
+      <DependentUpon>FrmQuanLyNhanSu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmQuyDinh.resx">
       <DependentUpon>FrmQuyDinh.cs</DependentUpon>
@@ -147,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmSignUp.resx">
       <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmThemNhanVien.resx">
+      <DependentUpon>FrmThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmThongTin.resx">
       <DependentUpon>FrmThongTin.cs</DependentUpon>
@@ -249,6 +276,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon_gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-check-regular1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

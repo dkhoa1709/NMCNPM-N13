@@ -56,9 +56,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // panelMain
             // 
+            this.panelMain.BackColor = System.Drawing.Color.White;
             this.panelMain.Controls.Add(this.groupBox2);
             this.panelMain.Controls.Add(this.groupBox1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMain.ForeColor = System.Drawing.Color.Black;
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1010, 401);
@@ -147,6 +149,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // textBox5
             // 
             this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(280, 194);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(323, 22);
@@ -166,6 +169,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // textBox4
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(280, 154);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(323, 22);
@@ -185,6 +189,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(280, 114);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(323, 22);
@@ -204,6 +209,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(280, 74);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(323, 22);
@@ -223,6 +229,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(280, 34);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(323, 22);
@@ -252,9 +259,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1010, 596);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelMain);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmLichChuyenBay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "NHẬN LỊCH CHUYẾN BAY";

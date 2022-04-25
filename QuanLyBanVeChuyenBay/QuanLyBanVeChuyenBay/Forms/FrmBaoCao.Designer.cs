@@ -47,20 +47,20 @@ namespace QuanLyBanVeChuyenBay.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 12);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 20);
+            this.label1.Size = new System.Drawing.Size(301, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Báo cáo doanh thu theo tháng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 12);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(249, 20);
+            this.label2.Size = new System.Drawing.Size(288, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Báo cáo doanh thu theo năm";
             // 
@@ -73,7 +73,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel1.Controls.Add(this.panelTitle1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1247, 662);
+            this.panel1.Size = new System.Drawing.Size(1247, 682);
             this.panel1.TabIndex = 4;
             // 
             // listView1
@@ -82,7 +82,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 45);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1247, 617);
+            this.listView1.Size = new System.Drawing.Size(1247, 637);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -115,7 +115,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel2.Controls.Add(this.panelTitle2);
             this.panel2.Location = new System.Drawing.Point(0, 352);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1247, 310);
+            this.panel2.Size = new System.Drawing.Size(1247, 330);
             this.panel2.TabIndex = 5;
             // 
             // listView2
@@ -124,7 +124,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(0, 45);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(1247, 265);
+            this.listView2.Size = new System.Drawing.Size(1247, 285);
             this.listView2.TabIndex = 3;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
@@ -141,9 +141,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1247, 662);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1247, 682);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmBaoCao";
             this.Text = "BÁO CÁO DOANH THU";
             this.Load += new System.EventHandler(this.FrmBaoCao_Load);

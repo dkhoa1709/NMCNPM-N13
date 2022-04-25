@@ -73,6 +73,26 @@ namespace QuanLyBanVeChuyenBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_check_regular1 {
+            get {
+                object obj = ResourceManager.GetObject("calendar-check-regular1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icon_Back {
+            get {
+                object obj = ResourceManager.GetObject("Icon_Back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_CMND {
             get {
                 object obj = ResourceManager.GetObject("Icon_CMND", resourceCulture);
@@ -213,6 +233,26 @@ namespace QuanLyBanVeChuyenBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icon_Plus {
+            get {
+                object obj = ResourceManager.GetObject("Icon_Plus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icon_Plus1 {
+            get {
+                object obj = ResourceManager.GetObject("Icon_Plus1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_Rank {
             get {
                 object obj = ResourceManager.GetObject("Icon_Rank", resourceCulture);
@@ -246,6 +286,36 @@ namespace QuanLyBanVeChuyenBay.Properties {
         internal static System.Drawing.Bitmap Icon_Status {
             get {
                 object obj = ResourceManager.GetObject("Icon_Status", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_plus_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-plus-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_plus_25 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-plus-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_plus_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-plus-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

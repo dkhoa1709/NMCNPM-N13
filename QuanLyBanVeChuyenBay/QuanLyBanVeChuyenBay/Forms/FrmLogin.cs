@@ -45,5 +45,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             new FrmSignUp().Show();
             this.Hide();
         }
+
+        private void FrmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSignUp));
             this.textBoxGmail = new System.Windows.Forms.TextBox();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
@@ -37,12 +38,13 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelTitle = new System.Windows.Forms.Label();
             this.textBoxPassWord = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.labelWarning = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelWarning = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.linkLabelSignUp = new System.Windows.Forms.LinkLabel();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -80,7 +82,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 15F, System.Drawing.FontStyle.Bold);
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(30, 489);
+            this.buttonLogin.Location = new System.Drawing.Point(30, 504);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(340, 45);
             this.buttonLogin.TabIndex = 4;
@@ -136,6 +138,17 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel3.Size = new System.Drawing.Size(340, 1);
             this.panel3.TabIndex = 0;
             // 
+            // labelWarning
+            // 
+            this.labelWarning.BackColor = System.Drawing.Color.White;
+            this.labelWarning.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold);
+            this.labelWarning.ForeColor = System.Drawing.Color.Red;
+            this.labelWarning.Location = new System.Drawing.Point(0, 410);
+            this.labelWarning.Name = "labelWarning";
+            this.labelWarning.Size = new System.Drawing.Size(400, 79);
+            this.labelWarning.TabIndex = 0;
+            this.labelWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Icon_Pass;
@@ -176,38 +189,42 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // labelWarning
+            // linkLabelSignUp
             // 
-            this.labelWarning.BackColor = System.Drawing.Color.White;
-            this.labelWarning.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold);
-            this.labelWarning.ForeColor = System.Drawing.Color.Red;
-            this.labelWarning.Location = new System.Drawing.Point(0, 410);
-            this.labelWarning.Name = "labelWarning";
-            this.labelWarning.Size = new System.Drawing.Size(400, 65);
-            this.labelWarning.TabIndex = 0;
-            this.labelWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabelSignUp.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabelSignUp.AutoSize = true;
+            this.linkLabelSignUp.BackColor = System.Drawing.Color.White;
+            this.linkLabelSignUp.DisabledLinkColor = System.Drawing.Color.Black;
+            this.linkLabelSignUp.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.linkLabelSignUp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.linkLabelSignUp.Location = new System.Drawing.Point(294, 576);
+            this.linkLabelSignUp.Name = "linkLabelSignUp";
+            this.linkLabelSignUp.Size = new System.Drawing.Size(51, 24);
+            this.linkLabelSignUp.TabIndex = 25;
+            this.linkLabelSignUp.TabStop = true;
+            this.linkLabelSignUp.Text = "Login";
+            this.linkLabelSignUp.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             // 
-            // button1
+            // label3
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 15F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(75, 543);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 45);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(56, 576);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(227, 24);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "If you have account, please ";
             // 
             // FrmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(400, 600);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(400, 613);
+            this.Controls.Add(this.linkLabelSignUp);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.textBoxPassWord);
             this.Controls.Add(this.panel3);
@@ -221,10 +238,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSignUp";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSignUp_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -248,6 +266,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label labelWarning;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabelSignUp;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -343,11 +343,13 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1182, 653);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.chart1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmDashBoard";
             this.Text = "Doanh thu";
             this.Load += new System.EventHandler(this.Formtab5_Load);

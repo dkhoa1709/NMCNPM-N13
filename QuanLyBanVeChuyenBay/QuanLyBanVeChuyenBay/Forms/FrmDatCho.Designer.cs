@@ -59,7 +59,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridViewPhieuDatCho = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonThanhToan = new System.Windows.Forms.Button();
             this.comboBoxHangVe = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuDatCho)).BeginInit();
             this.SuspendLayout();
@@ -344,16 +344,16 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label2.TabIndex = 32;
             this.label2.Text = "Thông tin chuyến bay";
             // 
-            // button1
+            // buttonThanhToan
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(82, 462);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(295, 92);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Tạo vé";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThanhToan.Location = new System.Drawing.Point(80, 462);
+            this.buttonThanhToan.Name = "buttonThanhToan";
+            this.buttonThanhToan.Size = new System.Drawing.Size(295, 92);
+            this.buttonThanhToan.TabIndex = 33;
+            this.buttonThanhToan.Text = "Thanh toán";
+            this.buttonThanhToan.UseVisualStyleBackColor = true;
             // 
             // comboBoxHangVe
             // 
@@ -367,9 +367,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 655);
             this.Controls.Add(this.comboBoxHangVe);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonThanhToan);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewPhieuDatCho);
@@ -400,6 +401,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.labelSanBayDi);
             this.Controls.Add(this.labelMaChuyenBay);
             this.Controls.Add(this.buttonThoat);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmDatCho";
             this.Text = "ĐẶT CHỖ CHUYẾN BAY";
             this.Load += new System.EventHandler(this.Formtab3_Load);
@@ -441,7 +443,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.DataGridView dataGridViewPhieuDatCho;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonThanhToan;
         private System.Windows.Forms.ComboBox comboBoxHangVe;
     }
 }
