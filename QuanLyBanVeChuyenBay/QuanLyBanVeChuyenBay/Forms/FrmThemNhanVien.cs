@@ -15,11 +15,42 @@ namespace QuanLyBanVeChuyenBay.Forms
         public FrmThemNhanVien()
         {
             InitializeComponent();
+            Shown += OnShown;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void OnShown(object sender, EventArgs e)
         {
-            new FrmCalendar().Show();
+            ActiveControl = pictureBoxNgaySinh;
+        }
+
+        private void pictureBoxNgaySinh_Click(object sender, EventArgs e)
+        {
+            FrmCalendar calendarForm = null;
+
+            try
+            {
+                // decide to pass a date time or not
+                calendarForm = DateTime.TryParse(textBox1.Text, out var currentDateTime) ?
+                    new FrmCalendar(currentDateTime) :
+                    new FrmCalendar();
+
+                // reposition to be next to calendar button
+                calendarForm.Location = new Point(Left + (Width - 100), Bottom - 80);
+
+                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandler;
+                calendarForm.ShowDialog();
+
+            }
+            finally
+            {
+                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandler;
+                calendarForm.Dispose();
+            }
+        }
+
+        private void CalendarFormOnDateTimeHandler(DateTime sender)
+        {
+            textBoxNgaySinh.Text = $"{sender.ToString("MM-dd-yyyy")}";
         }
     }
 }
