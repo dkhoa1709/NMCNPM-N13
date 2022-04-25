@@ -141,7 +141,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLoading";
-            this.Load += new System.EventHandler(this.FrmLoading_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

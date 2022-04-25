@@ -19,7 +19,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void buttonThem_Click(object sender, EventArgs e)
         {
-            new FrmThemNhanVien().Show();
+            new FrmThemNhanVien().ShowDialog();
         }
     }
 }

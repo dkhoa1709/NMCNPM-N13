@@ -17,7 +17,7 @@ namespace QuanLyBanVeChuyenBay
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmQuanLyNhanSu());
+            Application.Run(new FrmLoading());
         }
     }
 }

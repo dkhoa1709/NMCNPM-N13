@@ -33,11 +33,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelDecor = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelTitle1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panelTitle2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panelThongTinNhanVien = new System.Windows.Forms.Panel();
             this.panelChucVu = new System.Windows.Forms.Panel();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -64,6 +59,9 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxHoTen = new System.Windows.Forms.TextBox();
             this.panelDecor1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.panelTitle1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.buttonHuy = new System.Windows.Forms.Button();
             this.buttonHoanTat = new System.Windows.Forms.Button();
@@ -76,17 +74,19 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxTaiKhoan = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.panelTitle2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelTitle.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panelTitle1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panelTitle2.SuspendLayout();
             this.panelThongTinNhanVien.SuspendLayout();
             this.panelChucVu.SuspendLayout();
             this.panelGioiTinh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBatDau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgaySinh)).BeginInit();
+            this.panelTitle1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panelTitle2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitle
@@ -127,54 +127,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 457);
             this.panel1.TabIndex = 2;
-            // 
-            // panelTitle1
-            // 
-            this.panelTitle1.Controls.Add(this.label1);
-            this.panelTitle1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle1.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle1.Name = "panelTitle1";
-            this.panelTitle1.Size = new System.Drawing.Size(750, 50);
-            this.panelTitle1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Thông tin nhân viên";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.panelTitle2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 503);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 299);
-            this.panel2.TabIndex = 3;
-            // 
-            // panelTitle2
-            // 
-            this.panelTitle2.Controls.Add(this.label2);
-            this.panelTitle2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle2.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle2.Name = "panelTitle2";
-            this.panelTitle2.Size = new System.Drawing.Size(750, 50);
-            this.panelTitle2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Thông tin nhân viên";
             // 
             // panelThongTinNhanVien
             // 
@@ -449,6 +401,35 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label3.TabIndex = 34;
             this.label3.Text = "Họ và tên:";
             // 
+            // panelTitle1
+            // 
+            this.panelTitle1.Controls.Add(this.label1);
+            this.panelTitle1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle1.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle1.Name = "panelTitle1";
+            this.panelTitle1.Size = new System.Drawing.Size(750, 50);
+            this.panelTitle1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(203, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Thông tin nhân viên";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panelTitle2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 503);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(750, 299);
+            this.panel2.TabIndex = 3;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.buttonHuy);
@@ -576,6 +557,25 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label10.TabIndex = 15;
             this.label10.Text = "Tài khoản:";
             // 
+            // panelTitle2
+            // 
+            this.panelTitle2.Controls.Add(this.label2);
+            this.panelTitle2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle2.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle2.Name = "panelTitle2";
+            this.panelTitle2.Size = new System.Drawing.Size(750, 50);
+            this.panelTitle2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(203, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Thông tin nhân viên";
+            // 
             // FrmThemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -594,15 +594,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.MinimumSize = new System.Drawing.Size(750, 802);
             this.Name = "FrmThemNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmThemNhanVien";
+            this.Text = "THÊM NHÂN VIÊN";
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panelTitle1.ResumeLayout(false);
-            this.panelTitle1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panelTitle2.ResumeLayout(false);
-            this.panelTitle2.PerformLayout();
             this.panelThongTinNhanVien.ResumeLayout(false);
             this.panelThongTinNhanVien.PerformLayout();
             this.panelChucVu.ResumeLayout(false);
@@ -611,8 +606,13 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelGioiTinh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBatDau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgaySinh)).EndInit();
+            this.panelTitle1.ResumeLayout(false);
+            this.panelTitle1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panelTitle2.ResumeLayout(false);
+            this.panelTitle2.PerformLayout();
             this.ResumeLayout(false);
 
         }

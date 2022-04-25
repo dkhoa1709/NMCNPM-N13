@@ -15,26 +15,13 @@ namespace QuanLyBanVeChuyenBay.Forms
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
-        private static extern IntPtr CreateRoundRectRgn
-        (
-        int nLeftRect,
-        int nTopRect,
-        int RightRect,
-        int nBottomRect,
-        int nWidthEllipse,
-        int nHeightEllipse
-        );
+        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int RightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
         public FrmLoading()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
             ProgressBarLoad.Value = 0;
-        }
-
-        private void FrmLoading_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)

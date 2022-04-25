@@ -132,6 +132,10 @@ namespace QuanLyBanVeChuyenBay
             OpenchildForm(new Forms.FrmThongTin(), sender);
         }
 
+        private void buttonQuanLyNhanSu_Click(object sender, EventArgs e)
+        {
+            OpenchildForm(new Forms.FrmQuanLyNhanSu(), sender);
+        }
 
         private void buttonCloseChildForm_Click(object sender, EventArgs e)
         {
@@ -173,5 +177,6 @@ namespace QuanLyBanVeChuyenBay
         {
             Application.Exit();
         }
+
     }
 }
