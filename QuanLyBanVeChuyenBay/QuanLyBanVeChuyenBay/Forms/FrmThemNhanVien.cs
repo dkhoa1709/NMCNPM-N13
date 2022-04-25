@@ -30,27 +30,68 @@ namespace QuanLyBanVeChuyenBay.Forms
             try
             {
                 // decide to pass a date time or not
-                calendarForm = DateTime.TryParse(textBox1.Text, out var currentDateTime) ?
+                calendarForm = DateTime.TryParse(textBoxHoTen.Text, out var currentDateTime) ?
                     new FrmCalendar(currentDateTime) :
                     new FrmCalendar();
 
                 // reposition to be next to calendar button
                 calendarForm.Location = new Point(Left + (Width - 100), Bottom - 80);
 
-                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandler;
+                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandlerNgaySinh;
                 calendarForm.ShowDialog();
 
             }
             finally
             {
-                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandler;
+                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandlerNgaySinh;
                 calendarForm.Dispose();
             }
         }
 
-        private void CalendarFormOnDateTimeHandler(DateTime sender)
+        private void CalendarFormOnDateTimeHandlerNgaySinh(DateTime sender)
         {
             textBoxNgaySinh.Text = $"{sender.ToString("MM-dd-yyyy")}";
+        }
+
+        private void buttonHoanTat_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thêm nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
+
+        private void buttonHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBoxNgayBatDau_Click(object sender, EventArgs e)
+        {
+            FrmCalendar calendarForm = null;
+
+            try
+            {
+                // decide to pass a date time or not
+                calendarForm = DateTime.TryParse(textBoxHoTen.Text, out var currentDateTime) ?
+                    new FrmCalendar(currentDateTime) :
+                    new FrmCalendar();
+
+                // reposition to be next to calendar button
+                calendarForm.Location = new Point(Left + (Width - 100), Bottom - 80);
+
+                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandlerNgayBatDau;
+                calendarForm.ShowDialog();
+
+            }
+            finally
+            {
+                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandlerNgayBatDau;
+                calendarForm.Dispose();
+            }
+        }
+
+        private void CalendarFormOnDateTimeHandlerNgayBatDau(DateTime sender)
+        {
+            textBoxNgayBatDau.Text = $"{sender.ToString("MM-dd-yyyy")}";
         }
     }
 }

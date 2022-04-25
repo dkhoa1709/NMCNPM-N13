@@ -70,6 +70,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonThem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonThem.UseVisualStyleBackColor = true;
+            this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
             // 
             // FrmQuanLyNhanSu
             // 

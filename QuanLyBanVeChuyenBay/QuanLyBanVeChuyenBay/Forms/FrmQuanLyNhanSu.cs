@@ -16,5 +16,10 @@ namespace QuanLyBanVeChuyenBay.Forms
         {
             InitializeComponent();
         }
+
+        private void buttonThem_Click(object sender, EventArgs e)
+        {
+            new FrmThemNhanVien().Show();
+        }
     }
 }
