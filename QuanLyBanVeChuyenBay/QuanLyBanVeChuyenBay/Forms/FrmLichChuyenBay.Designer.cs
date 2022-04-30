@@ -35,16 +35,21 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonXoa = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelThoiGianBay = new System.Windows.Forms.Label();
+            this.labelSanBayDen = new System.Windows.Forms.Label();
+            this.labelNgayGio = new System.Windows.Forms.Label();
+            this.labelSanBayDi = new System.Windows.Forms.Label();
+            this.labelMaChuyenBay = new System.Windows.Forms.Label();
+            this.textBoxThoiGianBay = new System.Windows.Forms.TextBox();
+            this.panelThoiGIanBay = new System.Windows.Forms.Panel();
+            this.textBoxSanBayDen = new System.Windows.Forms.TextBox();
+            this.panelNgayGio = new System.Windows.Forms.Panel();
+            this.textBoxNgayGio = new System.Windows.Forms.TextBox();
+            this.panelSanBayDen = new System.Windows.Forms.Panel();
+            this.textBoxSanBayDi = new System.Windows.Forms.TextBox();
+            this.panelSanBayDi = new System.Windows.Forms.Panel();
+            this.textBoxMaChuyenBay = new System.Windows.Forms.TextBox();
+            this.panelMaChuyenBay = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelMain.SuspendLayout();
@@ -63,7 +68,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelMain.ForeColor = System.Drawing.Color.Black;
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1010, 401);
+            this.panelMain.Size = new System.Drawing.Size(1044, 435);
             this.panelMain.TabIndex = 16;
             // 
             // groupBox2
@@ -72,9 +77,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.groupBox2.Controls.Add(this.buttonSua);
             this.groupBox2.Controls.Add(this.buttonXoa);
             this.groupBox2.Controls.Add(this.buttonThem);
-            this.groupBox2.Location = new System.Drawing.Point(153, 294);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(170, 311);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(704, 80);
+            this.groupBox2.Size = new System.Drawing.Size(704, 98);
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -82,158 +88,204 @@ namespace QuanLyBanVeChuyenBay.Forms
             // buttonSua
             // 
             this.buttonSua.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonSua.Location = new System.Drawing.Point(492, 25);
-            this.buttonSua.MaximumSize = new System.Drawing.Size(120, 30);
-            this.buttonSua.MinimumSize = new System.Drawing.Size(120, 30);
+            this.buttonSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSua.Location = new System.Drawing.Point(527, 29);
             this.buttonSua.Name = "buttonSua";
-            this.buttonSua.Size = new System.Drawing.Size(120, 30);
-            this.buttonSua.TabIndex = 2;
+            this.buttonSua.Size = new System.Drawing.Size(150, 40);
+            this.buttonSua.TabIndex = 8;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = true;
             // 
             // buttonXoa
             // 
             this.buttonXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonXoa.Location = new System.Drawing.Point(292, 25);
-            this.buttonXoa.MaximumSize = new System.Drawing.Size(120, 30);
-            this.buttonXoa.MinimumSize = new System.Drawing.Size(120, 30);
+            this.buttonXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXoa.Location = new System.Drawing.Point(277, 29);
             this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(120, 30);
-            this.buttonXoa.TabIndex = 1;
+            this.buttonXoa.Size = new System.Drawing.Size(150, 40);
+            this.buttonXoa.TabIndex = 7;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = true;
             // 
             // buttonThem
             // 
             this.buttonThem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonThem.Location = new System.Drawing.Point(92, 25);
-            this.buttonThem.MaximumSize = new System.Drawing.Size(120, 30);
-            this.buttonThem.MinimumSize = new System.Drawing.Size(120, 30);
+            this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThem.Location = new System.Drawing.Point(27, 29);
             this.buttonThem.Name = "buttonThem";
-            this.buttonThem.Size = new System.Drawing.Size(120, 30);
-            this.buttonThem.TabIndex = 0;
+            this.buttonThem.Size = new System.Drawing.Size(150, 40);
+            this.buttonThem.TabIndex = 6;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(153, 32);
+            this.groupBox1.Controls.Add(this.labelThoiGianBay);
+            this.groupBox1.Controls.Add(this.labelSanBayDen);
+            this.groupBox1.Controls.Add(this.labelNgayGio);
+            this.groupBox1.Controls.Add(this.labelSanBayDi);
+            this.groupBox1.Controls.Add(this.labelMaChuyenBay);
+            this.groupBox1.Controls.Add(this.textBoxThoiGianBay);
+            this.groupBox1.Controls.Add(this.panelThoiGIanBay);
+            this.groupBox1.Controls.Add(this.textBoxSanBayDen);
+            this.groupBox1.Controls.Add(this.panelNgayGio);
+            this.groupBox1.Controls.Add(this.textBoxNgayGio);
+            this.groupBox1.Controls.Add(this.panelSanBayDen);
+            this.groupBox1.Controls.Add(this.textBoxSanBayDi);
+            this.groupBox1.Controls.Add(this.panelSanBayDi);
+            this.groupBox1.Controls.Add(this.textBoxMaChuyenBay);
+            this.groupBox1.Controls.Add(this.panelMaChuyenBay);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(170, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(704, 242);
+            this.groupBox1.Size = new System.Drawing.Size(704, 279);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
             // 
-            // label1
+            // labelThoiGianBay
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(101, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Mã chuyến bay:";
+            this.labelThoiGianBay.AutoSize = true;
+            this.labelThoiGianBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThoiGianBay.Location = new System.Drawing.Point(145, 217);
+            this.labelThoiGianBay.Name = "labelThoiGianBay";
+            this.labelThoiGianBay.Size = new System.Drawing.Size(113, 20);
+            this.labelThoiGianBay.TabIndex = 34;
+            this.labelThoiGianBay.Text = "Thời gian bay:";
             // 
-            // textBox5
+            // labelSanBayDen
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(280, 194);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(323, 22);
-            this.textBox5.TabIndex = 24;
+            this.labelSanBayDen.AutoSize = true;
+            this.labelSanBayDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSanBayDen.Location = new System.Drawing.Point(152, 172);
+            this.labelSanBayDen.Name = "labelSanBayDen";
+            this.labelSanBayDen.Size = new System.Drawing.Size(106, 20);
+            this.labelSanBayDen.TabIndex = 30;
+            this.labelSanBayDen.Text = "Sân bay đến:";
             // 
-            // label2
+            // labelNgayGio
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(101, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Sân bay đi:";
+            this.labelNgayGio.AutoSize = true;
+            this.labelNgayGio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNgayGio.Location = new System.Drawing.Point(164, 127);
+            this.labelNgayGio.Name = "labelNgayGio";
+            this.labelNgayGio.Size = new System.Drawing.Size(94, 20);
+            this.labelNgayGio.TabIndex = 31;
+            this.labelNgayGio.Text = "Ngày - Giờ:";
             // 
-            // textBox4
+            // labelSanBayDi
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(280, 154);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(323, 22);
-            this.textBox4.TabIndex = 23;
+            this.labelSanBayDi.AutoSize = true;
+            this.labelSanBayDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSanBayDi.Location = new System.Drawing.Point(166, 82);
+            this.labelSanBayDi.Name = "labelSanBayDi";
+            this.labelSanBayDi.Size = new System.Drawing.Size(92, 20);
+            this.labelSanBayDi.TabIndex = 32;
+            this.labelSanBayDi.Text = "Sân bay đi:";
             // 
-            // label3
+            // labelMaChuyenBay
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(101, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 20);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Sân bay đến:";
+            this.labelMaChuyenBay.AutoSize = true;
+            this.labelMaChuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMaChuyenBay.Location = new System.Drawing.Point(132, 37);
+            this.labelMaChuyenBay.Name = "labelMaChuyenBay";
+            this.labelMaChuyenBay.Size = new System.Drawing.Size(126, 20);
+            this.labelMaChuyenBay.TabIndex = 33;
+            this.labelMaChuyenBay.Text = "Mã chuyến bay:";
             // 
-            // textBox3
+            // textBoxThoiGianBay
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(280, 114);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(323, 22);
-            this.textBox3.TabIndex = 22;
+            this.textBoxThoiGianBay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxThoiGianBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxThoiGianBay.Location = new System.Drawing.Point(305, 217);
+            this.textBoxThoiGianBay.Multiline = true;
+            this.textBoxThoiGianBay.Name = "textBoxThoiGianBay";
+            this.textBoxThoiGianBay.Size = new System.Drawing.Size(260, 24);
+            this.textBoxThoiGianBay.TabIndex = 5;
             // 
-            // label4
+            // panelThoiGIanBay
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 154);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 20);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Ngày - Giờ:";
+            this.panelThoiGIanBay.BackColor = System.Drawing.Color.Black;
+            this.panelThoiGIanBay.Location = new System.Drawing.Point(305, 241);
+            this.panelThoiGIanBay.Name = "panelThoiGIanBay";
+            this.panelThoiGIanBay.Size = new System.Drawing.Size(260, 1);
+            this.panelThoiGIanBay.TabIndex = 20;
             // 
-            // textBox2
+            // textBoxSanBayDen
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(280, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(323, 22);
-            this.textBox2.TabIndex = 21;
+            this.textBoxSanBayDen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSanBayDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSanBayDen.Location = new System.Drawing.Point(305, 172);
+            this.textBoxSanBayDen.Multiline = true;
+            this.textBoxSanBayDen.Name = "textBoxSanBayDen";
+            this.textBoxSanBayDen.Size = new System.Drawing.Size(260, 24);
+            this.textBoxSanBayDen.TabIndex = 4;
             // 
-            // label6
+            // panelNgayGio
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(101, 194);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 20);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Thời gian bay:";
+            this.panelNgayGio.BackColor = System.Drawing.Color.Black;
+            this.panelNgayGio.Location = new System.Drawing.Point(305, 151);
+            this.panelNgayGio.Name = "panelNgayGio";
+            this.panelNgayGio.Size = new System.Drawing.Size(260, 1);
+            this.panelNgayGio.TabIndex = 21;
             // 
-            // textBox1
+            // textBoxNgayGio
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(280, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 22);
-            this.textBox1.TabIndex = 20;
+            this.textBoxNgayGio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNgayGio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNgayGio.Location = new System.Drawing.Point(305, 127);
+            this.textBoxNgayGio.Multiline = true;
+            this.textBoxNgayGio.Name = "textBoxNgayGio";
+            this.textBoxNgayGio.Size = new System.Drawing.Size(260, 24);
+            this.textBoxNgayGio.TabIndex = 3;
+            // 
+            // panelSanBayDen
+            // 
+            this.panelSanBayDen.BackColor = System.Drawing.Color.Black;
+            this.panelSanBayDen.Location = new System.Drawing.Point(305, 197);
+            this.panelSanBayDen.Name = "panelSanBayDen";
+            this.panelSanBayDen.Size = new System.Drawing.Size(260, 1);
+            this.panelSanBayDen.TabIndex = 22;
+            // 
+            // textBoxSanBayDi
+            // 
+            this.textBoxSanBayDi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSanBayDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSanBayDi.Location = new System.Drawing.Point(305, 82);
+            this.textBoxSanBayDi.Multiline = true;
+            this.textBoxSanBayDi.Name = "textBoxSanBayDi";
+            this.textBoxSanBayDi.Size = new System.Drawing.Size(260, 24);
+            this.textBoxSanBayDi.TabIndex = 2;
+            // 
+            // panelSanBayDi
+            // 
+            this.panelSanBayDi.BackColor = System.Drawing.Color.Black;
+            this.panelSanBayDi.Location = new System.Drawing.Point(305, 107);
+            this.panelSanBayDi.Name = "panelSanBayDi";
+            this.panelSanBayDi.Size = new System.Drawing.Size(260, 1);
+            this.panelSanBayDi.TabIndex = 23;
+            // 
+            // textBoxMaChuyenBay
+            // 
+            this.textBoxMaChuyenBay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMaChuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMaChuyenBay.Location = new System.Drawing.Point(305, 37);
+            this.textBoxMaChuyenBay.Multiline = true;
+            this.textBoxMaChuyenBay.Name = "textBoxMaChuyenBay";
+            this.textBoxMaChuyenBay.Size = new System.Drawing.Size(260, 24);
+            this.textBoxMaChuyenBay.TabIndex = 1;
+            // 
+            // panelMaChuyenBay
+            // 
+            this.panelMaChuyenBay.BackColor = System.Drawing.Color.Black;
+            this.panelMaChuyenBay.Location = new System.Drawing.Point(305, 61);
+            this.panelMaChuyenBay.Name = "panelMaChuyenBay";
+            this.panelMaChuyenBay.Size = new System.Drawing.Size(260, 1);
+            this.panelMaChuyenBay.TabIndex = 24;
             // 
             // dataGridView1
             // 
@@ -243,16 +295,16 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1010, 195);
+            this.dataGridView1.Size = new System.Drawing.Size(1044, 227);
             this.dataGridView1.TabIndex = 10;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 401);
+            this.panel3.Location = new System.Drawing.Point(0, 435);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1010, 195);
+            this.panel3.Size = new System.Drawing.Size(1044, 227);
             this.panel3.TabIndex = 17;
             // 
             // FrmLichChuyenBay
@@ -260,14 +312,13 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1010, 596);
+            this.ClientSize = new System.Drawing.Size(1044, 662);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelMain);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmLichChuyenBay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "NHẬN LỊCH CHUYẾN BAY";
-            this.Load += new System.EventHandler(this.Formtab1_Load);
             this.panelMain.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -280,16 +331,6 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         #endregion
         private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -297,5 +338,20 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Button buttonXoa;
         private System.Windows.Forms.Button buttonThem;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBoxThoiGianBay;
+        private System.Windows.Forms.Panel panelThoiGIanBay;
+        private System.Windows.Forms.TextBox textBoxSanBayDen;
+        private System.Windows.Forms.Panel panelNgayGio;
+        private System.Windows.Forms.TextBox textBoxNgayGio;
+        private System.Windows.Forms.Panel panelSanBayDen;
+        private System.Windows.Forms.TextBox textBoxSanBayDi;
+        private System.Windows.Forms.Panel panelSanBayDi;
+        private System.Windows.Forms.TextBox textBoxMaChuyenBay;
+        private System.Windows.Forms.Panel panelMaChuyenBay;
+        private System.Windows.Forms.Label labelThoiGianBay;
+        private System.Windows.Forms.Label labelSanBayDen;
+        private System.Windows.Forms.Label labelNgayGio;
+        private System.Windows.Forms.Label labelSanBayDi;
+        private System.Windows.Forms.Label labelMaChuyenBay;
     }
 }

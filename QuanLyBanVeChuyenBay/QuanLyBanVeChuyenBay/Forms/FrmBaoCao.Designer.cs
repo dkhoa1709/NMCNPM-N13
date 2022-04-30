@@ -148,7 +148,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmBaoCao";
             this.Text = "BÁO CÁO DOANH THU";
-            this.Load += new System.EventHandler(this.FrmBaoCao_Load);
             this.panel1.ResumeLayout(false);
             this.panelTitle1.ResumeLayout(false);
             this.panelTitle1.PerformLayout();

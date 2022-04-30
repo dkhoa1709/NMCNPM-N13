@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB\DbConnection.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +70,12 @@
     </Compile>
     <Compile Include="Forms\FrmCalendar.Designer.cs">
       <DependentUpon>FrmCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDoiMatKhau.Designer.cs">
+      <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmLoading.cs">
       <SubType>Form</SubType>
@@ -108,11 +113,11 @@
     <Compile Include="Forms\FrmDatCho.Designer.cs">
       <DependentUpon>FrmDatCho.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmSignUp.cs">
+    <Compile Include="Forms\FrmSuaThongTinNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmSignUp.Designer.cs">
-      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    <Compile Include="Forms\FrmSuaThongTinNhanVien.Designer.cs">
+      <DependentUpon>FrmSuaThongTinNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmThemNhanVien.cs">
       <SubType>Form</SubType>
@@ -120,11 +125,11 @@
     <Compile Include="Forms\FrmThemNhanVien.Designer.cs">
       <DependentUpon>FrmThemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmThongTin.cs">
+    <Compile Include="Forms\FrmThongTinDatVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmThongTin.Designer.cs">
-      <DependentUpon>FrmThongTin.cs</DependentUpon>
+    <Compile Include="Forms\FrmThongTinDatVe.Designer.cs">
+      <DependentUpon>FrmThongTinDatVe.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmTraCuu.cs">
       <SubType>Form</SubType>
@@ -138,7 +143,6 @@
     <Compile Include="Forms\FrmDashBoard.Designer.cs">
       <DependentUpon>FrmDashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Dashboard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
@@ -150,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmCalendar.resx">
       <DependentUpon>FrmCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDoiMatKhau.resx">
+      <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLoading.resx">
       <DependentUpon>FrmLoading.cs</DependentUpon>
@@ -169,14 +176,14 @@
     <EmbeddedResource Include="Forms\FrmDatCho.resx">
       <DependentUpon>FrmDatCho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmSignUp.resx">
-      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmSuaThongTinNhanVien.resx">
+      <DependentUpon>FrmSuaThongTinNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmThemNhanVien.resx">
       <DependentUpon>FrmThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmThongTin.resx">
-      <DependentUpon>FrmThongTin.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmThongTinDatVe.resx">
+      <DependentUpon>FrmThongTinDatVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTraCuu.resx">
       <DependentUpon>FrmTraCuu.cs</DependentUpon>

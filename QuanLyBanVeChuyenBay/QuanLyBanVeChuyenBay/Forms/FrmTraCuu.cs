@@ -17,47 +17,34 @@ namespace QuanLyBanVeChuyenBay.Forms
             InitializeComponent();
         }
 
-        private void LoadTheme()
+        private void pictureBoxNgayBay_Click(object sender, EventArgs e)
         {
-            foreach (Control btns in this.Controls)
+            FrmCalendar calendarForm = null;
+
+            try
             {
-                if (btns.GetType() == typeof(Button))
-                {
-                    Button btn = (Button)btns;
-                    btn.BackColor = ThemeColor.PrimaryColor;
-                    btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
-                }
-                if (btns.GetType() == typeof(Label))
-                {
-                    Label lbl = (Label)btns;
-                    lbl.ForeColor = ThemeColor.PrimaryColor;
-                }
+                // decide to pass a date time or not
+                calendarForm = DateTime.TryParse(textBoxNgay.Text, out var currentDateTime) ?
+                    new FrmCalendar(currentDateTime) :
+                    new FrmCalendar();
+
+                // reposition to be next to calendar button
+                calendarForm.Location = new Point(Left + (Width - 100), Bottom - 80);
+
+                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandlerNgaySinh;
+                calendarForm.ShowDialog();
+
+            }
+            finally
+            {
+                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandlerNgaySinh;
+                calendarForm.Dispose();
             }
         }
 
-        private void Formtab4_Load(object sender, EventArgs e)
+        private void CalendarFormOnDateTimeHandlerNgaySinh(DateTime sender)
         {
-            LoadTheme();
-        }
-
-        private void ChangeColor(Panel x)
-        {
-            foreach (Control btns in x.Controls)
-            {
-                if (btns.GetType() == typeof(Button))
-                {
-                    Button btn = (Button)btns;
-                    btn.BackColor = ThemeColor.PrimaryColor;
-                    btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
-                }
-                if (btns.GetType() == typeof(Label))
-                {
-                    Label lbl = (Label)btns;
-                    lbl.ForeColor = ThemeColor.PrimaryColor;
-                }
-            }
+            textBoxNgay.Text = $"{sender.ToString("MM-dd-yyyy")}";
         }
     }
 }

@@ -10,46 +10,39 @@ using System.Windows.Forms;
 
 namespace QuanLyBanVeChuyenBay.Forms
 {
-    public partial class FrmDatCho : Form
+    public partial class FrmThongTinDatVe : Form
     {
-        public FrmDatCho()
+        public FrmThongTinDatVe()
         {
             InitializeComponent();
         }
 
-        private void pictureBoxNgayDatVe_Click(object sender, EventArgs e)
+        private void buttonSua_Click(object sender, EventArgs e)
         {
-            FrmCalendar calendarForm = null;
+            ChangeReadOnly(groupBox1);
+            ChangeReadOnly(groupBox2);
+        }
 
-            try
+        private void ChangeReadOnly(GroupBox x)
+        {
+            foreach (Control btns in x.Controls)
             {
-                // decide to pass a date time or not
-                calendarForm = DateTime.TryParse(textBoxNgayDatVe.Text, out var currentDateTime) ?
-                    new FrmCalendar(currentDateTime) :
-                    new FrmCalendar();
-
-                // reposition to be next to calendar button
-                calendarForm.Location = new Point(Left + (Width - 100), Bottom - 80);
-
-                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandlerNgaySinh;
-                calendarForm.ShowDialog();
-
-            }
-            finally
-            {
-                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandlerNgaySinh;
-                calendarForm.Dispose();
+                if (btns.GetType() == typeof(TextBox) && !btns.Name.Equals("textBoxGiaTien"))
+                {
+                    TextBox txb = (TextBox)btns;
+                    txb.ReadOnly = false;
+                }
+                if (btns.GetType() == typeof(PictureBox))
+                {
+                    PictureBox pic = (PictureBox)btns;
+                    pic.Visible = true;
+                }
             }
         }
 
-        private void CalendarFormOnDateTimeHandlerNgaySinh(DateTime sender)
+        private void ChangeText(GroupBox x)
         {
-            textBoxNgayDatVe.Text = $"{sender.ToString("MM-dd-yyyy")}";
-        }
-
-        private void buttonTaoMoi_Click(object sender, EventArgs e)
-        {
-            foreach (Control btns in this.Controls)
+            foreach (Control btns in x.Controls)
             {
                 if (btns.GetType() == typeof(TextBox))
                 {
@@ -57,6 +50,17 @@ namespace QuanLyBanVeChuyenBay.Forms
                     txb.Text = "";
                 }
             }
+        }
+
+        private void buttonLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonXoa_Click(object sender, EventArgs e)
+        {
+            ChangeText(groupBox1);
+            ChangeText(groupBox2);
         }
 
         private void pictureBoxNgayBay_Click(object sender, EventArgs e)

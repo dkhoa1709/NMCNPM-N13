@@ -11,13 +11,14 @@ using System.Runtime.InteropServices;
 
 namespace QuanLyBanVeChuyenBay.Forms
 {
-    public partial class FrmThemNhanVien : Form
+    public partial class FrmSuaThongTinNhanVien : Form
     {
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int RightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
-        public FrmThemNhanVien()
+        public FrmSuaThongTinNhanVien()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
@@ -53,17 +54,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             textBoxNgaySinh.Text = $"{sender.ToString("MM-dd-yyyy")}";
         }
 
-        private void buttonHoanTat_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Thêm nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Close();
-        }
-
-        private void buttonHuy_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void pictureBoxNgayBatDau_Click(object sender, EventArgs e)
         {
             FrmCalendar calendarForm = null;
@@ -92,6 +82,22 @@ namespace QuanLyBanVeChuyenBay.Forms
         private void CalendarFormOnDateTimeHandlerNgayBatDau(DateTime sender)
         {
             textBoxNgayBatDau.Text = $"{sender.ToString("MM-dd-yyyy")}";
+        }
+
+        private void buttonLuu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sửa thông tin nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
+
+        private void buttonHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new FrmDoiMatKhau().ShowDialog();
         }
     }
 }

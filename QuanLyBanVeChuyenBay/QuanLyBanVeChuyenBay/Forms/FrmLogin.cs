@@ -42,7 +42,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void linkLabelSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new FrmSignUp().Show();
+            
             this.Hide();
         }
 

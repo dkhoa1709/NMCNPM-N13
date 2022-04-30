@@ -30,6 +30,7 @@ namespace QuanLyBanVeChuyenBay
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.buttonQuanLyNhanSu = new System.Windows.Forms.Button();
             this.buttonThongTin = new System.Windows.Forms.Button();
             this.buttonBaoCao = new System.Windows.Forms.Button();
             this.buttonQuyDinh = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@ namespace QuanLyBanVeChuyenBay
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonQuanLyNhanSu = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -74,6 +74,26 @@ namespace QuanLyBanVeChuyenBay
             this.panelMenu.Size = new System.Drawing.Size(325, 853);
             this.panelMenu.TabIndex = 0;
             // 
+            // buttonQuanLyNhanSu
+            // 
+            this.buttonQuanLyNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonQuanLyNhanSu.FlatAppearance.BorderSize = 0;
+            this.buttonQuanLyNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQuanLyNhanSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQuanLyNhanSu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonQuanLyNhanSu.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
+            this.buttonQuanLyNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQuanLyNhanSu.Location = new System.Drawing.Point(0, 585);
+            this.buttonQuanLyNhanSu.Name = "buttonQuanLyNhanSu";
+            this.buttonQuanLyNhanSu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonQuanLyNhanSu.Size = new System.Drawing.Size(325, 65);
+            this.buttonQuanLyNhanSu.TabIndex = 8;
+            this.buttonQuanLyNhanSu.Text = "  Quản lý nhân sự";
+            this.buttonQuanLyNhanSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQuanLyNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonQuanLyNhanSu.UseVisualStyleBackColor = true;
+            this.buttonQuanLyNhanSu.Click += new System.EventHandler(this.buttonQuanLyNhanSu_Click);
+            // 
             // buttonThongTin
             // 
             this.buttonThongTin.Dock = System.Windows.Forms.DockStyle.Top;
@@ -88,7 +108,7 @@ namespace QuanLyBanVeChuyenBay
             this.buttonThongTin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.buttonThongTin.Size = new System.Drawing.Size(325, 65);
             this.buttonThongTin.TabIndex = 7;
-            this.buttonThongTin.Text = "  Thông tin";
+            this.buttonThongTin.Text = "  Thông tin đặt vé";
             this.buttonThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonThongTin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonThongTin.UseVisualStyleBackColor = true;
@@ -343,26 +363,6 @@ namespace QuanLyBanVeChuyenBay
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonQuanLyNhanSu
-            // 
-            this.buttonQuanLyNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonQuanLyNhanSu.FlatAppearance.BorderSize = 0;
-            this.buttonQuanLyNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQuanLyNhanSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuanLyNhanSu.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonQuanLyNhanSu.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icon_google;
-            this.buttonQuanLyNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonQuanLyNhanSu.Location = new System.Drawing.Point(0, 585);
-            this.buttonQuanLyNhanSu.Name = "buttonQuanLyNhanSu";
-            this.buttonQuanLyNhanSu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonQuanLyNhanSu.Size = new System.Drawing.Size(325, 65);
-            this.buttonQuanLyNhanSu.TabIndex = 8;
-            this.buttonQuanLyNhanSu.Text = "  Quản lý nhân sự";
-            this.buttonQuanLyNhanSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonQuanLyNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonQuanLyNhanSu.UseVisualStyleBackColor = true;
-            this.buttonQuanLyNhanSu.Click += new System.EventHandler(this.buttonQuanLyNhanSu_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -375,6 +375,7 @@ namespace QuanLyBanVeChuyenBay
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

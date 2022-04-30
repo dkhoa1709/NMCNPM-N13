@@ -129,7 +129,7 @@ namespace QuanLyBanVeChuyenBay
 
         private void buttonThongTin_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.FrmThongTin(), sender);
+            OpenchildForm(new Forms.FrmThongTinDatVe(), sender);
         }
 
         private void buttonQuanLyNhanSu_Click(object sender, EventArgs e)
@@ -178,5 +178,29 @@ namespace QuanLyBanVeChuyenBay
             Application.Exit();
         }
 
+        private bool CheckAccountManager(int x)
+        {
+            if (x % 2 == 0)
+                return true;
+            return false;
+        }
+        int a = 2;
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            if(CheckAccountManager(a))
+            {
+                buttonDatVeChuyenBay.Visible = false;
+                buttonTraCuu.Visible = false;
+                buttonThongTin.Visible = false;
+            }
+            else
+            {
+                buttonDashBoard.Visible = false;
+                buttonQuyDinh.Visible = false;
+                buttonBaoCao.Visible = false;
+                buttonQuanLyNhanSu.Visible = false;
+            }
+        }
     }
 }

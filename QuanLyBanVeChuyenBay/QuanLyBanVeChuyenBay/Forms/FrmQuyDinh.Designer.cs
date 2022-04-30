@@ -261,7 +261,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // panelLeft
             // 
             this.panelLeft.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panelLeft.BackColor = System.Drawing.SystemColors.Control;
+            this.panelLeft.BackColor = System.Drawing.Color.White;
             this.panelLeft.Controls.Add(this.panel1);
             this.panelLeft.Controls.Add(this.label1);
             this.panelLeft.Controls.Add(this.dataGridView1);
@@ -359,7 +359,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmQuyDinh";
             this.Text = "FrmQuyDinh";
-            this.Load += new System.EventHandler(this.FrmDSSanBay_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panelTop.ResumeLayout(false);

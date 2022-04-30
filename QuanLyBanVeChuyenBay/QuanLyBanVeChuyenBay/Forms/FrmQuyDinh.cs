@@ -16,10 +16,5 @@ namespace QuanLyBanVeChuyenBay.Forms
         {
             InitializeComponent();
         }
-
-        private void FrmDSSanBay_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

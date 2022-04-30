@@ -88,7 +88,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(497, 574);
+            this.chart1.Size = new System.Drawing.Size(460, 496);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chart1";
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
@@ -116,7 +116,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(652, 335);
+            this.dataGridView1.Size = new System.Drawing.Size(652, 257);
             this.dataGridView1.TabIndex = 6;
             // 
             // Column1
@@ -344,7 +344,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.ClientSize = new System.Drawing.Size(1145, 575);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
@@ -352,7 +352,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmDashBoard";
             this.Text = "Doanh thu";
-            this.Load += new System.EventHandler(this.Formtab5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);

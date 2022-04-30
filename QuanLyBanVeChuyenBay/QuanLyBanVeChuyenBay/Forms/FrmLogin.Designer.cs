@@ -36,9 +36,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonLogin = new System.Windows.Forms.Button();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.textBoxPassWord = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.linkLabelForgotPass = new System.Windows.Forms.LinkLabel();
-            this.linkLabelSignUp = new System.Windows.Forms.LinkLabel();
             this.labelWarning = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -114,17 +112,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxPassWord.TabIndex = 2;
             this.textBoxPassWord.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxPassWord_KeyDown);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(27, 644);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(269, 24);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "If you don\'t have account, please ";
-            // 
             // linkLabelForgotPass
             // 
             this.linkLabelForgotPass.ActiveLinkColor = System.Drawing.Color.Black;
@@ -137,24 +124,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.linkLabelForgotPass.TabIndex = 6;
             this.linkLabelForgotPass.TabStop = true;
             this.linkLabelForgotPass.Text = "Forgot Password?";
-            // 
-            // linkLabelSignUp
-            // 
-            this.linkLabelSignUp.ActiveLinkColor = System.Drawing.Color.Black;
-            this.linkLabelSignUp.AutoSize = true;
-            this.linkLabelSignUp.BackColor = System.Drawing.Color.White;
-            this.linkLabelSignUp.DisabledLinkColor = System.Drawing.Color.Black;
-            this.linkLabelSignUp.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.linkLabelSignUp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.linkLabelSignUp.Location = new System.Drawing.Point(307, 644);
-            this.linkLabelSignUp.Name = "linkLabelSignUp";
-            this.linkLabelSignUp.Size = new System.Drawing.Size(67, 24);
-            this.linkLabelSignUp.TabIndex = 7;
-            this.linkLabelSignUp.TabStop = true;
-            this.linkLabelSignUp.Text = "Sign up";
-            this.linkLabelSignUp.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.linkLabelSignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSignUp_LinkClicked);
             // 
             // labelWarning
             // 
@@ -202,11 +171,9 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(400, 695);
+            this.ClientSize = new System.Drawing.Size(400, 630);
             this.Controls.Add(this.labelWarning);
-            this.Controls.Add(this.linkLabelSignUp);
             this.Controls.Add(this.linkLabelForgotPass);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxPassWord);
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.buttonLogin);
@@ -241,9 +208,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.TextBox textBoxUserName;
         private System.Windows.Forms.TextBox textBoxPassWord;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabelForgotPass;
-        private System.Windows.Forms.LinkLabel linkLabelSignUp;
         private System.Windows.Forms.Label labelWarning;
     }
 }
