@@ -358,7 +358,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.groupBox3);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmQuyDinh";
-            this.Text = "FrmQuyDinh";
+            this.Text = "QUY ĐỊNH CHUYẾN BAY";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panelTop.ResumeLayout(false);

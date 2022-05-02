@@ -683,7 +683,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonSua.UseVisualStyleBackColor = true;
             this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
             // 
-            // FrmThongTin
+            // FrmThongTinDatVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -692,8 +692,8 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "FrmThongTin";
-            this.Text = "FrmThongTin";
+            this.Name = "FrmThongTinDatVe";
+            this.Text = "THÔNG TIN ĐẶT VÉ";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

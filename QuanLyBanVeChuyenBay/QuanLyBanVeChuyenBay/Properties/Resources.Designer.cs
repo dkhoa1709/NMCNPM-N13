@@ -353,6 +353,16 @@ namespace QuanLyBanVeChuyenBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap planeAPP {
+            get {
+                object obj = ResourceManager.GetObject("planeAPP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rose {
             get {
                 object obj = ResourceManager.GetObject("rose", resourceCulture);

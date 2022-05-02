@@ -58,7 +58,6 @@ namespace QuanLyBanVeChuyenBay
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panelTitle.BackColor = color;
-                    panelLogo.BackColor = ThemeColor.ChangeColor(color, -0.5);
                     ThemeColor.PrimaryColor = color;
                     ThemeColor.SecondaryColor = ThemeColor.ChangeColor(color, -0.5);
                     buttonCloseChildForm.Visible = true;
@@ -147,9 +146,8 @@ namespace QuanLyBanVeChuyenBay
         private void Reset()
         {
             DisableButton();
-            labelTitle.Text = "HOME";
-            panelTitle.BackColor = Color.FromArgb(0, 150, 136);
-            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
+            labelTitle.Text = "QUẢN LÝ BÁN VÉ MÁY BAY";
+            panelTitle.BackColor = Color.FromArgb(51, 51, 76);
             currentButton = null;
             buttonCloseChildForm.Visible = false;
         }

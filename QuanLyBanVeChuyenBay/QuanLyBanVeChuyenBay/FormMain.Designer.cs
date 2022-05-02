@@ -29,17 +29,9 @@ namespace QuanLyBanVeChuyenBay
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.buttonQuanLyNhanSu = new System.Windows.Forms.Button();
-            this.buttonThongTin = new System.Windows.Forms.Button();
-            this.buttonBaoCao = new System.Windows.Forms.Button();
-            this.buttonQuyDinh = new System.Windows.Forms.Button();
-            this.buttonTraCuu = new System.Windows.Forms.Button();
-            this.buttonDatVeChuyenBay = new System.Windows.Forms.Button();
-            this.buttonLichChuyenBay = new System.Windows.Forms.Button();
-            this.buttonDashBoard = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.buttonMin = new System.Windows.Forms.Button();
             this.buttonMax = new System.Windows.Forms.Button();
@@ -48,12 +40,21 @@ namespace QuanLyBanVeChuyenBay
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonQuanLyNhanSu = new System.Windows.Forms.Button();
+            this.buttonThongTin = new System.Windows.Forms.Button();
+            this.buttonBaoCao = new System.Windows.Forms.Button();
+            this.buttonQuyDinh = new System.Windows.Forms.Button();
+            this.buttonTraCuu = new System.Windows.Forms.Button();
+            this.buttonDatVeChuyenBay = new System.Windows.Forms.Button();
+            this.buttonLichChuyenBay = new System.Windows.Forms.Button();
+            this.buttonDashBoard = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelTitle.SuspendLayout();
             this.panelDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -73,6 +74,124 @@ namespace QuanLyBanVeChuyenBay
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(325, 853);
             this.panelMenu.TabIndex = 0;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.White;
+            this.panelLogo.Controls.Add(this.pictureBox2);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(325, 130);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // panelTitle
+            // 
+            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelTitle.Controls.Add(this.buttonMin);
+            this.panelTitle.Controls.Add(this.buttonMax);
+            this.panelTitle.Controls.Add(this.buttonClose);
+            this.panelTitle.Controls.Add(this.buttonCloseChildForm);
+            this.panelTitle.Controls.Add(this.labelTitle);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(325, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(1257, 100);
+            this.panelTitle.TabIndex = 1;
+            this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
+            // 
+            // buttonMin
+            // 
+            this.buttonMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMin.FlatAppearance.BorderSize = 0;
+            this.buttonMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMin.ForeColor = System.Drawing.Color.White;
+            this.buttonMin.Location = new System.Drawing.Point(1147, 3);
+            this.buttonMin.Name = "buttonMin";
+            this.buttonMin.Size = new System.Drawing.Size(35, 35);
+            this.buttonMin.TabIndex = 4;
+            this.buttonMin.Text = "O";
+            this.buttonMin.UseVisualStyleBackColor = true;
+            this.buttonMin.Click += new System.EventHandler(this.buttonMin_Click);
+            // 
+            // buttonMax
+            // 
+            this.buttonMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMax.FlatAppearance.BorderSize = 0;
+            this.buttonMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMax.ForeColor = System.Drawing.Color.White;
+            this.buttonMax.Location = new System.Drawing.Point(1183, 3);
+            this.buttonMax.Name = "buttonMax";
+            this.buttonMax.Size = new System.Drawing.Size(35, 35);
+            this.buttonMax.TabIndex = 3;
+            this.buttonMax.Text = "O";
+            this.buttonMax.UseVisualStyleBackColor = true;
+            this.buttonMax.Click += new System.EventHandler(this.buttonMax_Click);
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClose.ForeColor = System.Drawing.Color.White;
+            this.buttonClose.Location = new System.Drawing.Point(1219, 3);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(35, 35);
+            this.buttonClose.TabIndex = 2;
+            this.buttonClose.Text = "O";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            // 
+            // buttonCloseChildForm
+            // 
+            this.buttonCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonCloseChildForm.FlatAppearance.BorderSize = 0;
+            this.buttonCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCloseChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCloseChildForm.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonCloseChildForm.Location = new System.Drawing.Point(0, 0);
+            this.buttonCloseChildForm.Name = "buttonCloseChildForm";
+            this.buttonCloseChildForm.Size = new System.Drawing.Size(100, 100);
+            this.buttonCloseChildForm.TabIndex = 1;
+            this.buttonCloseChildForm.Text = "X";
+            this.buttonCloseChildForm.UseVisualStyleBackColor = true;
+            this.buttonCloseChildForm.Click += new System.EventHandler(this.buttonCloseChildForm_Click);
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.White;
+            this.labelTitle.Location = new System.Drawing.Point(106, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(1035, 88);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "QUẢN LÝ BÁN VÉ MÁY BAY";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.Controls.Add(this.pictureBox1);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(325, 100);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1257, 753);
+            this.panelDesktop.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.planeAPP;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1257, 753);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // buttonQuanLyNhanSu
             // 
@@ -234,18 +353,9 @@ namespace QuanLyBanVeChuyenBay
             this.buttonDashBoard.UseVisualStyleBackColor = true;
             this.buttonDashBoard.Click += new System.EventHandler(this.buttonDashBoard_Click);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.White;
-            this.panelLogo.Controls.Add(this.pictureBox2);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(325, 130);
-            this.panelLogo.TabIndex = 0;
-            // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.LogoApp;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
@@ -255,122 +365,16 @@ namespace QuanLyBanVeChuyenBay
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // panelTitle
-            // 
-            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panelTitle.Controls.Add(this.buttonMin);
-            this.panelTitle.Controls.Add(this.buttonMax);
-            this.panelTitle.Controls.Add(this.buttonClose);
-            this.panelTitle.Controls.Add(this.buttonCloseChildForm);
-            this.panelTitle.Controls.Add(this.labelTitle);
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(325, 0);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1257, 100);
-            this.panelTitle.TabIndex = 1;
-            this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
-            // 
-            // buttonMin
-            // 
-            this.buttonMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonMin.FlatAppearance.BorderSize = 0;
-            this.buttonMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMin.ForeColor = System.Drawing.Color.White;
-            this.buttonMin.Location = new System.Drawing.Point(1147, 3);
-            this.buttonMin.Name = "buttonMin";
-            this.buttonMin.Size = new System.Drawing.Size(35, 35);
-            this.buttonMin.TabIndex = 4;
-            this.buttonMin.Text = "O";
-            this.buttonMin.UseVisualStyleBackColor = true;
-            this.buttonMin.Click += new System.EventHandler(this.buttonMin_Click);
-            // 
-            // buttonMax
-            // 
-            this.buttonMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonMax.FlatAppearance.BorderSize = 0;
-            this.buttonMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMax.ForeColor = System.Drawing.Color.White;
-            this.buttonMax.Location = new System.Drawing.Point(1183, 3);
-            this.buttonMax.Name = "buttonMax";
-            this.buttonMax.Size = new System.Drawing.Size(35, 35);
-            this.buttonMax.TabIndex = 3;
-            this.buttonMax.Text = "O";
-            this.buttonMax.UseVisualStyleBackColor = true;
-            this.buttonMax.Click += new System.EventHandler(this.buttonMax_Click);
-            // 
-            // buttonClose
-            // 
-            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonClose.FlatAppearance.BorderSize = 0;
-            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(1219, 3);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(35, 35);
-            this.buttonClose.TabIndex = 2;
-            this.buttonClose.Text = "O";
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
-            // 
-            // buttonCloseChildForm
-            // 
-            this.buttonCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonCloseChildForm.FlatAppearance.BorderSize = 0;
-            this.buttonCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCloseChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCloseChildForm.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonCloseChildForm.Location = new System.Drawing.Point(0, 0);
-            this.buttonCloseChildForm.Name = "buttonCloseChildForm";
-            this.buttonCloseChildForm.Size = new System.Drawing.Size(100, 100);
-            this.buttonCloseChildForm.TabIndex = 1;
-            this.buttonCloseChildForm.Text = "X";
-            this.buttonCloseChildForm.UseVisualStyleBackColor = true;
-            this.buttonCloseChildForm.Click += new System.EventHandler(this.buttonCloseChildForm_Click);
-            // 
-            // labelTitle
-            // 
-            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(584, 33);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(81, 29);
-            this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "Home";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.Controls.Add(this.pictureBox1);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(325, 100);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1257, 753);
-            this.panelDesktop.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.Plane1;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1181, 588);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1582, 853);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1600, 800);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -378,11 +382,10 @@ namespace QuanLyBanVeChuyenBay
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelTitle.ResumeLayout(false);
-            this.panelTitle.PerformLayout();
             this.panelDesktop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

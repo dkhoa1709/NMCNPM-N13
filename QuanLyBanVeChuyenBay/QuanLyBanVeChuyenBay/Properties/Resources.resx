@@ -121,8 +121,8 @@
   <data name="icons8-plus-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-plus-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-plus-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-plus-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LogoApp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoApp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_SanBayDen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_SanBayDen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +142,8 @@
   <data name="Icon_SanBayDi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_SanBayDi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-plus-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-plus-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,6 +163,9 @@
   <data name="Icon_gmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_gmail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="calendar-check-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar-check-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icon_Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,6 +181,9 @@
   <data name="Icon_Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="calendar-check-regular1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar-check-regular1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,22 +196,19 @@
   <data name="Icon_CMND" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_CMND.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_ID" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_ID.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Icon_IDPlane1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_IDPlane1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar-check-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar-check-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoApp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoApp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_ID" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_ID.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_ID1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_ID1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar-check-regular1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar-check-regular1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="planeAPP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planeAPP.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
