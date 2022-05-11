@@ -12,7 +12,6 @@ C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\Qua
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmTraCuu.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmLichChuyenBay.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmBaoCao.resources
-C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmDashBoard.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmLogin.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\CircularProgressBar.dll
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\WinFormAnimation.dll

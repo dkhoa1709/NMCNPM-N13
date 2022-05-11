@@ -33,16 +33,21 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelDecor = new System.Windows.Forms.Panel();
             this.panelThongTinNhanVien = new System.Windows.Forms.Panel();
+            this.buttonHuy = new System.Windows.Forms.Button();
+            this.buttonLuu = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panelChucVu = new System.Windows.Forms.Panel();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.panelGioiTinh = new System.Windows.Forms.Panel();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.pictureBoxNgayBatDau = new System.Windows.Forms.PictureBox();
             this.textBoxNgayBatDau = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBoxNgaySinh = new System.Windows.Forms.PictureBox();
             this.textBoxSoDienThoai = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,20 +61,12 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxHoTen = new System.Windows.Forms.TextBox();
             this.panelDecor1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxTaiKhoan = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.buttonHuy = new System.Windows.Forms.Button();
-            this.buttonLuu = new System.Windows.Forms.Button();
-            this.pictureBoxNgaySinh = new System.Windows.Forms.PictureBox();
-            this.pictureBoxNgayBatDau = new System.Windows.Forms.PictureBox();
             this.panelTitle.SuspendLayout();
             this.panelThongTinNhanVien.SuspendLayout();
             this.panelChucVu.SuspendLayout();
             this.panelGioiTinh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgaySinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBatDau)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgaySinh)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTitle
@@ -106,9 +103,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelThongTinNhanVien.Controls.Add(this.buttonHuy);
             this.panelThongTinNhanVien.Controls.Add(this.buttonLuu);
             this.panelThongTinNhanVien.Controls.Add(this.linkLabel1);
-            this.panelThongTinNhanVien.Controls.Add(this.textBoxTaiKhoan);
-            this.panelThongTinNhanVien.Controls.Add(this.panel4);
-            this.panelThongTinNhanVien.Controls.Add(this.label10);
             this.panelThongTinNhanVien.Controls.Add(this.panelChucVu);
             this.panelThongTinNhanVien.Controls.Add(this.panelGioiTinh);
             this.panelThongTinNhanVien.Controls.Add(this.pictureBoxNgayBatDau);
@@ -133,8 +127,44 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelThongTinNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongTinNhanVien.Location = new System.Drawing.Point(0, 46);
             this.panelThongTinNhanVien.Name = "panelThongTinNhanVien";
-            this.panelThongTinNhanVien.Size = new System.Drawing.Size(750, 526);
+            this.panelThongTinNhanVien.Size = new System.Drawing.Size(750, 460);
             this.panelThongTinNhanVien.TabIndex = 3;
+            // 
+            // buttonHuy
+            // 
+            this.buttonHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHuy.Location = new System.Drawing.Point(594, 404);
+            this.buttonHuy.Name = "buttonHuy";
+            this.buttonHuy.Size = new System.Drawing.Size(125, 35);
+            this.buttonHuy.TabIndex = 58;
+            this.buttonHuy.Text = "Hủy";
+            this.buttonHuy.UseVisualStyleBackColor = true;
+            this.buttonHuy.Click += new System.EventHandler(this.buttonHuy_Click);
+            // 
+            // buttonLuu
+            // 
+            this.buttonLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLuu.Location = new System.Drawing.Point(389, 404);
+            this.buttonLuu.Name = "buttonLuu";
+            this.buttonLuu.Size = new System.Drawing.Size(125, 35);
+            this.buttonLuu.TabIndex = 57;
+            this.buttonLuu.Text = "Lưu";
+            this.buttonLuu.UseVisualStyleBackColor = true;
+            this.buttonLuu.Click += new System.EventHandler(this.buttonLuu_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(83, 404);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(107, 20);
+            this.linkLabel1.TabIndex = 56;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Đổi mật khẩu";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // panelChucVu
             // 
@@ -198,6 +228,17 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.radioButton4.Text = "Nam";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
+            // pictureBoxNgayBatDau
+            // 
+            this.pictureBoxNgayBatDau.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
+            this.pictureBoxNgayBatDau.Location = new System.Drawing.Point(663, 338);
+            this.pictureBoxNgayBatDau.Name = "pictureBoxNgayBatDau";
+            this.pictureBoxNgayBatDau.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxNgayBatDau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxNgayBatDau.TabIndex = 52;
+            this.pictureBoxNgayBatDau.TabStop = false;
+            this.pictureBoxNgayBatDau.Click += new System.EventHandler(this.pictureBoxNgayBatDau_Click);
+            // 
             // textBoxNgayBatDau
             // 
             this.textBoxNgayBatDau.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -235,6 +276,17 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label9.Size = new System.Drawing.Size(112, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "Ngày bắt đầu:";
+            // 
+            // pictureBoxNgaySinh
+            // 
+            this.pictureBoxNgaySinh.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
+            this.pictureBoxNgaySinh.Location = new System.Drawing.Point(663, 138);
+            this.pictureBoxNgaySinh.Name = "pictureBoxNgaySinh";
+            this.pictureBoxNgaySinh.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxNgaySinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxNgaySinh.TabIndex = 47;
+            this.pictureBoxNgaySinh.TabStop = false;
+            this.pictureBoxNgaySinh.Click += new System.EventHandler(this.pictureBoxNgaySinh_Click);
             // 
             // textBoxSoDienThoai
             // 
@@ -358,105 +410,19 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label3.TabIndex = 0;
             this.label3.Text = "Họ và tên:";
             // 
-            // textBoxTaiKhoan
-            // 
-            this.textBoxTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTaiKhoan.Location = new System.Drawing.Point(196, 390);
-            this.textBoxTaiKhoan.Multiline = true;
-            this.textBoxTaiKhoan.Name = "textBoxTaiKhoan";
-            this.textBoxTaiKhoan.Size = new System.Drawing.Size(492, 25);
-            this.textBoxTaiKhoan.TabIndex = 54;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(196, 415);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(492, 1);
-            this.panel4.TabIndex = 53;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(85, 390);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 20);
-            this.label10.TabIndex = 55;
-            this.label10.Text = "Tài khoản:";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(83, 464);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(107, 20);
-            this.linkLabel1.TabIndex = 56;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Đổi mật khẩu";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // buttonHuy
-            // 
-            this.buttonHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHuy.Location = new System.Drawing.Point(594, 464);
-            this.buttonHuy.Name = "buttonHuy";
-            this.buttonHuy.Size = new System.Drawing.Size(125, 35);
-            this.buttonHuy.TabIndex = 58;
-            this.buttonHuy.Text = "Hủy";
-            this.buttonHuy.UseVisualStyleBackColor = true;
-            this.buttonHuy.Click += new System.EventHandler(this.buttonHuy_Click);
-            // 
-            // buttonLuu
-            // 
-            this.buttonLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLuu.Location = new System.Drawing.Point(389, 464);
-            this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(125, 35);
-            this.buttonLuu.TabIndex = 57;
-            this.buttonLuu.Text = "Lưu";
-            this.buttonLuu.UseVisualStyleBackColor = true;
-            this.buttonLuu.Click += new System.EventHandler(this.buttonLuu_Click);
-            // 
-            // pictureBoxNgaySinh
-            // 
-            this.pictureBoxNgaySinh.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
-            this.pictureBoxNgaySinh.Location = new System.Drawing.Point(663, 138);
-            this.pictureBoxNgaySinh.Name = "pictureBoxNgaySinh";
-            this.pictureBoxNgaySinh.Size = new System.Drawing.Size(25, 25);
-            this.pictureBoxNgaySinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxNgaySinh.TabIndex = 47;
-            this.pictureBoxNgaySinh.TabStop = false;
-            this.pictureBoxNgaySinh.Click += new System.EventHandler(this.pictureBoxNgaySinh_Click);
-            // 
-            // pictureBoxNgayBatDau
-            // 
-            this.pictureBoxNgayBatDau.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
-            this.pictureBoxNgayBatDau.Location = new System.Drawing.Point(663, 338);
-            this.pictureBoxNgayBatDau.Name = "pictureBoxNgayBatDau";
-            this.pictureBoxNgayBatDau.Size = new System.Drawing.Size(25, 25);
-            this.pictureBoxNgayBatDau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxNgayBatDau.TabIndex = 52;
-            this.pictureBoxNgayBatDau.TabStop = false;
-            this.pictureBoxNgayBatDau.Click += new System.EventHandler(this.pictureBoxNgayBatDau_Click);
-            // 
             // FrmSuaThongTinNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(750, 572);
+            this.ClientSize = new System.Drawing.Size(750, 506);
             this.Controls.Add(this.panelThongTinNhanVien);
             this.Controls.Add(this.panelDecor);
             this.Controls.Add(this.panelTitle);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(750, 572);
-            this.MinimumSize = new System.Drawing.Size(750, 572);
+            this.MaximumSize = new System.Drawing.Size(750, 506);
+            this.MinimumSize = new System.Drawing.Size(750, 506);
             this.Name = "FrmSuaThongTinNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSuaThongTinNhanVien";
@@ -468,8 +434,8 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelChucVu.PerformLayout();
             this.panelGioiTinh.ResumeLayout(false);
             this.panelGioiTinh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgaySinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBatDau)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgaySinh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -505,9 +471,6 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Panel panelDecor1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.TextBox textBoxTaiKhoan;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonHuy;
         private System.Windows.Forms.Button buttonLuu;
         private System.Windows.Forms.PictureBox pictureBoxNgayBatDau;

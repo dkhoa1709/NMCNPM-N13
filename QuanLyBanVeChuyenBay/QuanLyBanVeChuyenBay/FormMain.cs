@@ -14,14 +14,11 @@ namespace QuanLyBanVeChuyenBay
     public partial class FormMain : Form
     {
         private Button currentButton;
-        private Random random;
-        private int tempIndex;
         Form activeForm;
 
         public FormMain()
         {
             InitializeComponent();
-            random = new Random();
             buttonCloseChildForm.Visible = false;
             this.Text = String.Empty;
             this.ControlBox = false;
@@ -33,18 +30,6 @@ namespace QuanLyBanVeChuyenBay
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private Color SelectThemeColor()
-        {
-            int index = random.Next(ThemeColor.ColorList.Count);
-            while (tempIndex == index)
-            {
-                index = random.Next(ThemeColor.ColorList.Count);
-            }
-            tempIndex = index;
-            string color = ThemeColor.ColorList[index];
-            return ColorTranslator.FromHtml(color);
-        }
-
         private void ActivateButton(object btnSender)
         {
             if (btnSender != null)
@@ -52,14 +37,13 @@ namespace QuanLyBanVeChuyenBay
                 if (currentButton != (Button)btnSender)
                 {
                     DisableButton();
-                    Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
-                    currentButton.BackColor = color;
+                    currentButton.BackColor = Color.FromArgb(27, 105, 134); ;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    panelTitle.BackColor = color;
-                    ThemeColor.PrimaryColor = color;
-                    ThemeColor.SecondaryColor = ThemeColor.ChangeColor(color, -0.5);
+                    panelTitle.BackColor = Color.FromArgb(27, 105, 134);
+                    labelTitle.BackColor = Color.FromArgb(27, 105, 134);
+                    buttonCloseChildForm.BackColor = Color.FromArgb(27, 105, 134);
                     buttonCloseChildForm.Visible = true;
                 }
             }
@@ -71,7 +55,7 @@ namespace QuanLyBanVeChuyenBay
             {
                 if (previousBtn.GetType() == typeof(Button))
                 {
-                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+                    previousBtn.BackColor = Color.FromArgb(11, 68, 86);
                     previousBtn.ForeColor = Color.Gainsboro;
                     previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
@@ -94,11 +78,6 @@ namespace QuanLyBanVeChuyenBay
             childForm.BringToFront();
             childForm.Show();
             labelTitle.Text = childForm.Text;
-        }
-
-        private void buttonDashBoard_Click(object sender, EventArgs e)
-        {
-            OpenchildForm(new Forms.FrmDashBoard(), sender);
         }
 
         private void buttonLichChuyenBay_Click(object sender, EventArgs e)
@@ -182,7 +161,7 @@ namespace QuanLyBanVeChuyenBay
                 return true;
             return false;
         }
-        int a = 2;
+        int a = 1;
 
         private void FormMain_Load(object sender, EventArgs e)
         {
@@ -194,11 +173,16 @@ namespace QuanLyBanVeChuyenBay
             }
             else
             {
-                buttonDashBoard.Visible = false;
                 buttonQuyDinh.Visible = false;
                 buttonBaoCao.Visible = false;
                 buttonQuanLyNhanSu.Visible = false;
             }
+        }
+
+        private void labelTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
