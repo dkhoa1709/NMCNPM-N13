@@ -31,29 +31,28 @@ namespace QuanLyBanVeChuyenBay
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelTitle = new System.Windows.Forms.Panel();
-            this.buttonMin = new System.Windows.Forms.Button();
-            this.buttonMax = new System.Windows.Forms.Button();
-            this.buttonClose = new System.Windows.Forms.Button();
-            this.buttonCloseChildForm = new System.Windows.Forms.Button();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonQuanLyNhanSu = new System.Windows.Forms.Button();
             this.buttonThongTin = new System.Windows.Forms.Button();
             this.buttonBaoCao = new System.Windows.Forms.Button();
             this.buttonQuyDinh = new System.Windows.Forms.Button();
-            this.buttonTraCuu = new System.Windows.Forms.Button();
             this.buttonDatVeChuyenBay = new System.Windows.Forms.Button();
             this.buttonLichChuyenBay = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.buttonMin = new System.Windows.Forms.Button();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonMax = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.buttonCloseChildForm = new System.Windows.Forms.Button();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelTitle.SuspendLayout();
             this.panelDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -63,7 +62,6 @@ namespace QuanLyBanVeChuyenBay
             this.panelMenu.Controls.Add(this.buttonThongTin);
             this.panelMenu.Controls.Add(this.buttonBaoCao);
             this.panelMenu.Controls.Add(this.buttonQuyDinh);
-            this.panelMenu.Controls.Add(this.buttonTraCuu);
             this.panelMenu.Controls.Add(this.buttonDatVeChuyenBay);
             this.panelMenu.Controls.Add(this.buttonLichChuyenBay);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -72,6 +70,126 @@ namespace QuanLyBanVeChuyenBay
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(325, 853);
             this.panelMenu.TabIndex = 0;
+            // 
+            // buttonQuanLyNhanSu
+            // 
+            this.buttonQuanLyNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonQuanLyNhanSu.FlatAppearance.BorderSize = 0;
+            this.buttonQuanLyNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQuanLyNhanSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQuanLyNhanSu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonQuanLyNhanSu.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_admin_settings_male_401;
+            this.buttonQuanLyNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQuanLyNhanSu.Location = new System.Drawing.Point(0, 455);
+            this.buttonQuanLyNhanSu.Name = "buttonQuanLyNhanSu";
+            this.buttonQuanLyNhanSu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonQuanLyNhanSu.Size = new System.Drawing.Size(325, 65);
+            this.buttonQuanLyNhanSu.TabIndex = 8;
+            this.buttonQuanLyNhanSu.Text = "  Quản lý nhân sự";
+            this.buttonQuanLyNhanSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQuanLyNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonQuanLyNhanSu.UseVisualStyleBackColor = true;
+            this.buttonQuanLyNhanSu.Click += new System.EventHandler(this.buttonQuanLyNhanSu_Click);
+            // 
+            // buttonThongTin
+            // 
+            this.buttonThongTin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonThongTin.FlatAppearance.BorderSize = 0;
+            this.buttonThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThongTin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonThongTin.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_about_35;
+            this.buttonThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThongTin.Location = new System.Drawing.Point(0, 390);
+            this.buttonThongTin.Name = "buttonThongTin";
+            this.buttonThongTin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonThongTin.Size = new System.Drawing.Size(325, 65);
+            this.buttonThongTin.TabIndex = 7;
+            this.buttonThongTin.Text = "  Thông tin đặt vé";
+            this.buttonThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThongTin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonThongTin.UseVisualStyleBackColor = true;
+            this.buttonThongTin.Click += new System.EventHandler(this.buttonThongTin_Click);
+            // 
+            // buttonBaoCao
+            // 
+            this.buttonBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBaoCao.FlatAppearance.BorderSize = 0;
+            this.buttonBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBaoCao.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonBaoCao.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_profit_report_40;
+            this.buttonBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBaoCao.Location = new System.Drawing.Point(0, 325);
+            this.buttonBaoCao.Name = "buttonBaoCao";
+            this.buttonBaoCao.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonBaoCao.Size = new System.Drawing.Size(325, 65);
+            this.buttonBaoCao.TabIndex = 6;
+            this.buttonBaoCao.Text = "  Báo cáo doanh thu";
+            this.buttonBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonBaoCao.UseVisualStyleBackColor = true;
+            this.buttonBaoCao.Click += new System.EventHandler(this.buttonBaoCao_Click);
+            // 
+            // buttonQuyDinh
+            // 
+            this.buttonQuyDinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonQuyDinh.FlatAppearance.BorderSize = 0;
+            this.buttonQuyDinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQuyDinh.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonQuyDinh.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_gear_35;
+            this.buttonQuyDinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQuyDinh.Location = new System.Drawing.Point(0, 260);
+            this.buttonQuyDinh.Name = "buttonQuyDinh";
+            this.buttonQuyDinh.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonQuyDinh.Size = new System.Drawing.Size(325, 65);
+            this.buttonQuyDinh.TabIndex = 5;
+            this.buttonQuyDinh.Text = "  Quy định chuyến bay";
+            this.buttonQuyDinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQuyDinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonQuyDinh.UseVisualStyleBackColor = true;
+            this.buttonQuyDinh.Click += new System.EventHandler(this.buttonQuyDinh_Click);
+            // 
+            // buttonDatVeChuyenBay
+            // 
+            this.buttonDatVeChuyenBay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDatVeChuyenBay.FlatAppearance.BorderSize = 0;
+            this.buttonDatVeChuyenBay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDatVeChuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDatVeChuyenBay.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonDatVeChuyenBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_airport_35;
+            this.buttonDatVeChuyenBay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDatVeChuyenBay.Location = new System.Drawing.Point(0, 195);
+            this.buttonDatVeChuyenBay.Name = "buttonDatVeChuyenBay";
+            this.buttonDatVeChuyenBay.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonDatVeChuyenBay.Size = new System.Drawing.Size(325, 65);
+            this.buttonDatVeChuyenBay.TabIndex = 3;
+            this.buttonDatVeChuyenBay.Text = "  Đặt vé chuyến bay";
+            this.buttonDatVeChuyenBay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDatVeChuyenBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDatVeChuyenBay.UseVisualStyleBackColor = true;
+            this.buttonDatVeChuyenBay.Click += new System.EventHandler(this.buttonDatVeChuyenBay_Click);
+            // 
+            // buttonLichChuyenBay
+            // 
+            this.buttonLichChuyenBay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonLichChuyenBay.FlatAppearance.BorderSize = 0;
+            this.buttonLichChuyenBay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLichChuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLichChuyenBay.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonLichChuyenBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_add_property_35;
+            this.buttonLichChuyenBay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonLichChuyenBay.Location = new System.Drawing.Point(0, 130);
+            this.buttonLichChuyenBay.Name = "buttonLichChuyenBay";
+            this.buttonLichChuyenBay.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.buttonLichChuyenBay.Size = new System.Drawing.Size(325, 65);
+            this.buttonLichChuyenBay.TabIndex = 2;
+            this.buttonLichChuyenBay.Text = "  Nhận lịch chuyến bay";
+            this.buttonLichChuyenBay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonLichChuyenBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonLichChuyenBay.UseVisualStyleBackColor = true;
+            this.buttonLichChuyenBay.Click += new System.EventHandler(this.buttonLichChuyenBay_Click);
             // 
             // panelLogo
             // 
@@ -82,6 +200,18 @@ namespace QuanLyBanVeChuyenBay
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(325, 130);
             this.panelLogo.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(68)))), ((int)(((byte)(86)))));
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.LogoApp;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(325, 130);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // panelTitle
             // 
@@ -112,6 +242,20 @@ namespace QuanLyBanVeChuyenBay
             this.buttonMin.Text = "O";
             this.buttonMin.UseVisualStyleBackColor = true;
             this.buttonMin.Click += new System.EventHandler(this.buttonMin_Click);
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(68)))), ((int)(((byte)(86)))));
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.White;
+            this.labelTitle.Location = new System.Drawing.Point(100, 0);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(1035, 100);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "QUẢN LÝ BÁN VÉ MÁY BAY";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelTitle_MouseDown);
             // 
             // buttonMax
             // 
@@ -161,20 +305,6 @@ namespace QuanLyBanVeChuyenBay
             this.buttonCloseChildForm.UseVisualStyleBackColor = false;
             this.buttonCloseChildForm.Click += new System.EventHandler(this.buttonCloseChildForm_Click);
             // 
-            // labelTitle
-            // 
-            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(68)))), ((int)(((byte)(86)))));
-            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(100, 0);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(1035, 100);
-            this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "QUẢN LÝ BÁN VÉ MÁY BAY";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelTitle_MouseDown);
-            // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
@@ -196,158 +326,6 @@ namespace QuanLyBanVeChuyenBay
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonQuanLyNhanSu
-            // 
-            this.buttonQuanLyNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonQuanLyNhanSu.FlatAppearance.BorderSize = 0;
-            this.buttonQuanLyNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQuanLyNhanSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuanLyNhanSu.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonQuanLyNhanSu.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_admin_settings_male_401;
-            this.buttonQuanLyNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonQuanLyNhanSu.Location = new System.Drawing.Point(0, 520);
-            this.buttonQuanLyNhanSu.Name = "buttonQuanLyNhanSu";
-            this.buttonQuanLyNhanSu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonQuanLyNhanSu.Size = new System.Drawing.Size(325, 65);
-            this.buttonQuanLyNhanSu.TabIndex = 8;
-            this.buttonQuanLyNhanSu.Text = "  Quản lý nhân sự";
-            this.buttonQuanLyNhanSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonQuanLyNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonQuanLyNhanSu.UseVisualStyleBackColor = true;
-            this.buttonQuanLyNhanSu.Click += new System.EventHandler(this.buttonQuanLyNhanSu_Click);
-            // 
-            // buttonThongTin
-            // 
-            this.buttonThongTin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonThongTin.FlatAppearance.BorderSize = 0;
-            this.buttonThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThongTin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonThongTin.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_about_35;
-            this.buttonThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThongTin.Location = new System.Drawing.Point(0, 455);
-            this.buttonThongTin.Name = "buttonThongTin";
-            this.buttonThongTin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonThongTin.Size = new System.Drawing.Size(325, 65);
-            this.buttonThongTin.TabIndex = 7;
-            this.buttonThongTin.Text = "  Thông tin đặt vé";
-            this.buttonThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThongTin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonThongTin.UseVisualStyleBackColor = true;
-            this.buttonThongTin.Click += new System.EventHandler(this.buttonThongTin_Click);
-            // 
-            // buttonBaoCao
-            // 
-            this.buttonBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonBaoCao.FlatAppearance.BorderSize = 0;
-            this.buttonBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBaoCao.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonBaoCao.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_profit_report_40;
-            this.buttonBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBaoCao.Location = new System.Drawing.Point(0, 390);
-            this.buttonBaoCao.Name = "buttonBaoCao";
-            this.buttonBaoCao.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonBaoCao.Size = new System.Drawing.Size(325, 65);
-            this.buttonBaoCao.TabIndex = 6;
-            this.buttonBaoCao.Text = "  Báo cáo doanh thu";
-            this.buttonBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonBaoCao.UseVisualStyleBackColor = true;
-            this.buttonBaoCao.Click += new System.EventHandler(this.buttonBaoCao_Click);
-            // 
-            // buttonQuyDinh
-            // 
-            this.buttonQuyDinh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonQuyDinh.FlatAppearance.BorderSize = 0;
-            this.buttonQuyDinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuyDinh.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonQuyDinh.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_gear_35;
-            this.buttonQuyDinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonQuyDinh.Location = new System.Drawing.Point(0, 325);
-            this.buttonQuyDinh.Name = "buttonQuyDinh";
-            this.buttonQuyDinh.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonQuyDinh.Size = new System.Drawing.Size(325, 65);
-            this.buttonQuyDinh.TabIndex = 5;
-            this.buttonQuyDinh.Text = "  Quy định chuyến bay";
-            this.buttonQuyDinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonQuyDinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonQuyDinh.UseVisualStyleBackColor = true;
-            this.buttonQuyDinh.Click += new System.EventHandler(this.buttonQuyDinh_Click);
-            // 
-            // buttonTraCuu
-            // 
-            this.buttonTraCuu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonTraCuu.FlatAppearance.BorderSize = 0;
-            this.buttonTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTraCuu.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonTraCuu.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_analyze_40;
-            this.buttonTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTraCuu.Location = new System.Drawing.Point(0, 260);
-            this.buttonTraCuu.Name = "buttonTraCuu";
-            this.buttonTraCuu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonTraCuu.Size = new System.Drawing.Size(325, 65);
-            this.buttonTraCuu.TabIndex = 4;
-            this.buttonTraCuu.Text = "  Tra cứu chuyến bay";
-            this.buttonTraCuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonTraCuu.UseVisualStyleBackColor = true;
-            this.buttonTraCuu.Click += new System.EventHandler(this.buttonTraCuu_Click);
-            // 
-            // buttonDatVeChuyenBay
-            // 
-            this.buttonDatVeChuyenBay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonDatVeChuyenBay.FlatAppearance.BorderSize = 0;
-            this.buttonDatVeChuyenBay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDatVeChuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDatVeChuyenBay.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonDatVeChuyenBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_airport_35;
-            this.buttonDatVeChuyenBay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDatVeChuyenBay.Location = new System.Drawing.Point(0, 195);
-            this.buttonDatVeChuyenBay.Name = "buttonDatVeChuyenBay";
-            this.buttonDatVeChuyenBay.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonDatVeChuyenBay.Size = new System.Drawing.Size(325, 65);
-            this.buttonDatVeChuyenBay.TabIndex = 3;
-            this.buttonDatVeChuyenBay.Text = "  Đặt vé chuyến bay";
-            this.buttonDatVeChuyenBay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDatVeChuyenBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonDatVeChuyenBay.UseVisualStyleBackColor = true;
-            this.buttonDatVeChuyenBay.Click += new System.EventHandler(this.buttonDatVeChuyenBay_Click);
-            // 
-            // buttonLichChuyenBay
-            // 
-            this.buttonLichChuyenBay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonLichChuyenBay.FlatAppearance.BorderSize = 0;
-            this.buttonLichChuyenBay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLichChuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLichChuyenBay.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonLichChuyenBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_add_property_35;
-            this.buttonLichChuyenBay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLichChuyenBay.Location = new System.Drawing.Point(0, 130);
-            this.buttonLichChuyenBay.Name = "buttonLichChuyenBay";
-            this.buttonLichChuyenBay.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.buttonLichChuyenBay.Size = new System.Drawing.Size(325, 65);
-            this.buttonLichChuyenBay.TabIndex = 2;
-            this.buttonLichChuyenBay.Text = "  Nhận lịch chuyến bay";
-            this.buttonLichChuyenBay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLichChuyenBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonLichChuyenBay.UseVisualStyleBackColor = true;
-            this.buttonLichChuyenBay.Click += new System.EventHandler(this.buttonLichChuyenBay_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(68)))), ((int)(((byte)(86)))));
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.LogoApp;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(325, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -365,10 +343,10 @@ namespace QuanLyBanVeChuyenBay
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.panelDesktop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -378,7 +356,6 @@ namespace QuanLyBanVeChuyenBay
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button buttonQuyDinh;
-        private System.Windows.Forms.Button buttonTraCuu;
         private System.Windows.Forms.Button buttonDatVeChuyenBay;
         private System.Windows.Forms.Button buttonLichChuyenBay;
         private System.Windows.Forms.Panel panelTitle;

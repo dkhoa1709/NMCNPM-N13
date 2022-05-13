@@ -40,6 +40,12 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelHangVe = new System.Windows.Forms.Label();
             this.labelNgayDatVe = new System.Windows.Forms.Label();
             this.dataGridViewPhieuDatCho = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxMaChuyenBay = new System.Windows.Forms.TextBox();
@@ -50,7 +56,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelNgayGio = new System.Windows.Forms.Panel();
             this.textBoxSanBayDen = new System.Windows.Forms.TextBox();
             this.panelSanBayDen = new System.Windows.Forms.Panel();
-            this.textBoxHangVe = new System.Windows.Forms.TextBox();
             this.panelHangVe = new System.Windows.Forms.Panel();
             this.textBoxTenHanhKhach = new System.Windows.Forms.TextBox();
             this.panelTenHanhKhach = new System.Windows.Forms.Panel();
@@ -58,17 +63,14 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelCMND = new System.Windows.Forms.Panel();
             this.textBoxDienThoai = new System.Windows.Forms.TextBox();
             this.panelDienThoai = new System.Windows.Forms.Panel();
-            this.pictureBoxNgayDatVe = new System.Windows.Forms.PictureBox();
             this.textBoxNgayDatVe = new System.Windows.Forms.TextBox();
             this.panelNgayDatVe = new System.Windows.Forms.Panel();
             this.textBoxGiaTien = new System.Windows.Forms.TextBox();
             this.panelGiaVe = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.panelEmail = new System.Windows.Forms.Panel();
             this.labelEmail = new System.Windows.Forms.Label();
-            this.textBoxGio = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonThem = new System.Windows.Forms.Button();
             this.buttonTaoMoi = new System.Windows.Forms.Button();
@@ -76,22 +78,22 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonDatCho = new System.Windows.Forms.Button();
             this.buttonThanhToan = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxNgaySinh = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBoxHangVe = new System.Windows.Forms.ComboBox();
+            this.comboBoxGio = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
+            this.pictureBoxNgayDatVe = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuDatCho)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayDatVe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayDatVe)).BeginInit();
             this.SuspendLayout();
             // 
             // labelMaChuyenBay
@@ -215,6 +217,42 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridViewPhieuDatCho.Size = new System.Drawing.Size(479, 260);
             this.dataGridViewPhieuDatCho.TabIndex = 30;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Mã chuyến bay";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Tên hành khách";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Mã hành khách";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Ngày - Giờ";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Sân bay đi";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Sân bay đến";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -319,19 +357,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelSanBayDen.Size = new System.Drawing.Size(260, 1);
             this.panelSanBayDen.TabIndex = 0;
             // 
-            // textBoxHangVe
-            // 
-            this.textBoxHangVe.BackColor = System.Drawing.Color.White;
-            this.textBoxHangVe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxHangVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxHangVe.ForeColor = System.Drawing.Color.Black;
-            this.textBoxHangVe.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBoxHangVe.Location = new System.Drawing.Point(193, 270);
-            this.textBoxHangVe.Multiline = true;
-            this.textBoxHangVe.Name = "textBoxHangVe";
-            this.textBoxHangVe.Size = new System.Drawing.Size(260, 24);
-            this.textBoxHangVe.TabIndex = 6;
-            // 
             // panelHangVe
             // 
             this.panelHangVe.BackColor = System.Drawing.Color.Black;
@@ -403,17 +428,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelDienThoai.Size = new System.Drawing.Size(260, 1);
             this.panelDienThoai.TabIndex = 0;
             // 
-            // pictureBoxNgayDatVe
-            // 
-            this.pictureBoxNgayDatVe.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
-            this.pictureBoxNgayDatVe.Location = new System.Drawing.Point(428, 313);
-            this.pictureBoxNgayDatVe.Name = "pictureBoxNgayDatVe";
-            this.pictureBoxNgayDatVe.Size = new System.Drawing.Size(25, 25);
-            this.pictureBoxNgayDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxNgayDatVe.TabIndex = 64;
-            this.pictureBoxNgayDatVe.TabStop = false;
-            this.pictureBoxNgayDatVe.Click += new System.EventHandler(this.pictureBoxNgayDatVe_Click);
-            // 
             // textBoxNgayDatVe
             // 
             this.textBoxNgayDatVe.BackColor = System.Drawing.Color.White;
@@ -457,18 +471,18 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelGiaVe.Size = new System.Drawing.Size(260, 1);
             this.panelGiaVe.TabIndex = 0;
             // 
-            // textBox1
+            // textBoxEmail
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox1.Location = new System.Drawing.Point(705, 201);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 24);
-            this.textBox1.TabIndex = 11;
+            this.textBoxEmail.BackColor = System.Drawing.Color.White;
+            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmail.ForeColor = System.Drawing.Color.Black;
+            this.textBoxEmail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBoxEmail.Location = new System.Drawing.Point(705, 201);
+            this.textBoxEmail.Multiline = true;
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(260, 24);
+            this.textBoxEmail.TabIndex = 11;
             // 
             // panelEmail
             // 
@@ -488,19 +502,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelEmail.TabIndex = 66;
             this.labelEmail.Text = "Email:";
             // 
-            // textBoxGio
-            // 
-            this.textBoxGio.BackColor = System.Drawing.Color.White;
-            this.textBoxGio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxGio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGio.ForeColor = System.Drawing.Color.Black;
-            this.textBoxGio.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBoxGio.Location = new System.Drawing.Point(364, 179);
-            this.textBoxGio.Multiline = true;
-            this.textBoxGio.Name = "textBoxGio";
-            this.textBoxGio.Size = new System.Drawing.Size(89, 24);
-            this.textBoxGio.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -510,17 +511,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label3.Size = new System.Drawing.Size(15, 20);
             this.label3.TabIndex = 102;
             this.label3.Text = "-";
-            // 
-            // pictureBoxNgayBay
-            // 
-            this.pictureBoxNgayBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
-            this.pictureBoxNgayBay.Location = new System.Drawing.Point(312, 177);
-            this.pictureBoxNgayBay.Name = "pictureBoxNgayBay";
-            this.pictureBoxNgayBay.Size = new System.Drawing.Size(25, 25);
-            this.pictureBoxNgayBay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxNgayBay.TabIndex = 103;
-            this.pictureBoxNgayBay.TabStop = false;
-            this.pictureBoxNgayBay.Click += new System.EventHandler(this.pictureBoxNgayBay_Click);
             // 
             // panel1
             // 
@@ -607,28 +597,18 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonThanhToan.Text = "Thanh toán";
             this.buttonThanhToan.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // textBoxNgaySinh
             // 
-            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
-            this.pictureBox1.Location = new System.Drawing.Point(940, 247);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 109;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox2.Location = new System.Drawing.Point(705, 249);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(235, 25);
-            this.textBox2.TabIndex = 108;
+            this.textBoxNgaySinh.BackColor = System.Drawing.Color.White;
+            this.textBoxNgaySinh.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNgaySinh.ForeColor = System.Drawing.Color.Black;
+            this.textBoxNgaySinh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBoxNgaySinh.Location = new System.Drawing.Point(705, 249);
+            this.textBoxNgaySinh.Multiline = true;
+            this.textBoxNgaySinh.Name = "textBoxNgaySinh";
+            this.textBoxNgaySinh.Size = new System.Drawing.Size(235, 25);
+            this.textBoxNgaySinh.TabIndex = 108;
             // 
             // panel3
             // 
@@ -648,41 +628,75 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label4.TabIndex = 107;
             this.label4.Text = "Ngày sinh:";
             // 
-            // Column1
+            // comboBoxHangVe
             // 
-            this.Column1.HeaderText = "Mã chuyến bay";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
+            this.comboBoxHangVe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxHangVe.FormattingEnabled = true;
+            this.comboBoxHangVe.Items.AddRange(new object[] {
+            "Vé hạng 1",
+            "Vé hạng 2"});
+            this.comboBoxHangVe.Location = new System.Drawing.Point(193, 268);
+            this.comboBoxHangVe.Name = "comboBoxHangVe";
+            this.comboBoxHangVe.Size = new System.Drawing.Size(260, 24);
+            this.comboBoxHangVe.TabIndex = 6;
             // 
-            // Column2
+            // comboBoxGio
             // 
-            this.Column2.HeaderText = "Tên hành khách";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
+            this.comboBoxGio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxGio.FormattingEnabled = true;
+            this.comboBoxGio.Items.AddRange(new object[] {
+            "6H30",
+            "7H30",
+            "8H30",
+            "9H30",
+            "10H30"});
+            this.comboBoxGio.Location = new System.Drawing.Point(364, 179);
+            this.comboBoxGio.Name = "comboBoxGio";
+            this.comboBoxGio.Size = new System.Drawing.Size(89, 24);
+            this.comboBoxGio.TabIndex = 110;
             // 
-            // Column3
+            // pictureBox2
             // 
-            this.Column3.HeaderText = "Mã hành khách";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
+            this.pictureBox2.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_back_40;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 111;
+            this.pictureBox2.TabStop = false;
             // 
-            // Column4
+            // pictureBox1
             // 
-            this.Column4.HeaderText = "Ngày - Giờ";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
+            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
+            this.pictureBox1.Location = new System.Drawing.Point(940, 247);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 109;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Column5
+            // pictureBoxNgayBay
             // 
-            this.Column5.HeaderText = "Sân bay đi";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
+            this.pictureBoxNgayBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
+            this.pictureBoxNgayBay.Location = new System.Drawing.Point(312, 177);
+            this.pictureBoxNgayBay.Name = "pictureBoxNgayBay";
+            this.pictureBoxNgayBay.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxNgayBay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxNgayBay.TabIndex = 103;
+            this.pictureBoxNgayBay.TabStop = false;
+            this.pictureBoxNgayBay.Click += new System.EventHandler(this.pictureBoxNgayBay_Click);
             // 
-            // Column6
+            // pictureBoxNgayDatVe
             // 
-            this.Column6.HeaderText = "Sân bay đến";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
+            this.pictureBoxNgayDatVe.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
+            this.pictureBoxNgayDatVe.Location = new System.Drawing.Point(428, 313);
+            this.pictureBoxNgayDatVe.Name = "pictureBoxNgayDatVe";
+            this.pictureBoxNgayDatVe.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxNgayDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxNgayDatVe.TabIndex = 64;
+            this.pictureBoxNgayDatVe.TabStop = false;
+            this.pictureBoxNgayDatVe.Click += new System.EventHandler(this.pictureBoxNgayDatVe_Click);
             // 
             // FrmDatCho
             // 
@@ -690,16 +704,18 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 655);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.comboBoxGio);
+            this.Controls.Add(this.comboBoxHangVe);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxNgaySinh);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBoxNgayBay);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxGio);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.panelEmail);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.textBoxGiaTien);
@@ -713,7 +729,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.panelCMND);
             this.Controls.Add(this.textBoxTenHanhKhach);
             this.Controls.Add(this.panelTenHanhKhach);
-            this.Controls.Add(this.textBoxHangVe);
             this.Controls.Add(this.panelHangVe);
             this.Controls.Add(this.textBoxSanBayDen);
             this.Controls.Add(this.panelSanBayDen);
@@ -737,15 +752,17 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.labelSanBayDi);
             this.Controls.Add(this.labelMaChuyenBay);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDatCho";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐẶT CHỖ CHUYẾN BAY";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuDatCho)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayDatVe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayDatVe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -773,7 +790,6 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Panel panelNgayGio;
         private System.Windows.Forms.TextBox textBoxSanBayDen;
         private System.Windows.Forms.Panel panelSanBayDen;
-        private System.Windows.Forms.TextBox textBoxHangVe;
         private System.Windows.Forms.Panel panelHangVe;
         private System.Windows.Forms.TextBox textBoxTenHanhKhach;
         private System.Windows.Forms.Panel panelTenHanhKhach;
@@ -786,10 +802,9 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Panel panelNgayDatVe;
         private System.Windows.Forms.TextBox textBoxGiaTien;
         private System.Windows.Forms.Panel panelGiaVe;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Panel panelEmail;
         private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.TextBox textBoxGio;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBoxNgayBay;
         private System.Windows.Forms.Panel panel1;
@@ -806,8 +821,11 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxNgaySinh;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBoxHangVe;
+        private System.Windows.Forms.ComboBox comboBoxGio;
+        public System.Windows.Forms.PictureBox pictureBox2;
     }
 }

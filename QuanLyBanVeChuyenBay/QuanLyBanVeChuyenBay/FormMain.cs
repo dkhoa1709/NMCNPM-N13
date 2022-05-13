@@ -87,11 +87,6 @@ namespace QuanLyBanVeChuyenBay
 
         private void buttonDatVeChuyenBay_Click(object sender, EventArgs e)
         {
-            OpenchildForm(new Forms.FrmDatCho(), sender);
-        }
-
-        private void buttonTraCuu_Click(object sender, EventArgs e)
-        {
             OpenchildForm(new Forms.FrmTraCuu(), sender);
         }
 
@@ -126,7 +121,7 @@ namespace QuanLyBanVeChuyenBay
         {
             DisableButton();
             labelTitle.Text = "QUẢN LÝ BÁN VÉ MÁY BAY";
-            panelTitle.BackColor = Color.FromArgb(51, 51, 76);
+            panelTitle.BackColor = Color.FromArgb(27, 105, 134);
             currentButton = null;
             buttonCloseChildForm.Visible = false;
         }
@@ -165,18 +160,18 @@ namespace QuanLyBanVeChuyenBay
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            if(CheckAccountManager(a))
-            {
-                buttonDatVeChuyenBay.Visible = false;
-                buttonTraCuu.Visible = false;
-                buttonThongTin.Visible = false;
-            }
-            else
-            {
-                buttonQuyDinh.Visible = false;
-                buttonBaoCao.Visible = false;
-                buttonQuanLyNhanSu.Visible = false;
-            }
+            //if (CheckAccountManager(a))
+            //{
+            //    buttonDatVeChuyenBay.Visible = false;
+            //    buttonTraCuu.Visible = false;
+            //    buttonThongTin.Visible = false;
+            //}
+            //else
+            //{
+            //    buttonQuyDinh.Visible = false;
+            //    buttonBaoCao.Visible = false;
+            //    buttonQuanLyNhanSu.Visible = false;
+            //}
         }
 
         private void labelTitle_MouseDown(object sender, MouseEventArgs e)

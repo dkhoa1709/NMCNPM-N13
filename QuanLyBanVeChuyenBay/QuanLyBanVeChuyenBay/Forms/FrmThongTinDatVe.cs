@@ -21,13 +21,14 @@ namespace QuanLyBanVeChuyenBay.Forms
         {
             ChangeReadOnly(groupBox1);
             ChangeReadOnly(groupBox2);
+            comboBoxGio.Visible = true;
         }
 
         private void ChangeReadOnly(GroupBox x)
         {
             foreach (Control btns in x.Controls)
             {
-                if (btns.GetType() == typeof(TextBox) && !btns.Name.Equals("textBoxGiaTien"))
+                if (btns.GetType() == typeof(TextBox) && !btns.Name.Equals("textBoxGiaTien") && !btns.Name.Equals("textBoxMaKhachHang"))
                 {
                     TextBox txb = (TextBox)btns;
                     txb.ReadOnly = false;
@@ -90,7 +91,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void CalendarFormOnDateTimeHandlerNgayBay(DateTime sender)
         {
-            textBoxNgay.Text = $"{sender.ToString("MM-dd-yyyy")}";
+            textBoxNgay.Text = $"{sender.ToString("dd-MM-yyyy")}";
         }
     }
 }

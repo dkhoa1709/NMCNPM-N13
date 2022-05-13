@@ -29,6 +29,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -45,7 +46,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelGiaVe = new System.Windows.Forms.Panel();
             this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxGio = new System.Windows.Forms.TextBox();
             this.textBoxNgay = new System.Windows.Forms.TextBox();
             this.panelNgayGio = new System.Windows.Forms.Panel();
             this.textBoxHangVe = new System.Windows.Forms.TextBox();
@@ -80,6 +80,8 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonLuu = new System.Windows.Forms.Button();
             this.buttonSua = new System.Windows.Forms.Button();
+            this.comboBoxGio = new System.Windows.Forms.ComboBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -229,11 +231,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.comboBoxGio);
             this.groupBox2.Controls.Add(this.textBoxGiaTien);
             this.groupBox2.Controls.Add(this.panelGiaVe);
             this.groupBox2.Controls.Add(this.pictureBoxNgayBay);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBoxGio);
             this.groupBox2.Controls.Add(this.textBoxNgay);
             this.groupBox2.Controls.Add(this.panelNgayGio);
             this.groupBox2.Controls.Add(this.textBoxHangVe);
@@ -303,19 +305,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label3.Size = new System.Drawing.Size(15, 20);
             this.label3.TabIndex = 107;
             this.label3.Text = "-";
-            // 
-            // textBoxGio
-            // 
-            this.textBoxGio.BackColor = System.Drawing.Color.White;
-            this.textBoxGio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxGio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGio.ForeColor = System.Drawing.Color.Black;
-            this.textBoxGio.Location = new System.Drawing.Point(595, 174);
-            this.textBoxGio.Multiline = true;
-            this.textBoxGio.Name = "textBoxGio";
-            this.textBoxGio.ReadOnly = true;
-            this.textBoxGio.Size = new System.Drawing.Size(58, 24);
-            this.textBoxGio.TabIndex = 14;
             // 
             // textBoxNgay
             // 
@@ -658,6 +647,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Mã khách hàng");
             // 
             // buttonLuu
             // 
@@ -682,6 +672,22 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = true;
             this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
+            // 
+            // comboBoxGio
+            // 
+            this.comboBoxGio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxGio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGio.FormattingEnabled = true;
+            this.comboBoxGio.Location = new System.Drawing.Point(595, 174);
+            this.comboBoxGio.Name = "comboBoxGio";
+            this.comboBoxGio.Size = new System.Drawing.Size(58, 24);
+            this.comboBoxGio.TabIndex = 14;
+            this.comboBoxGio.Visible = false;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.BackColor = System.Drawing.Color.White;
+            this.toolTip1.ForeColor = System.Drawing.Color.Black;
             // 
             // FrmThongTinDatVe
             // 
@@ -732,7 +738,6 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Panel panelGiaVe;
         private System.Windows.Forms.PictureBox pictureBoxNgayBay;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxGio;
         private System.Windows.Forms.TextBox textBoxNgay;
         private System.Windows.Forms.Panel panelNgayGio;
         private System.Windows.Forms.TextBox textBoxHangVe;
@@ -770,5 +775,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.ComboBox comboBoxGio;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

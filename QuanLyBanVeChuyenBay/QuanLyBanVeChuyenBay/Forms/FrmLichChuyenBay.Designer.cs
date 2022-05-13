@@ -29,7 +29,6 @@ namespace QuanLyBanVeChuyenBay.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMain = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonSua = new System.Windows.Forms.Button();
@@ -38,7 +37,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxHangVe = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -62,6 +61,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelMaChuyenBay = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panelHangVe = new System.Windows.Forms.Panel();
             this.panelMain.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -131,13 +131,15 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonThem.TabIndex = 6;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = true;
+            this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.panelHangVe);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBoxHangVe);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.panel1);
@@ -178,28 +180,29 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(549, 37);
+            this.label3.Location = new System.Drawing.Point(560, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 42;
-            this.label3.Text = "Hạng vé";
+            this.label3.Text = "Hạng vé:";
             // 
-            // comboBox1
+            // comboBoxHangVe
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxHangVe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxHangVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxHangVe.FormattingEnabled = true;
+            this.comboBoxHangVe.Items.AddRange(new object[] {
             "vé hạng 1",
             "vé hạng 2"});
-            this.comboBox1.Location = new System.Drawing.Point(634, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 28);
-            this.comboBox1.TabIndex = 41;
+            this.comboBoxHangVe.Location = new System.Drawing.Point(649, 37);
+            this.comboBoxHangVe.Name = "comboBoxHangVe";
+            this.comboBoxHangVe.Size = new System.Drawing.Size(135, 28);
+            this.comboBoxHangVe.TabIndex = 41;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(778, 37);
+            this.label2.Location = new System.Drawing.Point(787, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(15, 20);
             this.label2.TabIndex = 40;
@@ -227,14 +230,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -400,6 +395,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -417,6 +413,14 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1044, 227);
             this.panel3.TabIndex = 17;
+            // 
+            // panelHangVe
+            // 
+            this.panelHangVe.BackColor = System.Drawing.Color.Black;
+            this.panelHangVe.Location = new System.Drawing.Point(649, 61);
+            this.panelHangVe.Name = "panelHangVe";
+            this.panelHangVe.Size = new System.Drawing.Size(135, 1);
+            this.panelHangVe.TabIndex = 45;
             // 
             // FrmLichChuyenBay
             // 
@@ -466,7 +470,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Label labelSanBayDi;
         private System.Windows.Forms.Label labelMaChuyenBay;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxHangVe;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel1;
@@ -474,5 +478,6 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Panel panelHangVe;
     }
 }

@@ -31,20 +31,19 @@ namespace QuanLyBanVeChuyenBay.Forms
                 // reposition to be next to calendar button
                 calendarForm.Location = new Point(Left + (Width - 100), Bottom - 80);
 
-                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandlerNgaySinh;
+                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandlerNgayDatVe;
                 calendarForm.ShowDialog();
-
             }
             finally
             {
-                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandlerNgaySinh;
+                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandlerNgayDatVe;
                 calendarForm.Dispose();
             }
         }
 
-        private void CalendarFormOnDateTimeHandlerNgaySinh(DateTime sender)
+        private void CalendarFormOnDateTimeHandlerNgayDatVe(DateTime sender)
         {
-            textBoxNgayDatVe.Text = $"{sender.ToString("MM-dd-yyyy")}";
+            textBoxNgayDatVe.Text = $"{sender.ToString("dd-MM-yyyy")}";
         }
 
         private void buttonTaoMoi_Click(object sender, EventArgs e)
@@ -86,7 +85,42 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void CalendarFormOnDateTimeHandlerNgayBay(DateTime sender)
         {
-            textBoxNgay.Text = $"{sender.ToString("MM-dd-yyyy")}";
+            textBoxNgay.Text = $"{sender.ToString("dd-MM-yyyy")}";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FrmCalendar calendarForm = null;
+
+            try
+            {
+                // decide to pass a date time or not
+                calendarForm = DateTime.TryParse(textBoxNgay.Text, out var currentDateTime) ?
+                    new FrmCalendar(currentDateTime) :
+                    new FrmCalendar();
+
+                // reposition to be next to calendar button
+                calendarForm.Location = new Point(Left + (Width - 100), Bottom - 80);
+
+                calendarForm.DateTimeHandler += CalendarFormOnDateTimeHandlerNgaySinh;
+                calendarForm.ShowDialog();
+
+            }
+            finally
+            {
+                calendarForm.DateTimeHandler -= CalendarFormOnDateTimeHandlerNgaySinh;
+                calendarForm.Dispose();
+            }
+        }
+
+        private void CalendarFormOnDateTimeHandlerNgaySinh(DateTime sender)
+        {
+            textBoxNgaySinh.Text = $"{sender.ToString("dd-MM-yyyy")}";
+        }
+
+        public void SetData(string a)
+        {
+            textBoxMaChuyenBay.Text = a;
         }
     }
 }

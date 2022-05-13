@@ -13,14 +13,14 @@ namespace QuanLyBanVeChuyenBay.Forms
 {
     public partial class FrmThemNhanVien : Form
     {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        //[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
-        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int RightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
+        //private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int RightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
         public FrmThemNhanVien()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
+            //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
         }
 
         private void pictureBoxNgaySinh_Click(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void CalendarFormOnDateTimeHandlerNgaySinh(DateTime sender)
         {
-            textBoxNgaySinh.Text = $"{sender.ToString("MM-dd-yyyy")}";
+            textBoxNgaySinh.Text = $"{sender.ToString("dd-MM-yyyy")}";
         }
 
         private void buttonHoanTat_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void CalendarFormOnDateTimeHandlerNgayBatDau(DateTime sender)
         {
-            textBoxNgayBatDau.Text = $"{sender.ToString("MM-dd-yyyy")}";
+            textBoxNgayBatDau.Text = $"{sender.ToString("dd-MM-yyyy")}";
         }
     }
 }
