@@ -32,7 +32,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelFill = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelShow = new System.Windows.Forms.Panel();
+            this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
             this.textBoxNgaySinh = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.labelNgayGio = new System.Windows.Forms.Label();
@@ -45,17 +48,14 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.panelView = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panelShow = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
             this.panelFill.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).BeginInit();
             this.panelView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).BeginInit();
             this.SuspendLayout();
             // 
             // panelFill
@@ -88,6 +88,17 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel3.Size = new System.Drawing.Size(570, 379);
             this.panel3.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.planecenter;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(570, 379);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panelShow);
@@ -107,6 +118,28 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(612, 379);
             this.panel2.TabIndex = 0;
+            // 
+            // panelShow
+            // 
+            this.panelShow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelShow.Location = new System.Drawing.Point(34, 244);
+            this.panelShow.Name = "panelShow";
+            this.panelShow.Size = new System.Drawing.Size(109, 95);
+            this.panelShow.TabIndex = 133;
+            this.panelShow.Visible = false;
+            // 
+            // pictureBoxNgayBay
+            // 
+            this.pictureBoxNgayBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
+            this.pictureBoxNgayBay.Location = new System.Drawing.Point(492, 195);
+            this.pictureBoxNgayBay.Name = "pictureBoxNgayBay";
+            this.pictureBoxNgayBay.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxNgayBay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxNgayBay.TabIndex = 132;
+            this.pictureBoxNgayBay.TabStop = false;
+            this.pictureBoxNgayBay.Click += new System.EventHandler(this.pictureBoxNgayBay_Click);
             // 
             // textBoxNgaySinh
             // 
@@ -216,6 +249,8 @@ namespace QuanLyBanVeChuyenBay.Forms
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -224,42 +259,10 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1182, 272);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // panelShow
-            // 
-            this.panelShow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelShow.Location = new System.Drawing.Point(34, 244);
-            this.panelShow.Name = "panelShow";
-            this.panelShow.Size = new System.Drawing.Size(109, 95);
-            this.panelShow.TabIndex = 133;
-            this.panelShow.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.planecenter;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(570, 379);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBoxNgayBay
-            // 
-            this.pictureBoxNgayBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
-            this.pictureBoxNgayBay.Location = new System.Drawing.Point(492, 195);
-            this.pictureBoxNgayBay.Name = "pictureBoxNgayBay";
-            this.pictureBoxNgayBay.Size = new System.Drawing.Size(25, 25);
-            this.pictureBoxNgayBay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxNgayBay.TabIndex = 132;
-            this.pictureBoxNgayBay.TabStop = false;
-            this.pictureBoxNgayBay.Click += new System.EventHandler(this.pictureBoxNgayBay_Click);
             // 
             // FrmTraCuu
             // 
@@ -271,16 +274,16 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Controls.Add(this.panelFill);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmTraCuu";
-            this.Text = "TRA CỨU CHUYẾN BAY";
+            this.Text = "ĐẶT VÉ CHUYẾN BAY";
             this.panelFill.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).EndInit();
             this.panelView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).EndInit();
             this.ResumeLayout(false);
 
         }

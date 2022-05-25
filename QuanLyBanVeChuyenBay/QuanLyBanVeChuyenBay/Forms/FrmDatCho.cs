@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace QuanLyBanVeChuyenBay.Forms
         {
             InitializeComponent();
         }
+
+        DataTable table = new DataTable();
 
         private void pictureBoxNgayDatVe_Click(object sender, EventArgs e)
         {
@@ -118,9 +121,41 @@ namespace QuanLyBanVeChuyenBay.Forms
             textBoxNgaySinh.Text = $"{sender.ToString("dd-MM-yyyy")}";
         }
 
-        public void SetData(string a)
+        public void SetData(string MaCB, string SBDi, string Ngay, string SBDen)
         {
-            textBoxMaChuyenBay.Text = a;
+            textBoxMaChuyenBay.Text = MaCB;
+            textBoxSanBayDi.Text = SBDi;
+            textBoxSanBayDen.Text = SBDen;
+            textBoxNgay.Text = Ngay;
+            textBoxNgayDatVe.Text = DateTime.Now.ToString("dd-MM-yyyy");
+        }
+
+        public void ResetData()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(TextBox))
+                {
+                    TextBox txb = (TextBox)btns;
+                    txb.Text = "";
+                }
+            }
+        }
+
+        private void buttonThem_Click(object sender, EventArgs e)
+        {
+            table.Rows.Add(textBoxMaChuyenBay.Text, textBoxTenHanhKhach.Text, textBoxNgay.Text, textBoxSanBayDi.Text, textBoxSanBayDen.Text);
+            dataGridViewPhieuDatCho.DataSource = table;
+        }
+
+        private void FrmDatCho_Load(object sender, EventArgs e)
+        {
+            table.Columns.Add("Mã chuyến bay", typeof(string));
+            table.Columns.Add("Tên hành khách", typeof(string));
+            table.Columns.Add("Ngày - giờ", typeof(string));
+            table.Columns.Add("Sân bay đi", typeof(string));
+            table.Columns.Add("Sân bay đến", typeof(string));
+            dataGridViewPhieuDatCho.DataSource = table;
         }
     }
 }

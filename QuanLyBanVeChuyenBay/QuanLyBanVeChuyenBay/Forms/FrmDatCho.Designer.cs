@@ -40,12 +40,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelHangVe = new System.Windows.Forms.Label();
             this.labelNgayDatVe = new System.Windows.Forms.Label();
             this.dataGridViewPhieuDatCho = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxMaChuyenBay = new System.Windows.Forms.TextBox();
@@ -70,10 +64,8 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.panelEmail = new System.Windows.Forms.Panel();
             this.labelEmail = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonThem = new System.Windows.Forms.Button();
-            this.buttonTaoMoi = new System.Windows.Forms.Button();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonDatCho = new System.Windows.Forms.Button();
@@ -82,18 +74,19 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxHangVe = new System.Windows.Forms.ComboBox();
-            this.comboBoxGio = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
             this.pictureBoxNgayDatVe = new System.Windows.Forms.PictureBox();
+            this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxGio = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuDatCho)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayDatVe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).BeginInit();
             this.SuspendLayout();
             // 
             // labelMaChuyenBay
@@ -203,55 +196,12 @@ namespace QuanLyBanVeChuyenBay.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewPhieuDatCho.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewPhieuDatCho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPhieuDatCho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
             this.dataGridViewPhieuDatCho.Location = new System.Drawing.Point(510, 304);
             this.dataGridViewPhieuDatCho.Name = "dataGridViewPhieuDatCho";
             this.dataGridViewPhieuDatCho.RowHeadersWidth = 51;
             this.dataGridViewPhieuDatCho.RowTemplate.Height = 24;
-            this.dataGridViewPhieuDatCho.Size = new System.Drawing.Size(479, 260);
+            this.dataGridViewPhieuDatCho.Size = new System.Drawing.Size(496, 260);
             this.dataGridViewPhieuDatCho.TabIndex = 30;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã chuyến bay";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên hành khách";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Mã hành khách";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Ngày - Giờ";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Sân bay đi";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Sân bay đến";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
             // 
             // label1
             // 
@@ -283,6 +233,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxMaChuyenBay.Location = new System.Drawing.Point(193, 89);
             this.textBoxMaChuyenBay.Multiline = true;
             this.textBoxMaChuyenBay.Name = "textBoxMaChuyenBay";
+            this.textBoxMaChuyenBay.ReadOnly = true;
             this.textBoxMaChuyenBay.Size = new System.Drawing.Size(260, 24);
             this.textBoxMaChuyenBay.TabIndex = 1;
             // 
@@ -304,6 +255,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxSanBayDi.Location = new System.Drawing.Point(193, 135);
             this.textBoxSanBayDi.Multiline = true;
             this.textBoxSanBayDi.Name = "textBoxSanBayDi";
+            this.textBoxSanBayDi.ReadOnly = true;
             this.textBoxSanBayDi.Size = new System.Drawing.Size(260, 24);
             this.textBoxSanBayDi.TabIndex = 2;
             // 
@@ -325,6 +277,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxNgay.Location = new System.Drawing.Point(193, 179);
             this.textBoxNgay.Multiline = true;
             this.textBoxNgay.Name = "textBoxNgay";
+            this.textBoxNgay.ReadOnly = true;
             this.textBoxNgay.Size = new System.Drawing.Size(119, 24);
             this.textBoxNgay.TabIndex = 3;
             // 
@@ -346,6 +299,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxSanBayDen.Location = new System.Drawing.Point(193, 224);
             this.textBoxSanBayDen.Multiline = true;
             this.textBoxSanBayDen.Name = "textBoxSanBayDen";
+            this.textBoxSanBayDen.ReadOnly = true;
             this.textBoxSanBayDen.Size = new System.Drawing.Size(260, 24);
             this.textBoxSanBayDen.TabIndex = 5;
             // 
@@ -502,20 +456,9 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelEmail.TabIndex = 66;
             this.labelEmail.Text = "Email:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(343, 181);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(15, 20);
-            this.label3.TabIndex = 102;
-            this.label3.Text = "-";
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.buttonThem);
-            this.panel1.Controls.Add(this.buttonTaoMoi);
             this.panel1.Controls.Add(this.buttonXoa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 570);
@@ -528,25 +471,13 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonThem.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThem.Location = new System.Drawing.Point(369, 22);
+            this.buttonThem.Location = new System.Drawing.Point(662, 22);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.Size = new System.Drawing.Size(150, 40);
             this.buttonThem.TabIndex = 14;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = true;
-            // 
-            // buttonTaoMoi
-            // 
-            this.buttonTaoMoi.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.buttonTaoMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTaoMoi.Location = new System.Drawing.Point(569, 22);
-            this.buttonTaoMoi.Name = "buttonTaoMoi";
-            this.buttonTaoMoi.Size = new System.Drawing.Size(150, 40);
-            this.buttonTaoMoi.TabIndex = 15;
-            this.buttonTaoMoi.Text = "Tạo mới";
-            this.buttonTaoMoi.UseVisualStyleBackColor = true;
-            this.buttonTaoMoi.Click += new System.EventHandler(this.buttonTaoMoi_Click);
+            this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
             // 
             // buttonXoa
             // 
@@ -554,7 +485,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoa.ForeColor = System.Drawing.Color.Black;
-            this.buttonXoa.Location = new System.Drawing.Point(769, 22);
+            this.buttonXoa.Location = new System.Drawing.Point(856, 22);
             this.buttonXoa.Name = "buttonXoa";
             this.buttonXoa.Size = new System.Drawing.Size(150, 40);
             this.buttonXoa.TabIndex = 16;
@@ -640,21 +571,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.comboBoxHangVe.Size = new System.Drawing.Size(260, 24);
             this.comboBoxHangVe.TabIndex = 6;
             // 
-            // comboBoxGio
-            // 
-            this.comboBoxGio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxGio.FormattingEnabled = true;
-            this.comboBoxGio.Items.AddRange(new object[] {
-            "6H30",
-            "7H30",
-            "8H30",
-            "9H30",
-            "10H30"});
-            this.comboBoxGio.Location = new System.Drawing.Point(364, 179);
-            this.comboBoxGio.Name = "comboBoxGio";
-            this.comboBoxGio.Size = new System.Drawing.Size(89, 24);
-            this.comboBoxGio.TabIndex = 110;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.icons8_back_40;
@@ -676,6 +592,17 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pictureBoxNgayDatVe
+            // 
+            this.pictureBoxNgayDatVe.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
+            this.pictureBoxNgayDatVe.Location = new System.Drawing.Point(428, 313);
+            this.pictureBoxNgayDatVe.Name = "pictureBoxNgayDatVe";
+            this.pictureBoxNgayDatVe.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxNgayDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxNgayDatVe.TabIndex = 64;
+            this.pictureBoxNgayDatVe.TabStop = false;
+            this.pictureBoxNgayDatVe.Click += new System.EventHandler(this.pictureBoxNgayDatVe_Click);
+            // 
             // pictureBoxNgayBay
             // 
             this.pictureBoxNgayBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
@@ -687,16 +614,30 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.pictureBoxNgayBay.TabStop = false;
             this.pictureBoxNgayBay.Click += new System.EventHandler(this.pictureBoxNgayBay_Click);
             // 
-            // pictureBoxNgayDatVe
+            // label3
             // 
-            this.pictureBoxNgayDatVe.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
-            this.pictureBoxNgayDatVe.Location = new System.Drawing.Point(428, 313);
-            this.pictureBoxNgayDatVe.Name = "pictureBoxNgayDatVe";
-            this.pictureBoxNgayDatVe.Size = new System.Drawing.Size(25, 25);
-            this.pictureBoxNgayDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxNgayDatVe.TabIndex = 64;
-            this.pictureBoxNgayDatVe.TabStop = false;
-            this.pictureBoxNgayDatVe.Click += new System.EventHandler(this.pictureBoxNgayDatVe_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(343, 181);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(15, 20);
+            this.label3.TabIndex = 102;
+            this.label3.Text = "-";
+            // 
+            // comboBoxGio
+            // 
+            this.comboBoxGio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxGio.FormattingEnabled = true;
+            this.comboBoxGio.Items.AddRange(new object[] {
+            "6H30",
+            "7H30",
+            "8H30",
+            "9H30",
+            "10H30"});
+            this.comboBoxGio.Location = new System.Drawing.Point(364, 179);
+            this.comboBoxGio.Name = "comboBoxGio";
+            this.comboBoxGio.Size = new System.Drawing.Size(89, 24);
+            this.comboBoxGio.TabIndex = 110;
             // 
             // FrmDatCho
             // 
@@ -756,13 +697,14 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.Name = "FrmDatCho";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐẶT CHỖ CHUYẾN BAY";
+            this.Load += new System.EventHandler(this.FrmDatCho_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuDatCho)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayDatVe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -805,27 +747,20 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Panel panelEmail;
         private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBoxNgayBay;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonThem;
-        private System.Windows.Forms.Button buttonTaoMoi;
         private System.Windows.Forms.Button buttonXoa;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonDatCho;
         private System.Windows.Forms.Button buttonThanhToan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBoxNgaySinh;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxHangVe;
-        private System.Windows.Forms.ComboBox comboBoxGio;
         public System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxNgayBay;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBoxGio;
     }
 }
