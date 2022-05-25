@@ -45,5 +45,10 @@ namespace QuanLyBanVeChuyenBay.Forms
 
             //sqlConn.Close();
         }
+
+        private void buttonAddSanBayTG_Click(object sender, EventArgs e)
+        {
+            new FrmThemSanBayTrungGian().ShowDialog();
+        }
     }
 }

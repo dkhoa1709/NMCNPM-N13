@@ -26,3 +26,4 @@ C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\Qua
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmSuaThongTinNhanVien.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmThongTinDatVe.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmDoiMatKhau.resources
+C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmThemSanBayTrungGian.resources

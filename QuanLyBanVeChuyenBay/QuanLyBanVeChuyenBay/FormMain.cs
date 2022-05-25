@@ -156,7 +156,6 @@ namespace QuanLyBanVeChuyenBay
                 return true;
             return false;
         }
-        int a = 1;
 
         private void FormMain_Load(object sender, EventArgs e)
         {
