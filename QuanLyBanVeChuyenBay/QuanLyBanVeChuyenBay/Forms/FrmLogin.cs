@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,36 +20,95 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (textBoxUserName.Text == "dkhoa1709" && textBoxPassWord.Text == "dkhoa1709")
-            {
-                new FormMain().Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Username or Password is incorrect!");
-                textBoxUserName.Clear();
-                textBoxPassWord.Clear();
-            }
+            Login();
         }
 
         private void textBoxPassWord_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 buttonLogin.PerformClick();
-            }    
+            }
         }
 
         private void linkLabelSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+
             this.Hide();
         }
 
         private void FrmLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private bool EmptyTextBoxes()
+        {
+            if (string.IsNullOrEmpty(textBoxUserName.Text) || string.IsNullOrEmpty(textBoxPassWord.Text))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private void Login()
+        {
+            if (this.EmptyTextBoxes())
+            {
+                if (EmptyTextBoxes())
+                {
+                    MessageBox.Show("Something is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    if (!CorrectPassword())
+                    {
+                        MessageBox.Show("User name or Password is incorrect", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+            }
+            var frm = new FormMain();
+            frm.FormClosing += delegate { this.Show(); };
+            this.ResetTexts();
+            this.Hide();
+            frm.Show();
+        }
+
+        private bool CorrectPassword()
+        {
+            var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
+            var sqlConn = new SqlConnection(strConn);
+            sqlConn.Open();
+            var sqlCommand = new SqlCommand("SELECT * FROM [dbo].[NHANSU]", sqlConn);
+            var reader = sqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                if (textBoxUserName.Text == reader.GetString(0) | textBoxPassWord.Text == reader.GetString(1))
+                {
+                    reader.Close();
+                    sqlCommand.Dispose();
+                    return true;
+                }
+            }
+            reader.Close();
+            sqlCommand.Dispose();
+            return false;
+        }
+
+        private void ResetTexts()
+        {
+            textBoxUserName.Text = "";
+            textBoxPassWord.Text = "";
+        }
+
+        private void textBoxUserName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonLogin.PerformClick();
+            }
         }
     }
 }

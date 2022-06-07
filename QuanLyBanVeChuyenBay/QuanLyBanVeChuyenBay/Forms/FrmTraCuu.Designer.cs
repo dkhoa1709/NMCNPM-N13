@@ -39,15 +39,15 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxNgaySinh = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.labelNgayGio = new System.Windows.Forms.Label();
-            this.textBoxSanBayDen = new System.Windows.Forms.TextBox();
             this.panelSanBayDen = new System.Windows.Forms.Panel();
-            this.textBoxSanBayDi = new System.Windows.Forms.TextBox();
             this.panelSanBayDi = new System.Windows.Forms.Panel();
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelView = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBoxSanBayDi = new System.Windows.Forms.ComboBox();
+            this.comboBoxSanBayDen = new System.Windows.Forms.ComboBox();
             this.panelFill.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -101,14 +101,14 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.comboBoxSanBayDen);
+            this.panel2.Controls.Add(this.comboBoxSanBayDi);
             this.panel2.Controls.Add(this.panelShow);
             this.panel2.Controls.Add(this.pictureBoxNgayBay);
             this.panel2.Controls.Add(this.textBoxNgaySinh);
             this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.labelNgayGio);
-            this.panel2.Controls.Add(this.textBoxSanBayDen);
             this.panel2.Controls.Add(this.panelSanBayDen);
-            this.panel2.Controls.Add(this.textBoxSanBayDi);
             this.panel2.Controls.Add(this.panelSanBayDi);
             this.panel2.Controls.Add(this.buttonTimKiem);
             this.panel2.Controls.Add(this.label2);
@@ -169,16 +169,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelNgayGio.TabIndex = 0;
             this.labelNgayGio.Text = "Ngày bay:";
             // 
-            // textBoxSanBayDen
-            // 
-            this.textBoxSanBayDen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSanBayDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSanBayDen.Location = new System.Drawing.Point(257, 134);
-            this.textBoxSanBayDen.Multiline = true;
-            this.textBoxSanBayDen.Name = "textBoxSanBayDen";
-            this.textBoxSanBayDen.Size = new System.Drawing.Size(260, 24);
-            this.textBoxSanBayDen.TabIndex = 2;
-            // 
             // panelSanBayDen
             // 
             this.panelSanBayDen.BackColor = System.Drawing.Color.Black;
@@ -186,16 +176,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panelSanBayDen.Name = "panelSanBayDen";
             this.panelSanBayDen.Size = new System.Drawing.Size(260, 1);
             this.panelSanBayDen.TabIndex = 0;
-            // 
-            // textBoxSanBayDi
-            // 
-            this.textBoxSanBayDi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSanBayDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSanBayDi.Location = new System.Drawing.Point(257, 78);
-            this.textBoxSanBayDi.Multiline = true;
-            this.textBoxSanBayDi.Name = "textBoxSanBayDi";
-            this.textBoxSanBayDi.Size = new System.Drawing.Size(260, 24);
-            this.textBoxSanBayDi.TabIndex = 1;
             // 
             // panelSanBayDi
             // 
@@ -264,6 +244,24 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // comboBoxSanBayDi
+            // 
+            this.comboBoxSanBayDi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSanBayDi.FormattingEnabled = true;
+            this.comboBoxSanBayDi.Location = new System.Drawing.Point(257, 78);
+            this.comboBoxSanBayDi.Name = "comboBoxSanBayDi";
+            this.comboBoxSanBayDi.Size = new System.Drawing.Size(260, 24);
+            this.comboBoxSanBayDi.TabIndex = 134;
+            // 
+            // comboBoxSanBayDen
+            // 
+            this.comboBoxSanBayDen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSanBayDen.FormattingEnabled = true;
+            this.comboBoxSanBayDen.Location = new System.Drawing.Point(257, 134);
+            this.comboBoxSanBayDen.Name = "comboBoxSanBayDen";
+            this.comboBoxSanBayDen.Size = new System.Drawing.Size(260, 24);
+            this.comboBoxSanBayDen.TabIndex = 135;
+            // 
             // FrmTraCuu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,9 +294,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelNgayGio;
-        private System.Windows.Forms.TextBox textBoxSanBayDen;
         private System.Windows.Forms.Panel panelSanBayDen;
-        private System.Windows.Forms.TextBox textBoxSanBayDi;
         private System.Windows.Forms.Panel panelSanBayDi;
         private System.Windows.Forms.Button buttonTimKiem;
         private System.Windows.Forms.Label label2;
@@ -308,5 +304,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.TextBox textBoxNgaySinh;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panelShow;
+        private System.Windows.Forms.ComboBox comboBoxSanBayDen;
+        private System.Windows.Forms.ComboBox comboBoxSanBayDi;
     }
 }

@@ -612,6 +612,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.pictureBoxNgayBay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxNgayBay.TabIndex = 103;
             this.pictureBoxNgayBay.TabStop = false;
+            this.pictureBoxNgayBay.Visible = false;
             this.pictureBoxNgayBay.Click += new System.EventHandler(this.pictureBoxNgayBay_Click);
             // 
             // label3

@@ -29,19 +29,17 @@ namespace QuanLyBanVeChuyenBay.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMain = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonSua = new System.Windows.Forms.Button();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonAddSanBayTG = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelDonGia = new System.Windows.Forms.Label();
             this.textBoxDonGia = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -52,8 +50,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelThoiGianBay = new System.Windows.Forms.Label();
             this.labelSanBayDen = new System.Windows.Forms.Label();
             this.labelNgayGio = new System.Windows.Forms.Label();
@@ -61,18 +57,20 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.labelMaChuyenBay = new System.Windows.Forms.Label();
             this.textBoxThoiGianBay = new System.Windows.Forms.TextBox();
             this.panelThoiGIanBay = new System.Windows.Forms.Panel();
-            this.textBoxSanBayDen = new System.Windows.Forms.TextBox();
-            this.panelNgayGio = new System.Windows.Forms.Panel();
-            this.textBoxNgayGio = new System.Windows.Forms.TextBox();
             this.panelSanBayDen = new System.Windows.Forms.Panel();
-            this.textBoxSanBayDi = new System.Windows.Forms.TextBox();
             this.panelSanBayDi = new System.Windows.Forms.Panel();
             this.textBoxMaChuyenBay = new System.Windows.Forms.TextBox();
             this.panelMaChuyenBay = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonAddSanBayTG = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxSanBayDi = new System.Windows.Forms.ComboBox();
+            this.comboBoxSanBayDen = new System.Windows.Forms.ComboBox();
+            this.comboBoxGio = new System.Windows.Forms.ComboBox();
+            this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
+            this.textBoxNgayBay = new System.Windows.Forms.TextBox();
+            this.panelNgayGio = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panelMain.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,6 +78,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMain
@@ -131,6 +130,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.buttonXoa.TabIndex = 7;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = true;
+            this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
             // 
             // buttonThem
             // 
@@ -148,6 +148,14 @@ namespace QuanLyBanVeChuyenBay.Forms
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.panel4);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.comboBoxGio);
+            this.groupBox1.Controls.Add(this.pictureBoxNgayBay);
+            this.groupBox1.Controls.Add(this.textBoxNgayBay);
+            this.groupBox1.Controls.Add(this.panelNgayGio);
+            this.groupBox1.Controls.Add(this.comboBoxSanBayDen);
+            this.groupBox1.Controls.Add(this.comboBoxSanBayDi);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.buttonAddSanBayTG);
             this.groupBox1.Controls.Add(this.dataGridView3);
@@ -168,11 +176,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.groupBox1.Controls.Add(this.labelMaChuyenBay);
             this.groupBox1.Controls.Add(this.textBoxThoiGianBay);
             this.groupBox1.Controls.Add(this.panelThoiGIanBay);
-            this.groupBox1.Controls.Add(this.textBoxSanBayDen);
-            this.groupBox1.Controls.Add(this.panelNgayGio);
-            this.groupBox1.Controls.Add(this.textBoxNgayGio);
             this.groupBox1.Controls.Add(this.panelSanBayDen);
-            this.groupBox1.Controls.Add(this.textBoxSanBayDi);
             this.groupBox1.Controls.Add(this.panelSanBayDi);
             this.groupBox1.Controls.Add(this.textBoxMaChuyenBay);
             this.groupBox1.Controls.Add(this.panelMaChuyenBay);
@@ -184,27 +188,36 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(730, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 20);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Thêm sân bay trung gian:";
+            // 
+            // buttonAddSanBayTG
+            // 
+            this.buttonAddSanBayTG.Location = new System.Drawing.Point(968, 72);
+            this.buttonAddSanBayTG.Name = "buttonAddSanBayTG";
+            this.buttonAddSanBayTG.Size = new System.Drawing.Size(40, 40);
+            this.buttonAddSanBayTG.TabIndex = 50;
+            this.buttonAddSanBayTG.Text = "+";
+            this.buttonAddSanBayTG.UseVisualStyleBackColor = true;
+            this.buttonAddSanBayTG.Click += new System.EventHandler(this.buttonAddSanBayTG_Click);
+            // 
             // dataGridView3
             // 
             this.dataGridView3.AllowUserToAddRows = false;
             this.dataGridView3.AllowUserToDeleteRows = false;
             this.dataGridView3.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column4});
             this.dataGridView3.Location = new System.Drawing.Point(713, 117);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
@@ -212,23 +225,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridView3.Size = new System.Drawing.Size(301, 243);
             this.dataGridView3.TabIndex = 49;
             // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Sân bay trung gian";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Ghi chú";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
             // labelDonGia
             // 
             this.labelDonGia.AutoSize = true;
             this.labelDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDonGia.Location = new System.Drawing.Point(61, 264);
+            this.labelDonGia.Location = new System.Drawing.Point(61, 308);
             this.labelDonGia.Name = "labelDonGia";
             this.labelDonGia.Size = new System.Drawing.Size(71, 20);
             this.labelDonGia.TabIndex = 48;
@@ -238,7 +239,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.textBoxDonGia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDonGia.Location = new System.Drawing.Point(172, 264);
+            this.textBoxDonGia.Location = new System.Drawing.Point(172, 308);
             this.textBoxDonGia.Multiline = true;
             this.textBoxDonGia.Name = "textBoxDonGia";
             this.textBoxDonGia.Size = new System.Drawing.Size(215, 24);
@@ -247,7 +248,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(172, 288);
+            this.panel2.Location = new System.Drawing.Point(172, 332);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(215, 1);
             this.panel2.TabIndex = 47;
@@ -315,22 +316,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
             this.dataGridView2.Location = new System.Drawing.Point(406, 116);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
@@ -338,24 +328,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridView2.Size = new System.Drawing.Size(293, 244);
             this.dataGridView2.TabIndex = 35;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Hạng vé";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Số lượng ghế";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
             // labelThoiGianBay
             // 
             this.labelThoiGianBay.AutoSize = true;
             this.labelThoiGianBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelThoiGianBay.Location = new System.Drawing.Point(19, 217);
+            this.labelThoiGianBay.Location = new System.Drawing.Point(19, 261);
             this.labelThoiGianBay.Name = "labelThoiGianBay";
             this.labelThoiGianBay.Size = new System.Drawing.Size(113, 20);
             this.labelThoiGianBay.TabIndex = 34;
@@ -365,7 +342,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.labelSanBayDen.AutoSize = true;
             this.labelSanBayDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSanBayDen.Location = new System.Drawing.Point(26, 172);
+            this.labelSanBayDen.Location = new System.Drawing.Point(26, 216);
             this.labelSanBayDen.Name = "labelSanBayDen";
             this.labelSanBayDen.Size = new System.Drawing.Size(106, 20);
             this.labelSanBayDen.TabIndex = 30;
@@ -375,11 +352,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.labelNgayGio.AutoSize = true;
             this.labelNgayGio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNgayGio.Location = new System.Drawing.Point(38, 127);
+            this.labelNgayGio.Location = new System.Drawing.Point(49, 130);
             this.labelNgayGio.Name = "labelNgayGio";
-            this.labelNgayGio.Size = new System.Drawing.Size(94, 20);
+            this.labelNgayGio.Size = new System.Drawing.Size(83, 20);
             this.labelNgayGio.TabIndex = 31;
-            this.labelNgayGio.Text = "Ngày - Giờ:";
+            this.labelNgayGio.Text = "Ngày bay:";
             // 
             // labelSanBayDi
             // 
@@ -405,7 +382,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             this.textBoxThoiGianBay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxThoiGianBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxThoiGianBay.Location = new System.Drawing.Point(172, 217);
+            this.textBoxThoiGianBay.Location = new System.Drawing.Point(172, 261);
             this.textBoxThoiGianBay.Multiline = true;
             this.textBoxThoiGianBay.Name = "textBoxThoiGianBay";
             this.textBoxThoiGianBay.Size = new System.Drawing.Size(215, 24);
@@ -414,56 +391,18 @@ namespace QuanLyBanVeChuyenBay.Forms
             // panelThoiGIanBay
             // 
             this.panelThoiGIanBay.BackColor = System.Drawing.Color.Black;
-            this.panelThoiGIanBay.Location = new System.Drawing.Point(172, 241);
+            this.panelThoiGIanBay.Location = new System.Drawing.Point(172, 285);
             this.panelThoiGIanBay.Name = "panelThoiGIanBay";
             this.panelThoiGIanBay.Size = new System.Drawing.Size(215, 1);
             this.panelThoiGIanBay.TabIndex = 20;
             // 
-            // textBoxSanBayDen
-            // 
-            this.textBoxSanBayDen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSanBayDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSanBayDen.Location = new System.Drawing.Point(172, 172);
-            this.textBoxSanBayDen.Multiline = true;
-            this.textBoxSanBayDen.Name = "textBoxSanBayDen";
-            this.textBoxSanBayDen.Size = new System.Drawing.Size(215, 24);
-            this.textBoxSanBayDen.TabIndex = 4;
-            // 
-            // panelNgayGio
-            // 
-            this.panelNgayGio.BackColor = System.Drawing.Color.Black;
-            this.panelNgayGio.Location = new System.Drawing.Point(172, 151);
-            this.panelNgayGio.Name = "panelNgayGio";
-            this.panelNgayGio.Size = new System.Drawing.Size(215, 1);
-            this.panelNgayGio.TabIndex = 21;
-            // 
-            // textBoxNgayGio
-            // 
-            this.textBoxNgayGio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNgayGio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNgayGio.Location = new System.Drawing.Point(172, 127);
-            this.textBoxNgayGio.Multiline = true;
-            this.textBoxNgayGio.Name = "textBoxNgayGio";
-            this.textBoxNgayGio.Size = new System.Drawing.Size(215, 24);
-            this.textBoxNgayGio.TabIndex = 3;
-            // 
             // panelSanBayDen
             // 
             this.panelSanBayDen.BackColor = System.Drawing.Color.Black;
-            this.panelSanBayDen.Location = new System.Drawing.Point(172, 197);
+            this.panelSanBayDen.Location = new System.Drawing.Point(172, 241);
             this.panelSanBayDen.Name = "panelSanBayDen";
             this.panelSanBayDen.Size = new System.Drawing.Size(215, 1);
             this.panelSanBayDen.TabIndex = 22;
-            // 
-            // textBoxSanBayDi
-            // 
-            this.textBoxSanBayDi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSanBayDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSanBayDi.Location = new System.Drawing.Point(172, 82);
-            this.textBoxSanBayDi.Multiline = true;
-            this.textBoxSanBayDi.Name = "textBoxSanBayDi";
-            this.textBoxSanBayDi.Size = new System.Drawing.Size(215, 24);
-            this.textBoxSanBayDi.TabIndex = 2;
             // 
             // panelSanBayDi
             // 
@@ -512,25 +451,92 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel3.Size = new System.Drawing.Size(1044, 198);
             this.panel3.TabIndex = 17;
             // 
-            // buttonAddSanBayTG
+            // comboBoxSanBayDi
             // 
-            this.buttonAddSanBayTG.Location = new System.Drawing.Point(968, 72);
-            this.buttonAddSanBayTG.Name = "buttonAddSanBayTG";
-            this.buttonAddSanBayTG.Size = new System.Drawing.Size(40, 40);
-            this.buttonAddSanBayTG.TabIndex = 50;
-            this.buttonAddSanBayTG.Text = "+";
-            this.buttonAddSanBayTG.UseVisualStyleBackColor = true;
-            this.buttonAddSanBayTG.Click += new System.EventHandler(this.buttonAddSanBayTG_Click);
+            this.comboBoxSanBayDi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSanBayDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSanBayDi.FormattingEnabled = true;
+            this.comboBoxSanBayDi.Location = new System.Drawing.Point(172, 76);
+            this.comboBoxSanBayDi.Name = "comboBoxSanBayDi";
+            this.comboBoxSanBayDi.Size = new System.Drawing.Size(215, 28);
+            this.comboBoxSanBayDi.TabIndex = 52;
             // 
-            // label1
+            // comboBoxSanBayDen
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(730, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 20);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "Thêm sân bay trung gian:";
+            this.comboBoxSanBayDen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSanBayDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSanBayDen.FormattingEnabled = true;
+            this.comboBoxSanBayDen.Location = new System.Drawing.Point(172, 211);
+            this.comboBoxSanBayDen.Name = "comboBoxSanBayDen";
+            this.comboBoxSanBayDen.Size = new System.Drawing.Size(215, 28);
+            this.comboBoxSanBayDen.TabIndex = 53;
+            // 
+            // comboBoxGio
+            // 
+            this.comboBoxGio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxGio.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.comboBoxGio.FormattingEnabled = true;
+            this.comboBoxGio.Items.AddRange(new object[] {
+            "6H30",
+            "7H30",
+            "8H30",
+            "9H30",
+            "10H30"});
+            this.comboBoxGio.Location = new System.Drawing.Point(172, 165);
+            this.comboBoxGio.Name = "comboBoxGio";
+            this.comboBoxGio.Size = new System.Drawing.Size(215, 24);
+            this.comboBoxGio.TabIndex = 115;
+            // 
+            // pictureBoxNgayBay
+            // 
+            this.pictureBoxNgayBay.Image = global::QuanLyBanVeChuyenBay.Properties.Resources.calendar_check_regular1;
+            this.pictureBoxNgayBay.Location = new System.Drawing.Point(362, 125);
+            this.pictureBoxNgayBay.Name = "pictureBoxNgayBay";
+            this.pictureBoxNgayBay.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxNgayBay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxNgayBay.TabIndex = 114;
+            this.pictureBoxNgayBay.TabStop = false;
+            this.pictureBoxNgayBay.Click += new System.EventHandler(this.pictureBoxNgayBay_Click);
+            // 
+            // textBoxNgayBay
+            // 
+            this.textBoxNgayBay.BackColor = System.Drawing.Color.White;
+            this.textBoxNgayBay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNgayBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNgayBay.ForeColor = System.Drawing.Color.Black;
+            this.textBoxNgayBay.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBoxNgayBay.Location = new System.Drawing.Point(172, 126);
+            this.textBoxNgayBay.Multiline = true;
+            this.textBoxNgayBay.Name = "textBoxNgayBay";
+            this.textBoxNgayBay.ReadOnly = true;
+            this.textBoxNgayBay.Size = new System.Drawing.Size(191, 24);
+            this.textBoxNgayBay.TabIndex = 112;
+            // 
+            // panelNgayGio
+            // 
+            this.panelNgayGio.BackColor = System.Drawing.Color.Black;
+            this.panelNgayGio.Location = new System.Drawing.Point(172, 151);
+            this.panelNgayGio.Name = "panelNgayGio";
+            this.panelNgayGio.Size = new System.Drawing.Size(215, 1);
+            this.panelNgayGio.TabIndex = 111;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(92, 172);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 20);
+            this.label4.TabIndex = 116;
+            this.label4.Text = "Giờ:";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(172, 191);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(215, 1);
+            this.panel4.TabIndex = 117;
             // 
             // FrmLichChuyenBay
             // 
@@ -552,6 +558,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNgayBay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -567,11 +574,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBoxThoiGianBay;
         private System.Windows.Forms.Panel panelThoiGIanBay;
-        private System.Windows.Forms.TextBox textBoxSanBayDen;
-        private System.Windows.Forms.Panel panelNgayGio;
-        private System.Windows.Forms.TextBox textBoxNgayGio;
         private System.Windows.Forms.Panel panelSanBayDen;
-        private System.Windows.Forms.TextBox textBoxSanBayDi;
         private System.Windows.Forms.Panel panelSanBayDi;
         private System.Windows.Forms.TextBox textBoxMaChuyenBay;
         private System.Windows.Forms.Panel panelMaChuyenBay;
@@ -591,11 +594,15 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.TextBox textBoxDonGia;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonAddSanBayTG;
+        private System.Windows.Forms.ComboBox comboBoxSanBayDen;
+        private System.Windows.Forms.ComboBox comboBoxSanBayDi;
+        private System.Windows.Forms.ComboBox comboBoxGio;
+        private System.Windows.Forms.PictureBox pictureBoxNgayBay;
+        private System.Windows.Forms.TextBox textBoxNgayBay;
+        private System.Windows.Forms.Panel panelNgayGio;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label4;
     }
 }

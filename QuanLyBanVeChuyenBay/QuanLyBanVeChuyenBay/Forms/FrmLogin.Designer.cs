@@ -97,6 +97,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(280, 35);
             this.textBoxUserName.TabIndex = 1;
+            this.textBoxUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxUserName_KeyDown);
             // 
             // textBoxPassWord
             // 

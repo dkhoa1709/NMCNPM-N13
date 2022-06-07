@@ -34,7 +34,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.panelTitle1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.listView2 = new System.Windows.Forms.ListView();
             this.panelTitle2 = new System.Windows.Forms.Panel();
@@ -88,23 +87,12 @@ namespace QuanLyBanVeChuyenBay.Forms
             // 
             // panelTitle1
             // 
-            this.panelTitle1.Controls.Add(this.dateTimePicker1);
             this.panelTitle1.Controls.Add(this.label1);
             this.panelTitle1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle1.Location = new System.Drawing.Point(0, 0);
             this.panelTitle1.Name = "panelTitle1";
             this.panelTitle1.Size = new System.Drawing.Size(1247, 45);
             this.panelTitle1.TabIndex = 1;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.CustomFormat = "MMM yyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(1066, 11);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(122, 22);
-            this.dateTimePicker1.TabIndex = 1;
             // 
             // panel2
             // 
@@ -165,7 +153,6 @@ namespace QuanLyBanVeChuyenBay.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelTitle1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panelTitle2;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ListView listView2;

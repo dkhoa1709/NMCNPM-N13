@@ -54,7 +54,7 @@ namespace QuanLyBanVeChuyenBay.Forms
         {
             dataGridView1.DataSource = null;
             dataGridView1.Columns.Clear();
-            if (!String.IsNullOrEmpty(textBoxSanBayDi.Text) && !String.IsNullOrEmpty(textBoxSanBayDen.Text))
+            if (!String.IsNullOrEmpty(comboBoxSanBayDi.Text) && !String.IsNullOrEmpty(comboBoxSanBayDen.Text))
             {
                 var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
                 var sqlConn = new SqlConnection(strConn);
@@ -66,7 +66,7 @@ namespace QuanLyBanVeChuyenBay.Forms
                              "LEFT JOIN SANBAY SB2 ON CB.MaSanBayDi = SB2.MaSBay " +
                              "LEFT JOIN SANBAY SB1 ON CB.MaSanBayDen = SB1.MaSBay " +
                              "LEFT JOIN SANBAY SB ON TT.MaSBayTrungGian = SB.MaSBay " +
-                             "WHERE SB2.Tensb = '" + textBoxSanBayDi.Text + "' AND SB1.Tensb = '" + textBoxSanBayDen.Text + "'";// lay het du lieu trong bang sinh vien
+                             "WHERE SB2.Tensb = '" + comboBoxSanBayDi.Text + "' AND SB1.Tensb = '" + comboBoxSanBayDen.Text + "'";// lay het du lieu trong bang sinh vien
                 DataTable dt = new DataTable(); //tạo một kho ảo để lưu trữ dữ liệu 
                 SqlCommand com = new SqlCommand(sql, sqlConn); //bat dau truy van
                 com.CommandType = CommandType.Text;
