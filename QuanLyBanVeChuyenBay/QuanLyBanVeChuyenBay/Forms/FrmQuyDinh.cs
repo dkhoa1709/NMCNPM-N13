@@ -26,7 +26,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void UpdateDataQuyDinh()
         {
-            var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
+            var strConn = @"Data Source=LAPTOP-NKLEA02K\TRUONGGIANG15;Initial Catalog = QUANLYBANVECHUYENBAY; Integrated Security = True";
             var sqlConn = new SqlConnection(strConn);
             sqlConn.Open();
             try
@@ -57,7 +57,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void LoadDataQuyDinh()
         {
-            var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
+            var strConn = @"Data Source=LAPTOP-NKLEA02K\TRUONGGIANG15;Initial Catalog = QUANLYBANVECHUYENBAY; Integrated Security = True";
             var sqlConn = new SqlConnection(strConn);
             sqlConn.Open();
             var sqlCommand = new SqlCommand("SELECT * FROM [dbo].[THAMSO]", sqlConn);
@@ -77,7 +77,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void LoadDataDSSB()
         {
-            var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
+            var strConn = @"Data Source=LAPTOP-NKLEA02K\TRUONGGIANG15;Initial Catalog = QUANLYBANVECHUYENBAY; Integrated Security = True";
             var sqlConn = new SqlConnection(strConn);
             sqlConn.Open();
             string sql = "SELECT MaSBay 'Mã sân bay', Tensb 'Tên sân bay' FROM SANBAY";
@@ -91,7 +91,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void LoadDataDSHV()
         {
-            var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
+            var strConn = @"Data Source=LAPTOP-NKLEA02K\TRUONGGIANG15;Initial Catalog = QUANLYBANVECHUYENBAY; Integrated Security = True";
             var sqlConn = new SqlConnection(strConn);
             sqlConn.Open();
             string sql = "SELECT MaHangVe 'Mã hạng vé', TenHangVe 'Tên hạng vé', TiLe 'Tỷ lệ' FROM HANGVE";
@@ -132,7 +132,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void InsertDataSB()
         {
-            var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
+            var strConn = @"Data Source=LAPTOP-NKLEA02K\TRUONGGIANG15;Initial Catalog = QUANLYBANVECHUYENBAY; Integrated Security = True";
             var sqlConn = new SqlConnection(strConn);
             sqlConn.Open();
             try
@@ -172,7 +172,7 @@ namespace QuanLyBanVeChuyenBay.Forms
 
         private void InsertDataHV()
         {
-            var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
+            var strConn = @"Data Source=LAPTOP-NKLEA02K\TRUONGGIANG15;Initial Catalog = QUANLYBANVECHUYENBAY; Integrated Security = True";
             var sqlConn = new SqlConnection(strConn);
             sqlConn.Open();
             try

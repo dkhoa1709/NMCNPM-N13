@@ -145,6 +145,31 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUANLYBANVECHUYENBAYDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYBANVECHUYENBAYDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYBANVECHUYENBAYDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYBANVECHUYENBAYDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYBANVECHUYENBAYDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +240,61 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QUANLYBANVECHUYENBAYDataSet.xsc">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYBANVECHUYENBAYDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet.xss">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet1.xsc">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYBANVECHUYENBAYDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet1.xss">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet2.xsc">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYBANVECHUYENBAYDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet2.xss">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet3.xsc">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYBANVECHUYENBAYDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet3.xss">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet4.xsc">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYBANVECHUYENBAYDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYBANVECHUYENBAYDataSet4.xss">
+      <DependentUpon>QUANLYBANVECHUYENBAYDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="Resources\icon_facebook.png" />
   </ItemGroup>
   <ItemGroup>

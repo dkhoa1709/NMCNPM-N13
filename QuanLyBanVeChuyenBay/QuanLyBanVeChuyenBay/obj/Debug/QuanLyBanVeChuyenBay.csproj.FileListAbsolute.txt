@@ -27,3 +27,32 @@ C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\Qua
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmThongTinDatVe.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmDoiMatKhau.resources
 C:\Users\dkhoa\OneDrive\Tài liệu\GitHub\NMCNPM-N13\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmThemSanBayTrungGian.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\QuanLyBanVeChuyenBay.exe.config
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\QuanLyBanVeChuyenBay.exe
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\QuanLyBanVeChuyenBay.pdb
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\CircularProgressBar.dll
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\WinFormAnimation.dll
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\CircularProgressBar.xml
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\bin\Debug\WinFormAnimation.xml
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.csproj.AssemblyReference.cache
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.FormMain.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmBaoCao.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmCalendar.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmDoiMatKhau.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmLoading.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmLogin.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmQuanLyNhanSu.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmQuyDinh.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmLichChuyenBay.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmDatCho.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmSuaThongTinNhanVien.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmThemNhanVien.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmThemSanBayTrungGian.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmThongTinDatVe.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Forms.FrmTraCuu.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.Properties.Resources.resources
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.csproj.GenerateResource.cache
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.csproj.CoreCompileInputs.cache
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.csproj.CopyComplete
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.exe
+D:\NMCNPM\NMCNPM-N13-main\QuanLyBanVeChuyenBay\QuanLyBanVeChuyenBay\obj\Debug\QuanLyBanVeChuyenBay.pdb

@@ -34,6 +34,8 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBoxSanBayDen = new System.Windows.Forms.ComboBox();
+            this.comboBoxSanBayDi = new System.Windows.Forms.ComboBox();
             this.panelShow = new System.Windows.Forms.Panel();
             this.pictureBoxNgayBay = new System.Windows.Forms.PictureBox();
             this.textBoxNgaySinh = new System.Windows.Forms.TextBox();
@@ -46,8 +48,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.panelView = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBoxSanBayDi = new System.Windows.Forms.ComboBox();
-            this.comboBoxSanBayDen = new System.Windows.Forms.ComboBox();
             this.panelFill.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -119,6 +119,24 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.panel2.Size = new System.Drawing.Size(612, 379);
             this.panel2.TabIndex = 0;
             // 
+            // comboBoxSanBayDen
+            // 
+            this.comboBoxSanBayDen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSanBayDen.FormattingEnabled = true;
+            this.comboBoxSanBayDen.Location = new System.Drawing.Point(257, 134);
+            this.comboBoxSanBayDen.Name = "comboBoxSanBayDen";
+            this.comboBoxSanBayDen.Size = new System.Drawing.Size(260, 24);
+            this.comboBoxSanBayDen.TabIndex = 135;
+            // 
+            // comboBoxSanBayDi
+            // 
+            this.comboBoxSanBayDi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSanBayDi.FormattingEnabled = true;
+            this.comboBoxSanBayDi.Location = new System.Drawing.Point(257, 78);
+            this.comboBoxSanBayDi.Name = "comboBoxSanBayDi";
+            this.comboBoxSanBayDi.Size = new System.Drawing.Size(260, 24);
+            this.comboBoxSanBayDi.TabIndex = 134;
+            // 
             // panelShow
             // 
             this.panelShow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -172,7 +190,7 @@ namespace QuanLyBanVeChuyenBay.Forms
             // panelSanBayDen
             // 
             this.panelSanBayDen.BackColor = System.Drawing.Color.Black;
-            this.panelSanBayDen.Location = new System.Drawing.Point(257, 159);
+            this.panelSanBayDen.Location = new System.Drawing.Point(257, 164);
             this.panelSanBayDen.Name = "panelSanBayDen";
             this.panelSanBayDen.Size = new System.Drawing.Size(260, 1);
             this.panelSanBayDen.TabIndex = 0;
@@ -243,24 +261,6 @@ namespace QuanLyBanVeChuyenBay.Forms
             this.dataGridView1.Size = new System.Drawing.Size(1182, 272);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // comboBoxSanBayDi
-            // 
-            this.comboBoxSanBayDi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSanBayDi.FormattingEnabled = true;
-            this.comboBoxSanBayDi.Location = new System.Drawing.Point(257, 78);
-            this.comboBoxSanBayDi.Name = "comboBoxSanBayDi";
-            this.comboBoxSanBayDi.Size = new System.Drawing.Size(260, 24);
-            this.comboBoxSanBayDi.TabIndex = 134;
-            // 
-            // comboBoxSanBayDen
-            // 
-            this.comboBoxSanBayDen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSanBayDen.FormattingEnabled = true;
-            this.comboBoxSanBayDen.Location = new System.Drawing.Point(257, 134);
-            this.comboBoxSanBayDen.Name = "comboBoxSanBayDen";
-            this.comboBoxSanBayDen.Size = new System.Drawing.Size(260, 24);
-            this.comboBoxSanBayDen.TabIndex = 135;
             // 
             // FrmTraCuu
             // 
