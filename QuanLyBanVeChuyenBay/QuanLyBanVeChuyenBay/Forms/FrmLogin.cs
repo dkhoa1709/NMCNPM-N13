@@ -73,7 +73,11 @@ namespace QuanLyBanVeChuyenBay.Forms
             frm.FormClosing += delegate { this.Show(); };
             this.ResetTexts();
             this.Hide();
-            frm.Show();
+            if(true)
+            {
+                frm.Show();
+            }    
+  
         }
 
         private bool CorrectPassword()

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -150,27 +151,35 @@ namespace QuanLyBanVeChuyenBay
             Application.Exit();
         }
 
-        private bool CheckAccountManager(int x)
+        private bool CheckAccountManager()
         {
-            if (x % 2 == 0)
-                return true;
+            var strConn = @"Data Source=NBIN17\NBIN17;Initial Catalog=QUANLYBANVECHUYENBAY;Persist Security Info=True;User=sa;Password=12345";
+            var sqlConn = new SqlConnection(strConn);
+            sqlConn.Open();
+            var sqlCommand = new SqlCommand("SELECT * FROM [dbo].[NHANSU]", sqlConn);
+            var reader = sqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader.GetString(7).Equals("Quan ly"))
+                {
+                    reader.Close();
+                    sqlCommand.Dispose();
+                    return true;
+                }
+            }
+            reader.Close();
+            sqlCommand.Dispose();
             return false;
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            //if (CheckAccountManager(a))
-            //{
-            //    buttonDatVeChuyenBay.Visible = false;
-            //    buttonTraCuu.Visible = false;
-            //    buttonThongTin.Visible = false;
-            //}
-            //else
-            //{
-            //    buttonQuyDinh.Visible = false;
-            //    buttonBaoCao.Visible = false;
-            //    buttonQuanLyNhanSu.Visible = false;
-            //}
+            if (!CheckAccountManager())
+            {
+                buttonQuyDinh.Visible = false;
+                buttonBaoCao.Visible = false;
+                buttonQuanLyNhanSu.Visible = false;
+            }
         }
 
         private void labelTitle_MouseDown(object sender, MouseEventArgs e)
